@@ -13,7 +13,7 @@ public class Main {
         String str1 = reverse(str);
         if (str.equals(str1)){
             System.out.println("Число является палиндром");
-        }else{
+        } else {
             System.out.println("Число не является палиндром");
         }
     }
