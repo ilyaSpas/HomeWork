@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        HashMap<String,String> hashMap = new HashMap<>();
+        HashMap<String,ArrayList<String>> hashMap = new HashMap<>();
         Scanner scanner = new Scanner(System.in);
         String key = "";
         String value = "";
@@ -39,7 +39,8 @@ public class Main {
                     key = scanner.nextLine();
                     System.out.printf("Введите номер телефона для %s: ", key);
                     value = scanner.nextLine();
-                    hashMap.put(key, value);
+                    hashMap.put(key, new ArrayList<String>());
+                    hashMap.get(key).add(value);
                 }
                 if (yesOrNo.equals("n")){
                     System.out.println("Добавить к существующему контакту?");
@@ -51,7 +52,7 @@ public class Main {
                             System.out.println("Найден абонент " + key);
                             System.out.println("Введите дополнительный номер: ");
                             value = scanner.nextLine();
-                            hashMap.putIfAbsent(key,value);
+                            hashMap.get(key).add(value);
                         }
                         if (!hashMap.containsKey(key)){
                             System.out.println("Абонента с именем " + key + " не найдено.");
