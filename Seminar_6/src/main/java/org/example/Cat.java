@@ -43,6 +43,7 @@ public class Cat {
             if (!satiety) {
                 plate.decreaseFood(appetite * hungry);
                 satiety = true;
+                this.hungry = (int) ((plate.getFood()/hungry)*0.1);
             }
         }
     }
