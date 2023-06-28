@@ -1,9 +1,7 @@
 package org.example;
 
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -50,7 +48,7 @@ public class Main {
                         key = scanner.nextLine();
                         if (hashMap.containsKey(key)) {
                             System.out.println("Найден абонент " + key);
-                            System.out.println("Введите дополнительный номер: ");
+                            System.out.print("Введите дополнительный номер: ");
                             value = scanner.nextLine();
                             hashMap.get(key).add(value);
                         }
@@ -94,6 +92,7 @@ public class Main {
             }
             if(answer.equals("LIST")){
                 System.out.println("В телефонной книге содержатся: ");
+                Collections.sort(hashMap);
                 for (String var : hashMap.keySet()){
                     System.out.println("Имя: " + var + ", номер телефона - " + hashMap.get(var));
                 }
