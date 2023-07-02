@@ -1,7 +1,7 @@
 package org.example;
 
 public class Greens extends Food{
-    public boolean forHerbivore = true;
+    private boolean forHerbivore = true;
 
 
     public Greens(int amount) {

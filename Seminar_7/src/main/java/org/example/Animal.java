@@ -16,6 +16,7 @@ public abstract class Animal {
     public void eat(Food food){
         food.setAmount(food.getAmount() - appetite);
         satiety += appetite;
+        System.out.println(name + " is eating " + appetite + " food.");
     }
 
     public Animal(String name, double weight, int age) {
