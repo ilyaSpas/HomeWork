@@ -1,7 +1,7 @@
 package org.example;
 
 public abstract class Food {
-    public int amount;
+    private int amount;
 
     public Food(int amount) {
         this.amount = amount;
