@@ -18,4 +18,5 @@ public class Box {
         this.weight = weight;
     }
 
+
 }
