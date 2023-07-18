@@ -8,20 +8,20 @@ public class Main {
         Fruit fruit3 = new Orange(4);
         Fruit fruit4 = new Fruit(2);
 
-        Basket basket0 = new Basket();
-        Basket basket1 = new Basket();
+        Box box0 = new Box();
+        Box box1 = new Box();
 
-        basket0.addFruit(fruit0);
-        basket0.addFruit(fruit1);
-        basket0.addFruit(fruit2);
-        basket0.addFruit(fruit3);
-        basket0.addFruit(fruit4);
+        box0.addFruit(fruit0);
+        box0.addFruit(fruit1);
+        box0.addFruit(fruit2);
+        box0.addFruit(fruit3);
+        box0.addFruit(fruit4);
 
-        basket0.infoBasket();
+        box0.infoBox();
 
-        basket0.transferFruits(basket1);
+        box0.transferFruits(box1);
 
-        basket1.infoBasket();
-        basket0.infoBasket();
+        box1.infoBox();
+        box0.infoBox();
     }
 }

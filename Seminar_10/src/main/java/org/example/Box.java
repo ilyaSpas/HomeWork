@@ -2,15 +2,15 @@ package org.example;
 
 import java.util.ArrayList;
 
-public class Basket {
+public class Box {
     public ArrayList<Fruit> arrayList = new ArrayList<>();
 
-    public Basket() {
+    public Box() {
     }
     public void addFruit(Fruit fruit){
         arrayList.add(fruit);
     }
-    public void infoBasket(){
+    public void infoBox(){
         if (!arrayList.isEmpty()){
             int allWeight = 0;
             for (Fruit fruit : arrayList) {
@@ -24,9 +24,9 @@ public class Basket {
         }
     }
 
-    public void transferFruits(Basket basket){
+    public void transferFruits(Box box){
         for (Fruit fruit : this.arrayList){
-            basket.addFruit(fruit);
+            box.addFruit(fruit);
         }
         this.arrayList.clear();
     }
