@@ -11,19 +11,12 @@ public class Box<T extends Fruit> {
     public int getWeight(){
         if (!arrayList.isEmpty()){
             int allWeight = 0;
-            System.out.println("\n    Информация о корзине:");
             for (Fruit fruit : arrayList) {
                 allWeight += fruit.getWeight();
-                System.out.println("Фрукт " + fruit.getClass().toString()
-                        .substring(18).toUpperCase() +
-                        ", вес " + fruit.getWeight() + " кг.");
             }
-            System.out.println("==================================\n" +
-                    "Общий вес корзины с фруктами " + allWeight + " кг.\n");
             return allWeight;
         }
         else {
-            System.out.println("Корзина пуста.");
             return 0;
         }
     }
