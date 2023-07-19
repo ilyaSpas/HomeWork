@@ -2,26 +2,33 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        Fruit fruit0 = new Apple(5);
-        Fruit fruit1 = new Orange(4);
-        Fruit fruit2 = new GoldenApple(3);
-        Fruit fruit3 = new Orange(4);
-        Fruit fruit4 = new Fruit(2);
+        Box<String> stringBox = new Box<>(); // не должно компилироваться
 
-        Box box0 = new Box();
-        Box box1 = new Box();
+        Box<Orange> orangeBox = new Box<>();
+        orangeBox.add(new Orange(1));
+        orangeBox.add(new Orange(2));
+        orangeBox.add(new Apple(2));       // не должно компилироваться
+        orangeBox.add(new GoldenApple(2)); // не должно компилироваться
 
-        box0.addFruit(fruit0);
-        box0.addFruit(fruit1);
-        box0.addFruit(fruit2);
-        box0.addFruit(fruit3);
-        box0.addFruit(fruit4);
+        System.out.println(orangeBox.getWeight()); // 3
 
-        box0.infoBox();
+        Box<Apple> appleBox = new Box<>();
+        appleBox.add(new Apple(1));
+        appleBox.add(new GoldenApple(2)); // допустимый вариант
+        System.out.println(appleBox.getWeight()); // 3
 
-        box0.transferFruits(box1);
+        Box<GoldenApple> goldenAppleBox = new Box<>();
+        goldenAppleBox.add(new GoldenApple(5)); // допустимый вариант
+        goldenAppleBox.add(new Apple(5));       // не должно компилироваться
+        System.out.println(goldenAppleBox.getWeight()); // 5
 
-        box1.infoBox();
-        box0.infoBox();
+        goldenAppleBox.moveTo(appleBox); // допустимый вариант
+        appleBox.moveTo(goldenAppleBox); // не должно компилироваться
+        orangeBox.moveTo(appleBox);      // не должно компилироваться
+
+        Box<Orange> orangeBox2 = new Box<>();
+        orangeBox.moveTo(orangeBox2);
+        System.out.println(orangeBox.getWeight()); // 0
+        System.out.println(orangeBox2.getWeight()); // 3
     }
 }
