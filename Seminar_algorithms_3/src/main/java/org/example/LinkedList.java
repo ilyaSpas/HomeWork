@@ -86,6 +86,16 @@ public class LinkedList <T>{
         }
     }
 
+    public LinkedList<T> reverse(){
+        LinkedList<T> reverseLinkedList = new LinkedList<T>();
+        Node node = head;
+        while (node != null){
+            reverseLinkedList.addFirst(node.value);
+            node = node.next;
+        }
+        return reverseLinkedList;
+    }
+
 
     @Override
     public String toString() {
