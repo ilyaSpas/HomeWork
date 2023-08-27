@@ -86,6 +86,7 @@ public class LinkedList <T>{
         }
     }
 
+    // разворот связаного списка
     public LinkedList<T> reverse(){
         LinkedList<T> reverseLinkedList = new LinkedList<T>();
         Node node = head;
