@@ -28,11 +28,6 @@ public class HashMap<K, V> implements Iterable<HashMap.Entity> {
         }
     }
 
-
-    /**
-     * TODO: Вывести все элементы хеш-таблицы на экран через toString()
-     * @return
-     */
     @Override
     public String toString() {
         return super.toString();
