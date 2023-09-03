@@ -1,4 +1,4 @@
-package org.example;
+package org.example.regular;
 
 public class Decorator {
     public static String decorate(int i){

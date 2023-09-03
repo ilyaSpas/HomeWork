@@ -1,5 +1,8 @@
-package org.example;
+package org.example.sample;
 
+
+import org.example.regular.Calculator;
+import org.example.regular.Decorator;
 
 public class Main {
     public static void main(String[] args) {
