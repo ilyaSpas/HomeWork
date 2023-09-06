@@ -96,6 +96,9 @@ public class Main {
         for (int x = 0; x < fieldsSizeX; x++) {
             for (int y = 0; y < fieldsSizeY - 2; y++) {
                 if (field[x][y] == DOT_HUMAN && field[x][y + 1] == DOT_HUMAN && field[x][y + 2] == DOT_EMPTY) {
+                    if(y + 3 == fieldsSizeY){
+                        continue;
+                    }
                     field[x][y + 2] = DOT_AI;
                     return;
                 }
@@ -106,6 +109,9 @@ public class Main {
         for (int x = 0; x < fieldsSizeX; x++) {
             for (int y = 1; y < fieldsSizeY - 1; y++) {
                 if (field[x][y] == DOT_HUMAN && field[x][y + 1] == DOT_HUMAN && field[x][y - 1] == DOT_EMPTY) {
+                    if(y - 1 == 0){
+                        continue;
+                    }
                     field[x][y - 1] = DOT_AI;
                     return;
                 }
@@ -113,10 +119,14 @@ public class Main {
         }
 
 
+
         //сверху от игрока
         for (int x = 1; x < fieldsSizeX - 1; x++) {
             for (int y = 0; y < fieldsSizeY; y++) {
                 if (field[x][y] == DOT_HUMAN && field[x + 1][y] == DOT_HUMAN && field[x - 1][y] == DOT_EMPTY) {
+                    if(x == 1){
+                        continue;
+                    }
                     field[x - 1][y] = DOT_AI;
                     return;
                 }
@@ -128,6 +138,9 @@ public class Main {
         for (int x = 0; x < fieldsSizeX - 1; x++) {
             for (int y = 0; y < fieldsSizeY; y++) {
                 if (field[x][y] == DOT_HUMAN && field[x + 1][y] == DOT_HUMAN && field[x + 2][y] == DOT_EMPTY) {
+                    if(x == fieldsSizeX - 1){
+                        continue;
+                    }
                     field[x + 2][y] = DOT_AI;
                     return;
                 }
@@ -135,8 +148,10 @@ public class Main {
         }
 
         do {
+
             x1 = random.nextInt(fieldsSizeX);
             y1 = random.nextInt(fieldsSizeY);
+
         } while (!isCellValid(x1, y1) || !isCellEmpty(x1, y1));
         field[x1][y1] = DOT_AI;
     }
