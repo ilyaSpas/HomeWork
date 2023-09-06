@@ -21,8 +21,8 @@ public class Main {
     }
     public static void initialize(){
 
-        fieldsSizeX = 3;
-        fieldsSizeY = 3;
+        fieldsSizeX = 5;
+        fieldsSizeY = 5;
         field = new char[fieldsSizeX][fieldsSizeX];
 
         for (int x = 0; x < fieldsSizeX; x++){
@@ -100,16 +100,28 @@ public class Main {
 
     private static boolean checkWin(char c){
 
-        if(field[0][0] == c && field[0][1] == c && field[0][2] == c) return true;
-        if(field[1][0] == c && field[1][1] == c && field[1][2] == c) return true;
-        if(field[2][0] == c && field[2][1] == c && field[2][2] == c) return true;
+//        if(field[0][0] == c && field[0][1] == c && field[0][2] == c) return true;
+//        if(field[1][0] == c && field[1][1] == c && field[1][2] == c) return true;
+//        if(field[2][0] == c && field[2][1] == c && field[2][2] == c) return true;
+//
+//        if(field[0][0] == c && field[1][0] == c && field[2][0] == c) return true;
+//        if(field[0][1] == c && field[1][1] == c && field[2][1] == c) return true;
+//        if(field[0][2] == c && field[1][2] == c && field[2][2] == c) return true;
+//
+//        if(field[0][0] == c && field[1][1] == c && field[2][2] == c) return true;
+//        if(field[0][2] == c && field[1][1] == c && field[2][0] == c) return true;
 
-        if(field[0][0] == c && field[1][0] == c && field[2][0] == c) return true;
-        if(field[0][1] == c && field[1][1] == c && field[2][1] == c) return true;
-        if(field[0][2] == c && field[1][2] == c && field[2][2] == c) return true;
+        for (int x = 0; x < fieldsSizeX - 2; x++){
+            for (int y = 0; y < fieldsSizeY - 2; y++){
+                if(field[x][y] == c && field[x+1][y] == c && field[x+2][y] == c) return true;
+                if(field[x][y] == c && field[x][y+1] == c && field[x][y+2] == c) return true;
+                if(field[x][y] == c && field[x+1][y+1] == c && field[x+2][y+2] == c) return true;
 
-        if(field[0][0] == c && field[1][1] == c && field[2][2] == c) return true;
-        if(field[0][2] == c && field[1][1] == c && field[2][0] == c) return true;
+                if (x >= fieldsSizeX - 3 && y >= fieldsSizeY - 3){
+                    if(field[x][y] == c && field[x-1][y+1] == c && field[x-2][y+2] == c) return true;
+                }
+            }
+        }
 
         return false;
     }
