@@ -122,6 +122,9 @@ public class Main {
         for (int x = 1; x < fieldsSizeX - 1; x++) {
             for (int y = 1; y < fieldsSizeY - 1; y++) {
                 if (field[x][y] == DOT_HUMAN && field[x + 1][y + 1] == DOT_HUMAN && field[x - 1][y - 1] == DOT_EMPTY) {
+                    if(x == 1 && y == 1){
+                        continue;
+                    }
                     field[x - 1][y - 1] = DOT_AI;
                     return;
                 }
