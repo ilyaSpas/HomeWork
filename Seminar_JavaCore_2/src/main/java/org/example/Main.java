@@ -92,7 +92,7 @@ public class Main {
         int x1, y1;
 
 
-        // ход справа от игрока
+        //справа от игрока
         for (int x = 0; x < fieldsSizeX; x++) {
             for (int y = 0; y < fieldsSizeY - 2; y++) {
                 if (field[x][y] == DOT_HUMAN && field[x][y + 1] == DOT_HUMAN && field[x][y + 2] == DOT_EMPTY) {
@@ -102,7 +102,7 @@ public class Main {
             }
         }
 
-        // ход слева от игрока
+        //слева от игрока
         for (int x = 0; x < fieldsSizeX; x++) {
             for (int y = 1; y < fieldsSizeY - 1; y++) {
                 if (field[x][y] == DOT_HUMAN && field[x][y + 1] == DOT_HUMAN && field[x][y - 1] == DOT_EMPTY) {
@@ -112,9 +112,25 @@ public class Main {
             }
         }
 
-        for (int x = 1; x < fieldsSizeX; x++) {
-            for (int y = 0; y < fieldsSizeY; y++) {
 
+        //сверху от игрока
+        for (int x = 1; x < fieldsSizeX - 1; x++) {
+            for (int y = 0; y < fieldsSizeY; y++) {
+                if (field[x][y] == DOT_HUMAN && field[x + 1][y] == DOT_HUMAN && field[x - 1][y] == DOT_EMPTY) {
+                    field[x - 1][y] = DOT_AI;
+                    return;
+                }
+            }
+        }
+
+
+        //снизу от игрока
+        for (int x = 0; x < fieldsSizeX - 1; x++) {
+            for (int y = 0; y < fieldsSizeY; y++) {
+                if (field[x][y] == DOT_HUMAN && field[x + 1][y] == DOT_HUMAN && field[x + 2][y] == DOT_EMPTY) {
+                    field[x + 2][y] = DOT_AI;
+                    return;
+                }
             }
         }
 
