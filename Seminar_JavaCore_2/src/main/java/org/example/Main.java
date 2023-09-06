@@ -7,7 +7,7 @@ public class Main {
     private static final char DOT_HUMAN = 'X';
     private static final char DOT_AI = 'O';
     private static final char DOT_EMPTY = '*';
-    private  static final Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
     private static final Random random = new Random();
     private static char[][] field;
     private static int fieldsSizeX;
@@ -19,67 +19,66 @@ public class Main {
         game.start();
 
     }
-    public static void initialize(){
+
+    public static void initialize() {
 
         fieldsSizeX = 7;
         fieldsSizeY = 7;
         field = new char[fieldsSizeX][fieldsSizeX];
 
-        for (int x = 0; x < fieldsSizeX; x++){
-            for (int y = 0; y < fieldsSizeY; y++){
+        for (int x = 0; x < fieldsSizeX; x++) {
+            for (int y = 0; y < fieldsSizeY; y++) {
                 field[x][y] = DOT_EMPTY;
             }
         }
     }
 
-    public static void printField(){
+    public static void printField() {
         System.out.print("+");
-        for (int x = 0; x < fieldsSizeX * 2 + 1; x++){
+        for (int x = 0; x < fieldsSizeX * 2 + 1; x++) {
             System.out.print((x % 2 == 0) ? "-" : x / 2 + 1);
         }
         System.out.println();
 
-        for (int x = 0; x < fieldsSizeX; x++){
+        for (int x = 0; x < fieldsSizeX; x++) {
             System.out.print(x + 1 + "|");
-            for (int y = 0; y < fieldsSizeY; y++){
+            for (int y = 0; y < fieldsSizeY; y++) {
                 System.out.print(field[x][y] + "|");
             }
             System.out.println();
         }
 
-        for (int x = 0; x < fieldsSizeX * 2 + 2; x++){
+        for (int x = 0; x < fieldsSizeX * 2 + 2; x++) {
             System.out.print("-");
         }
         System.out.println();
 
     }
 
-    private static void humanTurn(){
+    private static void humanTurn() {
         int x, y;
 
         do {
 
-            while (true){
+            while (true) {
                 System.out.print("Введите координату хода X (от 1 до 3): ");
-                if (scanner.hasNextInt()){
+                if (scanner.hasNextInt()) {
                     x = scanner.nextInt() - 1;
                     scanner.nextLine();
                     break;
-                }
-                else {
+                } else {
                     System.out.println("Некорректное число, повторите попытку ввода.");
                     scanner.nextLine();
                 }
             }
 
-            while (true){
+            while (true) {
                 System.out.print("Введите координату хода Y (от 1 до 3): ");
-                if (scanner.hasNextInt()){
+                if (scanner.hasNextInt()) {
                     y = scanner.nextInt() - 1;
                     scanner.nextLine();
                     break;
-                }
-                else {
+                } else {
                     System.out.println("Некорректное число, повторите попытку ввода.");
                     scanner.nextLine();
                 }
@@ -89,16 +88,44 @@ public class Main {
         field[x][y] = DOT_HUMAN;
     }
 
-    public static void AITurn(){
-        int x,y;
+    public static void AITurn() {
+        int x1, y1;
+
+
+        // ход справа от игрока
+        for (int x = 0; x < fieldsSizeX; x++) {
+            for (int y = 0; y < fieldsSizeY - 2; y++) {
+                if (field[x][y] == DOT_HUMAN && field[x][y + 1] == DOT_HUMAN && field[x][y + 2] == DOT_EMPTY) {
+                    field[x][y + 2] = DOT_AI;
+                    return;
+                }
+            }
+        }
+
+        // ход слева от игрока
+        for (int x = 0; x < fieldsSizeX; x++) {
+            for (int y = 1; y < fieldsSizeY - 1; y++) {
+                if (field[x][y] == DOT_HUMAN && field[x][y + 1] == DOT_HUMAN && field[x][y - 1] == DOT_EMPTY) {
+                    field[x][y - 1] = DOT_AI;
+                    return;
+                }
+            }
+        }
+
+        for (int x = 1; x < fieldsSizeX; x++) {
+            for (int y = 0; y < fieldsSizeY; y++) {
+
+            }
+        }
+
         do {
-            x = random.nextInt(fieldsSizeX);
-            y = random.nextInt(fieldsSizeY);
-        } while (!isCellValid(x,y) || !isCellEmpty(x,y));
-        field[x][y] = DOT_AI;
+            x1 = random.nextInt(fieldsSizeX);
+            y1 = random.nextInt(fieldsSizeY);
+        } while (!isCellValid(x1, y1) || !isCellEmpty(x1, y1));
+        field[x1][y1] = DOT_AI;
     }
 
-    private static boolean checkWin(char c){
+    private static boolean checkWin(char c) {
 
 //        if(field[0][0] == c && field[0][1] == c && field[0][2] == c) return true;
 //        if(field[1][0] == c && field[1][1] == c && field[1][2] == c) return true;
@@ -111,14 +138,18 @@ public class Main {
 //        if(field[0][0] == c && field[1][1] == c && field[2][2] == c) return true;
 //        if(field[0][2] == c && field[1][1] == c && field[2][0] == c) return true;
 
-        for (int x = 0; x < fieldsSizeX - 2; x++){
-            for (int y = 0; y < fieldsSizeY - 2; y++){
-                if(field[x][y] == c && field[x+1][y] == c && field[x+2][y] == c) return true;
-                if(field[x][y] == c && field[x][y+1] == c && field[x][y+2] == c) return true;
-                if(field[x][y] == c && field[x+1][y+1] == c && field[x+2][y+2] == c) return true;
+        for (int x = 0; x < fieldsSizeX - 3; x++) {
+            for (int y = 0; y < fieldsSizeY - 3; y++) {
+                if (field[x][y] == c && field[x + 1][y] == c && field[x + 2][y] == c && field[x + 3][y] == c)
+                    return true;
+                if (field[x][y] == c && field[x][y + 1] == c && field[x][y + 2] == c && field[x][y + 3] == c)
+                    return true;
+                if (field[x][y] == c && field[x + 1][y + 1] == c && field[x + 2][y + 2] == c && field[x + 3][y + 3] == c)
+                    return true;
 
-                if (x >= 2 && y <= fieldsSizeY - 3){
-                    if(field[x][y] == c && field[x-1][y+1] == c && field[x-2][y+2] == c) return true;
+                if (x >= 3 && y <= fieldsSizeY - 4) {
+                    if (field[x][y] == c && field[x - 1][y + 1] == c && field[x - 2][y + 2] == c && field[x - 3][y + 3] == c)
+                        return true;
                 }
             }
         }
@@ -126,17 +157,17 @@ public class Main {
         return false;
     }
 
-    public static boolean checkDraw(){
+    public static boolean checkDraw() {
         for (int x = 0; x < fieldsSizeX; x++) {
             for (int y = 0; y < fieldsSizeY; y++) {
-                if(isCellEmpty(x,y)) return false;
+                if (isCellEmpty(x, y)) return false;
             }
         }
         return true;
     }
 
 
-    public void start(){
+    public void start() {
         initialize();
         printField();
 
@@ -160,8 +191,8 @@ public class Main {
     }
 
 
-    public static boolean checkGameState(char c, String str){
-        if (checkWin(c)){
+    public static boolean checkGameState(char c, String str) {
+        if (checkWin(c)) {
             System.out.println(str);
             return true;
         }
@@ -172,10 +203,11 @@ public class Main {
         return false;
     }
 
-    public static boolean isCellEmpty(int x, int y){
+    public static boolean isCellEmpty(int x, int y) {
         return field[x][y] == DOT_EMPTY;
     }
-    public static boolean isCellValid(int x, int y){
-        return x >= 0 && x < fieldsSizeX && y >= 0 && y <fieldsSizeY;
+
+    public static boolean isCellValid(int x, int y) {
+        return x >= 0 && x < fieldsSizeX && y >= 0 && y < fieldsSizeY;
     }
 }
