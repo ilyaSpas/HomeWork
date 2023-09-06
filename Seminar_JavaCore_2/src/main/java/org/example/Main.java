@@ -21,8 +21,8 @@ public class Main {
     }
     public static void initialize(){
 
-        fieldsSizeX = 5;
-        fieldsSizeY = 5;
+        fieldsSizeX = 7;
+        fieldsSizeY = 7;
         field = new char[fieldsSizeX][fieldsSizeX];
 
         for (int x = 0; x < fieldsSizeX; x++){
@@ -117,7 +117,7 @@ public class Main {
                 if(field[x][y] == c && field[x][y+1] == c && field[x][y+2] == c) return true;
                 if(field[x][y] == c && field[x+1][y+1] == c && field[x+2][y+2] == c) return true;
 
-                if (x >= fieldsSizeX - 3 && y >= fieldsSizeY - 3){
+                if (x >= 2 && y <= fieldsSizeY - 3){
                     if(field[x][y] == c && field[x-1][y+1] == c && field[x-2][y+2] == c) return true;
                 }
             }
