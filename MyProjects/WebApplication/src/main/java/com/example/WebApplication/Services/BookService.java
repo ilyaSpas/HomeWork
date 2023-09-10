@@ -24,11 +24,6 @@ public class BookService {
             image1 = toImageEntity(file1);
             book.addImageToProduct(image1);
         }
-
-        log.info("Saving new Book. Title: {}", book.getTitle());
-
-        Book bookFromDb = bookRepository.save(book);
-        bookFromDb.setPreviewImageId(bookFromDb.getImages().get(0).getId());
         bookRepository.save(book);
     }
 

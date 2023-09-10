@@ -18,7 +18,7 @@
     <h4>Каталог</h4>
     <div th:each="el : ${books}" th:object="${book}" class="alert alert-info mr-2">
 
-        <img src="/images/102" height="60px"/>
+        <img src="/images/${el.previewImageId}" height="60px"/>
 
         <h5 th:text="'Название книги: ' + ${el.title}"></h5>
     </div>
