@@ -1,0 +1,7 @@
+package org.example.HW.MyExceptions;
+
+public class MyException extends Exception{
+    public MyException(String message) {
+        super(message);
+    }
+}
