@@ -34,6 +34,24 @@ public class Main {
             System.out.println(s + " - содержит строку поиска " + TO_SEARCH);
         }
     }
+    public static void createBackup(File dir) throws IOException {
+
+        File[] files = dir.listFiles();
+        File backupDir = new File("./backup");
+
+        for (File file : files){
+            try (FileOutputStream fileOutputStream = new FileOutputStream("./backup/" + file.getName())) {
+                int c;
+                try (FileInputStream fileInputStream = new FileInputStream(file.getName())) {
+                    while ((c = fileInputStream.read()) != -1) {
+                        fileOutputStream.write(c);
+                    }
+                }
+            }
+        }
+
+
+    }
     private static List<String> searchMatch(File dir,  String search) throws IOException {
         List<String> list = new ArrayList<>();
         File[] files = dir.listFiles();
