@@ -40,6 +40,7 @@ public class Main {
         File backupDir = new File("./backup");
 
         for (File file : files){
+
             try (FileOutputStream fileOutputStream = new FileOutputStream("./backup/" + file.getName())) {
                 int c;
                 try (FileInputStream fileInputStream = new FileInputStream(file.getName())) {
