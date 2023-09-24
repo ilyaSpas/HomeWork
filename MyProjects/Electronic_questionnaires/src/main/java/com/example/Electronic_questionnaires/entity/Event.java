@@ -3,21 +3,21 @@ package com.example.Electronic_questionnaires.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "event")
+@Table(name = "event_shp")
 public class Event {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
     @Column(name = "town")
     private String town;
-    @Column(name = "date")
+    @Column(name = "date_of_event")
     private String date;
 
     public Event() {
     }
 
-    public Event(String town, String date) {
+    public Event(int id, String town, String date) {
+        this.id = id;
         this.town = town;
         this.date = date;
     }

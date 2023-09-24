@@ -20,7 +20,6 @@ public class EventController {
     }
     @PostMapping("/create-event-new")
     public String createEvent(@ModelAttribute Event event) {
-        eventService.save(event);
         return "redirect:/";
     }
 
