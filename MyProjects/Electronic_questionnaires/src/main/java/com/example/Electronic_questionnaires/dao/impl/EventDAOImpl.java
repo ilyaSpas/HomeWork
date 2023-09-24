@@ -10,9 +10,19 @@ import java.util.List;
 
 public class EventDAOImpl implements EventDAO {
 
+    private Session session;
 
     public void save(Event event) {
-
+        Configuration configuration = new Configuration().addAnnotatedClass(Event.class);
+        SessionFactory sessionFactory = configuration.buildSessionFactory();
+        this.session = sessionFactory.getCurrentSession();
+        try {
+            session.beginTransaction();
+            session.save(event);
+            session.getTransaction().commit();
+        } finally {
+            sessionFactory.close();
+        }
     }
 
     @Override
