@@ -3,7 +3,6 @@ package com.example.Electronic_questionnaires.controllers;
 import com.example.Electronic_questionnaires.entity.Event;
 import com.example.Electronic_questionnaires.service.EventService;
 import com.example.Electronic_questionnaires.service.impl.EventServiceImpl;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
