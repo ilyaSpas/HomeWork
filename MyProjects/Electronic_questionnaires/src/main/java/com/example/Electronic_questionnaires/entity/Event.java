@@ -17,12 +17,6 @@ public class Event {
     public Event() {
     }
 
-    public Event(int id, String town, String date) {
-        this.id = id;
-        this.town = town;
-        this.date = date;
-    }
-
     public Event(String town, String date) {
         this.town = town;
         this.date = date;
