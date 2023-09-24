@@ -5,13 +5,16 @@ import com.example.Electronic_questionnaires.entity.Event;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 public class EventDAOImpl implements EventDAO {
 
-    @Override
+
     public void save(Event event) {
+
     }
 
     @Override
