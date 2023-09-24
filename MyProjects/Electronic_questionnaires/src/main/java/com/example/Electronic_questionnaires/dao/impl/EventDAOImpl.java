@@ -5,17 +5,19 @@ import com.example.Electronic_questionnaires.entity.Event;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class EventDAOImpl implements EventDAO {
-
+    private SessionFactory sessionFactory;
     private Session session;
 
+
+
     public void save(Event event) {
-        Configuration configuration = new Configuration().addAnnotatedClass(Event.class);
-        SessionFactory sessionFactory = configuration.buildSessionFactory();
-        this.session = sessionFactory.getCurrentSession();
+        sessionFactory = new Configuration().addAnnotatedClass(Event.class).buildSessionFactory();
+        session = sessionFactory.getCurrentSession();
         try {
             session.beginTransaction();
             session.save(event);
