@@ -15,7 +15,7 @@ public class Main2 {
         try {
             session.beginTransaction();
 
-            Event event = new Event(1,"ds","dsa");
+            Event event = new Event("ds","dsa");
             session.save(event);
 
 

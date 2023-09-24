@@ -3,7 +3,7 @@ package com.example.Electronic_questionnaires.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "event_shp")
+@Table(name = "event_shp_test")
 public class Event {
     @Id
     @Column(name = "id")
@@ -18,6 +18,11 @@ public class Event {
 
     public Event(int id, String town, String date) {
         this.id = id;
+        this.town = town;
+        this.date = date;
+    }
+
+    public Event(String town, String date) {
         this.town = town;
         this.date = date;
     }
