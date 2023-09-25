@@ -11,13 +11,11 @@ import java.util.List;
 @Service
 public class EventDAOImpl implements EventDAO {
     private SessionFactory sessionFactory;
-    private Session session;
-
 
 
     public void save(Event event) {
         sessionFactory = new Configuration().addAnnotatedClass(Event.class).buildSessionFactory();
-        session = sessionFactory.getCurrentSession();
+        Session session = sessionFactory.getCurrentSession();
         try {
             session.beginTransaction();
             session.save(event);

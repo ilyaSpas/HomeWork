@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, post-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Главная</title>
+</head>
+<div class="container">
+    <H2>Онлайн регстрация</H2>
+    <hr>
+    <form th:action="@{'/event/' + ${event.id} + '/registration'}" th:method="post">
+
+        <input type="text" name="name" placeholder="Имя" class="form-control"><br>
+        <input type="text" name="surName" placeholder="Фамилия" class="form-control"><br>
+        <input type="text" name="fatherName" placeholder="Отчество" class="form-control"><br>
+        <input type="text" name="birthday" placeholder="Дата рождения" class="form-control"><br>
+        <input type="text" name="town" placeholder="Ваш город" class="form-control"><br>
+        <input type="text" name="nameOfPharmacy" placeholder="Название аптеки" class="form-control"><br>
+        <input type="text" name="addressOfPharmacy" placeholder="Адрес аптеки" class="form-control"><br>
+        <input type="text" name="phoneNumber" placeholder="Телефон" class="form-control"><br>
+        <input type="text" name="email" placeholder="EMAIL" class="form-control"><br>
+
+
+
+        <button type="submit" class="btn btn-dark">Зарегистрироваться</button>
+        <br>
+        <a th:href="'/event/' + ${event.id} + '/report'" >Список участников</a>
+    </form>
+
+</div>
+</html>
