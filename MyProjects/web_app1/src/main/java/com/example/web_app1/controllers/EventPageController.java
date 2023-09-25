@@ -30,7 +30,7 @@ public class EventPageController {
     @PostMapping("/create")
     public String createBook(@ModelAttribute Event event) {
         eventService.addEvent(event);
-        return "mainPageView";
+        return "redirect:/all-events";
     }
 
     @GetMapping("/all-events")

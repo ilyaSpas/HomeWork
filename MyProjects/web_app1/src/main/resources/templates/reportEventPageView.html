@@ -12,10 +12,24 @@
 <div class="container">
     <H2>Список участников мероприятия</H2>
     <hr>
-    <div th:each="person : ${persons}" class="alert alert-info mr-2">
-        <p th:text="${person.name}"></p>
+    <div class="alert alert-info mr-2">
+        <table>
+            <tr>
+                <th>Имя</th>
+                <th>Фамилия</th>
+                <th>Отчество</th>
+            </tr>
+
+            <tr th:each="person : ${persons}">
+                <td th:text="${person.name}">name</td>
+                <td th:text="${person.surName}">surName</td>
+                <td th:text="${person.fatherName}">fatherName</td>
+            </tr>
+        </table>
     </div>
-
-
+    <p><a href="/report/" download="report.txt">Скачать отчет</a></p>
 </div>
+
+
+
 </html>
