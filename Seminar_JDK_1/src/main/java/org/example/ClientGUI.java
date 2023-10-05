@@ -22,6 +22,7 @@ public class ClientGUI extends JFrame {
     Chat chat = new Chat();
 
     ClientGUI() throws IOException {
+
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(WINDOW_POS_X, WINDOW_POX_Y);
         setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
@@ -69,9 +70,17 @@ public class ClientGUI extends JFrame {
                 panelTop.setVisible(false);
             }
         });
-
-
     }
 
+    private Component createTop(){
+        JPanel jPanel = new JPanel();
+        JButton jButton = new JButton("J-Button");
+        jPanel.add(jButton);
 
+        return jButton;
+    }
+    private void init(){
+        add(createTop());
+    }
 }
+
