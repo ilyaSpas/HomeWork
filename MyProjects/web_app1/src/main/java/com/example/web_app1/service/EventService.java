@@ -2,15 +2,18 @@ package com.example.web_app1.service;
 
 import com.example.web_app1.models.Event;
 import com.example.web_app1.repo.EventRepository;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-@RequiredArgsConstructor
 public class EventService {
-    @Autowired
+
     private final EventRepository eventRepository;
+    @Autowired
+    public EventService(EventRepository eventRepository) {
+        this.eventRepository = eventRepository;
+    }
+
     public void addEvent(Event event){
         eventRepository.save(event);
     }

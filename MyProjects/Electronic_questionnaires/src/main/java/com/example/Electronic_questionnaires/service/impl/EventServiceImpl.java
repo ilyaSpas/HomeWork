@@ -10,7 +10,7 @@ import java.util.List;
 @Service
 public class EventServiceImpl implements EventService {
 
-    private EventDAO eventDAO = new EventDAOImpl();
+    private final EventDAO eventDAO = new EventDAOImpl();
 
     @Override
     public void save(Event event) {

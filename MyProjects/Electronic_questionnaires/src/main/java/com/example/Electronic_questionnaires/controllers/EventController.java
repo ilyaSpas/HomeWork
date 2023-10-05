@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class EventController {
 
-    private EventService eventService = new EventServiceImpl();
+    private final EventService eventService = new EventServiceImpl();
 
     @GetMapping("/create-event")
     public String createEventPage() {

@@ -2,26 +2,19 @@ package com.example.Electronic_questionnaires.dao.impl;
 
 import com.example.Electronic_questionnaires.dao.EventDAO;
 import com.example.Electronic_questionnaires.entity.Event;
+import com.example.Electronic_questionnaires.utils.HibernateSessionFactoryUtil;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Configuration;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
-@Service
-public class EventDAOImpl implements EventDAO {
-    private SessionFactory sessionFactory;
 
+public class EventDAOImpl implements EventDAO {
 
     public void save(Event event) {
-        sessionFactory = new Configuration().addAnnotatedClass(Event.class).buildSessionFactory();
-        Session session = sessionFactory.getCurrentSession();
-        try {
+        Session session = HibernateSessionFactoryUtil.getSessionFactory().getCurrentSession();
+        try (session) {
             session.beginTransaction();
             session.save(event);
             session.getTransaction().commit();
-        } finally {
-            sessionFactory.close();
         }
     }
 
