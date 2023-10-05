@@ -61,12 +61,15 @@ public class ClientGUI extends JFrame {
             }
 
         });
+
+
         btnLogin.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 panelTop.setVisible(false);
             }
         });
+
 
     }
 

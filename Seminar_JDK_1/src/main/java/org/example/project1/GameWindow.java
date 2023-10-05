@@ -6,32 +6,24 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class GameWindow extends JFrame {
-    private static final int WINDOW_HEIGHT = 555;
-    private static final int WINDOW_WIDTH = 502;
-    private static final int WINDOW_POS_X = 800;
-    private static final int WINDOW_POX_Y = 300;
+    private static final int WIDTH = 555;
+    private static final int HEIGHT = 507;
 
-    JButton btnStart = new JButton("New game");
-    JButton btnExit = new JButton("Exit");
-
-    SettingsWindow settingsWindow;
+    JButton btnStart, btnExit;
+    SettingWindow settingWindow;
     Map map;
 
-    GameWindow() {
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setLocation(WINDOW_POS_X, WINDOW_POX_Y);
-        setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
-        setTitle("New game");
+    GameWindow(){
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(WIDTH, HEIGHT);
+        setLocationRelativeTo(null);
+        setTitle("TicTacToe");
         setResizable(false);
 
-        add(map = new Map(), BorderLayout.CENTER);
-
-        JPanel panBottom = new JPanel(new GridLayout(1, 2));
-        panBottom.add(btnStart);
-        panBottom.add(btnExit);
-        add(panBottom, BorderLayout.SOUTH);
-
-        settingsWindow = new SettingsWindow(this);
+        btnStart = new JButton("New Game");
+        btnExit = new JButton("Exit");
+        settingWindow = new SettingWindow(this);
+        map = new Map();
 
         btnExit.addActionListener(new ActionListener() {
             @Override
@@ -43,15 +35,21 @@ public class GameWindow extends JFrame {
         btnStart.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                settingsWindow.setVisible(true);
+                settingWindow.setVisible(true);
             }
         });
 
+        JPanel panBottom = new JPanel(new GridLayout(1, 2));
+        panBottom.add(btnStart);
+        panBottom.add(btnExit);
+
+        add(panBottom, BorderLayout.SOUTH);
+        add(map);
 
         setVisible(true);
     }
 
-    public void starNewGame(int i, int i1, int i2, int i3) {
-        map.startNewGame(i, i1, i2, i3);
+    void startNewGame(int mode, int sizeX, int sizeY, int winLen){
+        map.startNewGame(mode, sizeX, sizeY, winLen);
     }
 }
