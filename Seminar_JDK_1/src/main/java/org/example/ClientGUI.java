@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 
 public class ClientGUI extends JFrame {
     private static final int WINDOW_POS_X = 500;
@@ -20,7 +21,7 @@ public class ClientGUI extends JFrame {
     JPasswordField passField = new JPasswordField();
     Chat chat = new Chat();
 
-    ClientGUI() {
+    ClientGUI() throws IOException {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(WINDOW_POS_X, WINDOW_POX_Y);
         setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
@@ -51,7 +52,11 @@ public class ClientGUI extends JFrame {
         btnSend.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                chat.sendMSG(loginField.getText() + ": " + textField.getText());
+                try {
+                    chat.sendMSG(loginField.getText() + ": " + textField.getText());
+                } catch (IOException ex) {
+                    throw new RuntimeException(ex);
+                }
                 textField.setText("");
             }
 
