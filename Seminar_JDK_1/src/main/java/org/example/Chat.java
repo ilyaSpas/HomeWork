@@ -31,9 +31,10 @@ public class Chat extends JPanel {
     }
 
     private void initializeChat() throws IOException {
-        InputStream inputStream = new FileInputStream(file);
-        byte[] log = inputStream.readAllBytes();
-        textArea.setText(new String(log));
+        try(InputStream inputStream = new FileInputStream(file);){
+            byte[] log = inputStream.readAllBytes();
+            textArea.setText(new String(log));
+        }
     }
 
     @Override
