@@ -39,9 +39,7 @@ public class Chat extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        render(g);
     }
 
-    private void render(Graphics g) {
-    }
+
 }
