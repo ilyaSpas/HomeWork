@@ -1,14 +1,3 @@
-Ivan Ivanovich: Привет
-Ivan Ivanovich: Как твои дела? 
-Ivan Ivanovich: 123
-Ivan Ivanovich: 123
-Ivan Ivanovich: 123
-Ivan Ivanovich: foo();
-Ivan Ivanovich: 
-Ivan Ivanovich: 1234567890
-Ivan Ivanovich: 
-Ivan Ivanovich: gfd
-Ivan Ivanovich: ttt
-Ivan Ivanovich: sa
-Ivan Ivanovich: 111
-Ivan Ivanovich: 222
+
+[10:01:45]Ivan Ivanovich: Ghbdtn
+[10:01:52]Ivan Ivanovich: Как твои дела? 
