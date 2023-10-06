@@ -49,7 +49,7 @@ public class Chat extends JPanel {
 
     private String timeNow() {
         Date date = new Date();
-        return "[" + simpleDateFormat.format(date) + "]";
+        return "[" + simpleDateFormat.format(date) + "] ";
     }
 
 }
