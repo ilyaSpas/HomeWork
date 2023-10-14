@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -26,7 +27,8 @@ public class ClientGUI extends JFrame {
     JTextField hostField = new JFormattedTextField();
     JTextField loginField = new JFormattedTextField();
     JPasswordField passField = new JPasswordField();
-
+    private File file = new File("C:\\Users\\Spass\\OneDrive\\Рабочий стол\\HW\\" +
+            "Seminar_JDK_1\\src\\main\\resources\\serverWindowLog.txt");
     DateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss");
     Chat chat = new Chat();
 
@@ -85,11 +87,7 @@ public class ClientGUI extends JFrame {
         btnSend.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                try {
-                    chat.sendMSG(loginField.getText() + ": " + textField.getText());
-                } catch (IOException ex) {
-                    throw new RuntimeException(ex);
-                }
+                sendMsgOnServer(loginField.getText() + ": " + textField.getText());
                 textField.setText("");
             }
         });
@@ -108,7 +106,6 @@ public class ClientGUI extends JFrame {
             }
         });
 
-
         return panelTop;
     }
 
@@ -116,18 +113,23 @@ public class ClientGUI extends JFrame {
         JPanel panelBottom = new JPanel(new GridLayout());
         panelBottom.add(textField);
         panelBottom.add(btnSend);
-        return panelBottom;
-    }
+        return panelBottom;}
 
-    private void init() {
-        add(createTop(), BorderLayout.NORTH);
+    private void init() {        add(createTop(), BorderLayout.NORTH);
         add(chat);
-        add(createBottom(), BorderLayout.SOUTH);
-    }
+        add(createBottom(), BorderLayout.SOUTH);}
 
     private String timeNow() {
         Date date = new Date();
-        return "[" + simpleDateFormat.format(date) + "] ";
+        return "[" + simpleDateFormat.format(date) + "] ";}
+
+    private void sendMsgOnServer(String msg){
+        try {
+            server.saveMsg(msg);
+            chat.setText(server.getChatLog());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 }

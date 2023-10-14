@@ -20,6 +20,8 @@ public class ServerWindow extends JFrame {
     private static final int WINDOW_HEIGHT = 400;
     private File file = new File("C:\\Users\\Spass\\OneDrive\\Рабочий стол\\HW\\" +
             "Seminar_JDK_1\\src\\main\\resources\\serverWindowLog.txt");
+    private File file2 = new File("C:\\Users\\Spass\\OneDrive\\Рабочий стол\\HW\\" +
+            "Seminar_JDK_1\\src\\main\\resources\\log.txt");
     DateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss");
     private JTextArea textArea;
     private JScrollPane jScrollPane;
@@ -145,5 +147,19 @@ public class ServerWindow extends JFrame {
     private String timeNow() {
         Date date = new Date();
         return "[" + simpleDateFormat.format(date) + "] ";
+    }
+
+    public void saveMsg(String msg) throws IOException {
+        String temp = timeNow() + msg + "\n";
+        try (OutputStream outputStream = new FileOutputStream(file2, true);) {
+            outputStream.write(temp.getBytes());
+        }
+    }
+
+    public String getChatLog() throws IOException {
+        try (InputStream inputStream = new FileInputStream(file2);) {
+            byte[] log = inputStream.readAllBytes();
+            return new String(log);
+        }
     }
 }

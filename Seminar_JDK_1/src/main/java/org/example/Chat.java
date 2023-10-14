@@ -18,7 +18,6 @@ public class Chat extends JPanel {
         textArea = new JTextArea(17, 34);
         jScrollPane = new JScrollPane(textArea);
         add(jScrollPane);
-
     }
 
     public void sendMSG(String msg) throws IOException {
@@ -53,4 +52,7 @@ public class Chat extends JPanel {
         return "[" + simpleDateFormat.format(date) + "] ";
     }
 
+    public void setText(String chatLog) {
+        textArea.setText(chatLog);
+    }
 }

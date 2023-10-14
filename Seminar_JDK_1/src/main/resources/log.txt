@@ -9,3 +9,7 @@
 [11:55:37] Ivan Ivanovich: 123456
 [12:46:38] Ivan Ivanovich: Привет!
 [12:46:57] Smirnov Vasya: Как дела?
+[13:16:04] Ivan Ivanovich: xxx
+[13:22:27] Ivan Ivanovich: 111
+[13:22:29] Ivan Ivanovich: 222
+[13:22:34] Ivan Ivanovich: 333
