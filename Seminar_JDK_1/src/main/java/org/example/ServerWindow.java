@@ -46,7 +46,7 @@ public class ServerWindow extends JFrame {
         panelBottom.add(btnStop);
         add(panelBottom, BorderLayout.SOUTH);
 
-        reloadLog();
+        clearLog();
 
         setVisible(true);
 
@@ -56,14 +56,14 @@ public class ServerWindow extends JFrame {
                 if (state) {
                     System.out.println("Сервер уже работает.");
                     try {
-                        saveLogMessage("Сервер уже работает.");
+                        saveLogMsg("Сервер уже работает.");
                     } catch (IOException ex) {
                         throw new RuntimeException(ex);
                     }
                 } else {
                     System.out.println("Сервер запущен.");
                     try {
-                        saveLogMessage("Сервер запущен.");
+                        saveLogMsg("Сервер запущен.");
                     } catch (IOException ex) {
                         throw new RuntimeException(ex);
                     }
@@ -84,7 +84,7 @@ public class ServerWindow extends JFrame {
                 if (state) {
                     System.out.println("Сервер прервал свою работу.");
                     try {
-                        saveLogMessage("Сервер прервал свою работу.");
+                        saveLogMsg("Сервер прервал свою работу.");
                     } catch (IOException ex) {
                         throw new RuntimeException(ex);
                     }
@@ -92,7 +92,7 @@ public class ServerWindow extends JFrame {
                 } else {
                     System.out.println("Сервер уже выключен.");
                     try {
-                        saveLogMessage("Сервер уже выключен.");
+                        saveLogMsg("Сервер уже выключен.");
                     } catch (IOException ex) {
                         throw new RuntimeException(ex);
                     }
@@ -115,29 +115,24 @@ public class ServerWindow extends JFrame {
             return false;
         }
     }
+
     private void disConnectUser(ClientGUI client) {
         clientGUIList.remove(client);
     }
 
-    public void saveLogMessage(String msg) throws IOException {
+    public void saveLogMsg(String msg) throws IOException {
         String temp = timeNow() + msg + "\n";
         try (OutputStream outputStream = new FileOutputStream(file, true);) {
             outputStream.write(temp.getBytes());
         }
     }
+
     public void saveMsg(String msg) throws IOException {
         String temp = timeNow() + msg + "\n";
         try (OutputStream outputStream = new FileOutputStream(file2, true);) {
             outputStream.write(temp.getBytes());
         }
         mailing(new String(getChatLog()));
-    }
-
-    public void reloadLog() throws IOException {
-        String temp = "";
-        try (OutputStream outputStream = new FileOutputStream(file, false);) {
-            outputStream.write(temp.getBytes());
-        }
     }
 
     public String getLog() throws IOException {
@@ -147,13 +142,21 @@ public class ServerWindow extends JFrame {
         }
     }
 
+    public void clearLog() throws IOException {
+        String temp = "";
+        try (OutputStream outputStream = new FileOutputStream(file, false);) {
+            outputStream.write(temp.getBytes());
+        }
+    }
+
+
     public void updateLog() throws IOException {
         textArea.setText(getLog());
     }
 
     private void mailing(String str) throws IOException {
         for (ClientGUI clientGUI : clientGUIList) {
-            clientGUI.setTextArea(getChatLog());
+            clientGUI.setChatTextArea(getChatLog());
         }
     }
 

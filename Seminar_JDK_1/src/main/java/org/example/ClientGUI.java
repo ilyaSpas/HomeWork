@@ -64,7 +64,7 @@ public class ClientGUI extends JFrame {
                     try {
                         serverStatus = true;
                         chat.initialize();
-                        server.saveLogMessage(" Авторизован пользователь " + loginField.getText());
+                        server.saveLogMsg(" Авторизован пользователь " + loginField.getText());
                         server.updateLog();
                         btnLogin.setEnabled(false);
                         btnLogOut.setEnabled(true);
@@ -78,10 +78,9 @@ public class ClientGUI extends JFrame {
         btnLogOut.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                server = null;
                 btnLogOut.setEnabled(false);
                 btnLogin.setEnabled(true);
-                chat.setText("");
+                chat.setChatTextArea("");
             }
         });
 
@@ -122,14 +121,14 @@ public class ClientGUI extends JFrame {
     private void sendMsgOnServer(String msg) {
         try {
             server.saveMsg(msg);
-            setTextArea(msg);
+            setChatTextArea(msg);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
 
-    public void setTextArea(String msg) throws IOException {
-        chat.setText(server.getChatLog());
+    public void setChatTextArea(String msg) throws IOException {
+        chat.setChatTextArea(server.getChatLog());
     }
 }
 
