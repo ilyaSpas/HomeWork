@@ -35,7 +35,7 @@ public class ServerWindow extends JFrame {
 
         clientGUIList = new ArrayList<>();
 
-        textArea = new JTextArea(18, 33);
+        textArea = new JTextArea(17, 34);
         jScrollPane = new JScrollPane(textArea);
         add(jScrollPane, BorderLayout.CENTER);
 
@@ -96,7 +96,8 @@ public class ServerWindow extends JFrame {
                     }
                 }
                 try {
-                    textArea.setText(getLog());
+                    updateLog();
+                    //textArea.setText(getLog());
                 } catch (IOException ex) {
                     throw new RuntimeException(ex);
                 }
@@ -135,6 +136,10 @@ public class ServerWindow extends JFrame {
 
     private void disConnectUser(ClientGUI client){
         clientGUIList.remove(client);
+    }
+
+    public void updateLog() throws IOException {
+        textArea.setText(getLog());
     }
 
     private String timeNow() {

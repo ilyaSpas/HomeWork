@@ -5,7 +5,6 @@ import java.awt.*;
 import java.io.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Arrays;
 import java.util.Date;
 
 public class Chat extends JPanel {
@@ -16,7 +15,7 @@ public class Chat extends JPanel {
     DateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss");
 
     Chat() throws IOException {
-        textArea = new JTextArea(16, 35);
+        textArea = new JTextArea(17, 34);
         jScrollPane = new JScrollPane(textArea);
         add(jScrollPane);
 
@@ -37,7 +36,7 @@ public class Chat extends JPanel {
         }
     }
 
-    void initializeChat() throws IOException {
+    void initialize() throws IOException {
         try (InputStream inputStream = new FileInputStream(file);) {
             byte[] log = inputStream.readAllBytes();
             textArea.setText(new String(log));

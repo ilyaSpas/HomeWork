@@ -7,6 +7,9 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class ClientGUI extends JFrame {
     private static final int WINDOW_POS_X = 700;
@@ -23,6 +26,8 @@ public class ClientGUI extends JFrame {
     JTextField hostField = new JFormattedTextField();
     JTextField loginField = new JFormattedTextField();
     JPasswordField passField = new JPasswordField();
+
+    DateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss");
     Chat chat = new Chat();
 
     ClientGUI(ServerWindow server) throws IOException {
@@ -39,7 +44,7 @@ public class ClientGUI extends JFrame {
         setVisible(true);
     }
 
-    private Component createTop(){
+    private Component createTop() {
         JPanel panelTop = new JPanel(new GridLayout(2, 3, 2, 3));
 
         loginField.setText("Ivan Ivanovich");
@@ -57,10 +62,12 @@ public class ClientGUI extends JFrame {
         btnLogin.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (server.state){
+                if (server.state) {
                     server.connectUser(ClientGUI.this);
                     try {
-                        chat.initializeChat();
+                        chat.initialize();
+                        server.saveLogMessage(" Авторизован пользователь " + loginField.getText());
+                        server.updateLog();
                     } catch (IOException ex) {
                         throw new RuntimeException(ex);
                     }
@@ -90,7 +97,7 @@ public class ClientGUI extends JFrame {
         textField.addKeyListener(new KeyAdapter() {
             @Override
             public void keyTyped(KeyEvent e) {
-                if(e.getKeyChar() == '\n'){
+                if (e.getKeyChar() == '\n') {
                     try {
                         chat.sendMSG(loginField.getText() + ": " + textField.getText());
                         textField.setText("");
@@ -102,20 +109,26 @@ public class ClientGUI extends JFrame {
         });
 
 
-
         return panelTop;
     }
 
-    private Component createBottom(){
+    private Component createBottom() {
         JPanel panelBottom = new JPanel(new GridLayout());
         panelBottom.add(textField);
         panelBottom.add(btnSend);
         return panelBottom;
     }
-    private void init(){
+
+    private void init() {
         add(createTop(), BorderLayout.NORTH);
         add(chat);
         add(createBottom(), BorderLayout.SOUTH);
     }
+
+    private String timeNow() {
+        Date date = new Date();
+        return "[" + simpleDateFormat.format(date) + "] ";
+    }
+
 }
 
