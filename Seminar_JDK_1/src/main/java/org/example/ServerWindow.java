@@ -53,7 +53,7 @@ public class ServerWindow extends JFrame {
         btnStart.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (state){
+                if (state) {
                     System.out.println("Сервер уже работает.");
                     try {
                         saveLogMessage("Сервер уже работает.");
@@ -77,11 +77,11 @@ public class ServerWindow extends JFrame {
             }
         });
 
-        btnStop.addActionListener(new ActionListener()  {
+        btnStop.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 clientGUIList.clear();
-                if (state){
+                if (state) {
                     System.out.println("Сервер прервал свою работу.");
                     try {
                         saveLogMessage("Сервер прервал свою работу.");
@@ -99,7 +99,6 @@ public class ServerWindow extends JFrame {
                 }
                 try {
                     updateLog();
-                    //textArea.setText(getLog());
                 } catch (IOException ex) {
                     throw new RuntimeException(ex);
                 }
@@ -107,19 +106,31 @@ public class ServerWindow extends JFrame {
 
         });
     }
-    public boolean connectUser(ClientGUI client){
-        if (state){
+
+    public boolean connectUser(ClientGUI client) {
+        if (state) {
             clientGUIList.add(client);
             return true;
         } else {
             return false;
         }
     }
+    private void disConnectUser(ClientGUI client) {
+        clientGUIList.remove(client);
+    }
+
     public void saveLogMessage(String msg) throws IOException {
         String temp = timeNow() + msg + "\n";
         try (OutputStream outputStream = new FileOutputStream(file, true);) {
             outputStream.write(temp.getBytes());
         }
+    }
+    public void saveMsg(String msg) throws IOException {
+        String temp = timeNow() + msg + "\n";
+        try (OutputStream outputStream = new FileOutputStream(file2, true);) {
+            outputStream.write(temp.getBytes());
+        }
+        mailing(new String(getChatLog()));
     }
 
     public void reloadLog() throws IOException {
@@ -136,23 +147,13 @@ public class ServerWindow extends JFrame {
         }
     }
 
-    private void disConnectUser(ClientGUI client){
-        clientGUIList.remove(client);
-    }
-
     public void updateLog() throws IOException {
         textArea.setText(getLog());
     }
 
-    private String timeNow() {
-        Date date = new Date();
-        return "[" + simpleDateFormat.format(date) + "] ";
-    }
-
-    public void saveMsg(String msg) throws IOException {
-        String temp = timeNow() + msg + "\n";
-        try (OutputStream outputStream = new FileOutputStream(file2, true);) {
-            outputStream.write(temp.getBytes());
+    private void mailing(String str) throws IOException {
+        for (ClientGUI clientGUI : clientGUIList) {
+            clientGUI.setTextArea(getChatLog());
         }
     }
 
@@ -162,4 +163,10 @@ public class ServerWindow extends JFrame {
             return new String(log);
         }
     }
+
+    private String timeNow() {
+        Date date = new Date();
+        return "[" + simpleDateFormat.format(date) + "] ";
+    }
+
 }

@@ -6,11 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.io.File;
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class ClientGUI extends JFrame {
     private static final int WINDOW_POS_X = 700;
@@ -19,6 +15,7 @@ public class ClientGUI extends JFrame {
     private static final int WINDOW_HEIGHT = 400;
 
     private ServerWindow server;
+    private boolean serverStatus = false;
     JButton btnLogin = new JButton("Login");
     JButton btnLogOut = new JButton("LogOut");
     JButton btnSend = new JButton("Send");
@@ -27,12 +24,9 @@ public class ClientGUI extends JFrame {
     JTextField hostField = new JFormattedTextField();
     JTextField loginField = new JFormattedTextField();
     JPasswordField passField = new JPasswordField();
-    private File file = new File("C:\\Users\\Spass\\OneDrive\\Рабочий стол\\HW\\" +
-            "Seminar_JDK_1\\src\\main\\resources\\serverWindowLog.txt");
-    DateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss");
     Chat chat = new Chat();
 
-    ClientGUI(ServerWindow server) throws IOException {
+    ClientGUI(ServerWindow server) {
         this.server = server;
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -53,6 +47,7 @@ public class ClientGUI extends JFrame {
         panelTop.add(loginField);
         passField.setText("12345");
         panelTop.add(passField);
+        btnLogOut.setEnabled(false);
         panelTop.add(btnLogOut);
         ipField.setText("127.0.0.1");
         panelTop.add(ipField);
@@ -67,9 +62,12 @@ public class ClientGUI extends JFrame {
                 if (server.state) {
                     server.connectUser(ClientGUI.this);
                     try {
+                        serverStatus = true;
                         chat.initialize();
                         server.saveLogMessage(" Авторизован пользователь " + loginField.getText());
                         server.updateLog();
+                        btnLogin.setEnabled(false);
+                        btnLogOut.setEnabled(true);
                     } catch (IOException ex) {
                         throw new RuntimeException(ex);
                     }
@@ -81,28 +79,9 @@ public class ClientGUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 server = null;
-            }
-        });
-
-        btnSend.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                sendMsgOnServer(loginField.getText() + ": " + textField.getText());
-                textField.setText("");
-            }
-        });
-
-        textField.addKeyListener(new KeyAdapter() {
-            @Override
-            public void keyTyped(KeyEvent e) {
-                if (e.getKeyChar() == '\n') {
-                    try {
-                        chat.sendMSG(loginField.getText() + ": " + textField.getText());
-                        textField.setText("");
-                    } catch (IOException ex) {
-                        throw new RuntimeException(ex);
-                    }
-                }
+                btnLogOut.setEnabled(false);
+                btnLogin.setEnabled(true);
+                chat.setText("");
             }
         });
 
@@ -113,24 +92,44 @@ public class ClientGUI extends JFrame {
         JPanel panelBottom = new JPanel(new GridLayout());
         panelBottom.add(textField);
         panelBottom.add(btnSend);
-        return panelBottom;}
 
-    private void init() {        add(createTop(), BorderLayout.NORTH);
+        btnSend.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                sendMsgOnServer(loginField.getText() + ": " + textField.getText());
+                textField.setText("");
+            }
+        });
+        textField.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                if (e.getKeyChar() == '\n') {
+                    sendMsgOnServer(loginField.getText() + ": " + textField.getText());
+                    textField.setText("");
+                }
+            }
+        });
+
+        return panelBottom;
+    }
+
+    private void init() {
+        add(createTop(), BorderLayout.NORTH);
         add(chat);
-        add(createBottom(), BorderLayout.SOUTH);}
+        add(createBottom(), BorderLayout.SOUTH);
+    }
 
-    private String timeNow() {
-        Date date = new Date();
-        return "[" + simpleDateFormat.format(date) + "] ";}
-
-    private void sendMsgOnServer(String msg){
+    private void sendMsgOnServer(String msg) {
         try {
             server.saveMsg(msg);
-            chat.setText(server.getChatLog());
+            setTextArea(msg);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
 
+    public void setTextArea(String msg) throws IOException {
+        chat.setText(server.getChatLog());
+    }
 }
 

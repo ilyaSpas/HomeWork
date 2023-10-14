@@ -12,28 +12,14 @@ public class Chat extends JPanel {
     private JScrollPane jScrollPane;
     private File file = new File("C:\\Users\\Spass\\OneDrive\\Рабочий стол\\HW\\" +
             "Seminar_JDK_1\\src\\main\\resources\\log.txt");
-    DateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss");
 
-    Chat() throws IOException {
+    Chat() {
         textArea = new JTextArea(17, 34);
+        setText("Сервер не активен.");
         jScrollPane = new JScrollPane(textArea);
         add(jScrollPane);
     }
 
-    public void sendMSG(String msg) throws IOException {
-        String oldText = textArea.getText();
-        oldText = oldText + "\n" + timeNow() + msg;
-        textArea.setText(oldText);
-        saveMsg(msg);
-        repaint();
-    }
-
-    private void saveMsg(String msg) throws IOException {
-        String temp = timeNow() + msg + "\n";
-        try (OutputStream outputStream = new FileOutputStream(file, true);) {
-            outputStream.write(temp.getBytes());
-        }
-    }
 
     void initialize() throws IOException {
         try (InputStream inputStream = new FileInputStream(file);) {
@@ -47,12 +33,8 @@ public class Chat extends JPanel {
         super.paintComponent(g);
     }
 
-    private String timeNow() {
-        Date date = new Date();
-        return "[" + simpleDateFormat.format(date) + "] ";
-    }
-
     public void setText(String chatLog) {
         textArea.setText(chatLog);
     }
+
 }
