@@ -10,14 +10,16 @@ import java.util.Date;
 
 public class Chat extends JPanel {
     private JTextArea textArea;
+    private JScrollPane jScrollPane;
     private File file = new File("C:\\Users\\Spass\\OneDrive\\Рабочий стол\\HW\\" +
             "Seminar_JDK_1\\src\\main\\resources\\log.txt");
     DateFormat simpleDateFormat = new SimpleDateFormat("HH:mm:ss");
 
     Chat() throws IOException {
-        textArea = new JTextArea(20, 35);
-        add(textArea);
-        initializeChat();
+        textArea = new JTextArea(16, 35);
+        jScrollPane = new JScrollPane(textArea);
+        add(jScrollPane);
+
     }
 
     public void sendMSG(String msg) throws IOException {
@@ -35,7 +37,7 @@ public class Chat extends JPanel {
         }
     }
 
-    private void initializeChat() throws IOException {
+    void initializeChat() throws IOException {
         try (InputStream inputStream = new FileInputStream(file);) {
             byte[] log = inputStream.readAllBytes();
             textArea.setText(new String(log));

@@ -4,7 +4,8 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        new ClientGUI();
-        new ServerWindow();
+        ServerWindow serverWindow = new ServerWindow();
+        new ClientGUI(serverWindow);
+
     }
 }
