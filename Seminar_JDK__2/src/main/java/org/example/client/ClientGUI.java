@@ -4,6 +4,8 @@ import org.example.server.ServerWindow;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class ClientGUI extends JFrame implements ClientView{
     private static final int WINDOW_POS_X = 700;
@@ -38,7 +40,7 @@ public class ClientGUI extends JFrame implements ClientView{
         add(createBottom(), BorderLayout.SOUTH);
     }
     private Component createTop(){
-        JPanel panelTop = new JPanel(new GridLayout(3, 3));
+        JPanel panelTop = new JPanel(new GridLayout(2, 3));
 
         loginField = new JTextField("Ivan Ivanovich");
         panelTop.add(loginField);
@@ -58,11 +60,12 @@ public class ClientGUI extends JFrame implements ClientView{
         btnLogOut = new JButton("Logout");
         panelTop.add(btnLogOut);
 
-        jLabelStatus = new JLabel("Статус сервера: ");
-        panelTop.add(jLabelStatus);
-
-        jLabel = new JLabel("Сервер не активен.");
-        panelTop.add(jLabel);
+        btnLogin.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                client.loginUser();
+            }
+        });
 
         return panelTop;
     }
@@ -81,6 +84,18 @@ public class ClientGUI extends JFrame implements ClientView{
         btnSend = new JButton("Send");
         panelTop.add(btnSend);
 
+        btnSend.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                client.sendChatMessage(textField.getText());
+                updateChatLog();
+            }
+        });
+
         return panelTop;
+    }
+
+    public void updateChatLog() {
+        textArea.setText(client.getChatLoge());
     }
 }

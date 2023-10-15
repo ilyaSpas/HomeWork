@@ -1,11 +1,11 @@
 package org.example.server;
 
-import org.example.client.ClientGUI;
+import org.example.client.Client;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class ServerWindow extends JFrame implements ServerView {
     private static final int WINDOW_POS_X = 200;
@@ -16,7 +16,6 @@ public class ServerWindow extends JFrame implements ServerView {
     JTextArea textArea;
     JScrollPane jScrollPane;
     JLabel jLabel, jLabelStatus;
-    List<ClientGUI> clientGUIList;
     private Server server;
 
     public ServerWindow() {
@@ -27,8 +26,7 @@ public class ServerWindow extends JFrame implements ServerView {
         setResizable(false);
 
         server = new Server(this);
-
-        clientGUIList = new ArrayList<>();
+        server.updateLog();
 
         init();
 
@@ -66,6 +64,39 @@ public class ServerWindow extends JFrame implements ServerView {
         btnStop = new JButton("Stop");
         panelTop.add(btnStop);
 
+        btnStart.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                server.start();
+                jLabel.setText("Сервер запущен.");
+                textArea.setText(server.getLog());
+            }
+        });
+
+        btnStop.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                server.stop();
+                jLabel.setText("Сервер не активен.");
+                textArea.setText(server.getLog());
+            }
+        });
+
         return panelTop;
+    }
+
+    @Override
+    public void sendChatMessage(String message) {
+        server.sendChatMessage(message);
+    }
+
+    @Override
+    public void loginUser(Client client) {
+        server.loginUser(client);
+    }
+
+    @Override
+    public String getChatLog() {
+        return server.getChatLog();
     }
 }
