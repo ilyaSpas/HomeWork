@@ -6,6 +6,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 public class ClientGUI extends JFrame implements ClientView{
     private static final int WINDOW_POS_X = 700;
@@ -64,6 +66,7 @@ public class ClientGUI extends JFrame implements ClientView{
             @Override
             public void actionPerformed(ActionEvent e) {
                 client.loginUser();
+                updateChatLog();
             }
         });
 
@@ -89,6 +92,17 @@ public class ClientGUI extends JFrame implements ClientView{
             public void actionPerformed(ActionEvent e) {
                 client.sendChatMessage(textField.getText());
                 updateChatLog();
+                textField.setText("");
+            }
+        });
+        textField.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                if (e.getKeyChar() == '\n') {
+                    client.sendChatMessage(textField.getText());
+                    updateChatLog();
+                    textField.setText("");
+                }
             }
         });
 
