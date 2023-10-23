@@ -9,4 +9,5 @@ public interface ClientGUIView {
     void findByName();
     void findByPhoneNumber();
     void findByExp();
+    void refresh();
 }

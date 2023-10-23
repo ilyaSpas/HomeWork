@@ -140,21 +140,18 @@ public class ClientGUI extends JFrame implements ClientGUIView {
         if (nameField.getText().equals("") || phoneNumberField.getText().equals("")
                 || experienceField.getText().equals("")){
             showMessage("Ошибка ввода!");
-            nameField.setText("");
-            phoneNumberField.setText("");
-            experienceField.setText("");
+            refresh();
             return;
         }
             client.saveEmployer(nameField.getText(), phoneNumberField.getText(), experienceField.getText());
             showMessage("Сохранен новый контакт.");
-            nameField.setText("");
-            phoneNumberField.setText("");
-            experienceField.setText("");
+            refresh();
     }
 
     @Override
     public void showAll() {
         showMessage(client.getAllEmployers());
+        refresh();
     }
 
     @Override
@@ -169,7 +166,7 @@ public class ClientGUI extends JFrame implements ClientGUIView {
             return;
         }
         showMessage(client.findEmployerByName(nameFindField.getText()));
-        nameFindField.setText("");
+        refresh();
     }
 
     @Override
@@ -179,7 +176,7 @@ public class ClientGUI extends JFrame implements ClientGUIView {
             return;
         }
         showMessage(client.findEmployerByPhoneNumber(phoneNumberFindField.getText()));
-        phoneNumberFindField.setText("");
+        refresh();
     }
 
     @Override
@@ -189,6 +186,16 @@ public class ClientGUI extends JFrame implements ClientGUIView {
             return;
         }
         showMessage(client.findEmployerByExp(expFindField.getText()));
+        refresh();
+    }
+
+    @Override
+    public void refresh() {
+        experienceField.setText("");
         expFindField.setText("");
+        nameFindField.setText("");
+        nameField.setText("");
+        phoneNumberFindField.setText("");
+        phoneNumberField.setText("");
     }
 }
