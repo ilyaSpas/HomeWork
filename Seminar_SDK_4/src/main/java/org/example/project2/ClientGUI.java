@@ -137,8 +137,8 @@ public class ClientGUI extends JFrame implements ClientGUIView {
 
     @Override
     public void saveEmployer() {
-        if (nameField.getText().equals("") || phoneNumberField.getText().equals("")
-                || experienceField.getText().equals("")){
+        if (nameField.getText().isEmpty() || phoneNumberField.getText().isEmpty()
+                || experienceField.getText().isEmpty()){
             showMessage("Ошибка ввода!");
             refresh();
             return;

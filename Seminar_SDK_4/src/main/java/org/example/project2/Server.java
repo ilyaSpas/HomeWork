@@ -18,6 +18,9 @@ public class Server {
     }
 
     public String getAllEmployers() {
+        if (allEmployers.isEmpty()){
+            return "Записная книга - пуста!";
+        }
         return allEmployers.toString();
     }
 
