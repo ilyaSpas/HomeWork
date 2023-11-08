@@ -10,6 +10,7 @@ public class Person {
     public String getName() {
         return name;
     }
+
     public synchronized void throwBall(Person person){
         System.out.println(name + " бросил мяч " + person.getName() + ".");
         person.catchBall(person);
