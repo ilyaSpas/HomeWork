@@ -30,7 +30,7 @@ public class Philosopher extends Thread {
     }
 
     public void philosopherWish() throws InterruptedException {
-        while (hungry > 0){
+        while (hungry > 0) {
             if (getRandomBoolean()) {
                 System.out.println(name + " размышляет.");
             } else {
