@@ -1,29 +1,43 @@
 package org.example.hw;
 
-import java.util.Random;
-
-public class Philosopher extends Thread{
+public class Philosopher extends Thread {
     private String name;
-    public Philosopher(String name){
+    private Table table;
+    private int hungry;
+
+
+    public Philosopher(Table table, String name) {
+        hungry = 3;
+        this.table = table;
         this.name = name;
     }
+
     public String getPhilosopherName() {
         return name;
     }
-    public static boolean getRandomBoolean(){
+
+    public static boolean getRandomBoolean() {
         return Math.random() < 0.5;
     }
 
     @Override
     public void run() {
-        this.philosopherWish();
+        try {
+            this.philosopherWish();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
-    public void philosopherWish(){
-        if (getRandomBoolean()){
-            System.out.println(name + " размыщляет.");
-        } else {
-            System.out.println(name + " хочет есть.");
+    public void philosopherWish() throws InterruptedException {
+        while (hungry > 0){
+            if (getRandomBoolean()) {
+                System.out.println(name + " размышляет.");
+            } else {
+                System.out.println(name + " ест.");
+                hungry--;
+            }
+            sleep(1000);
         }
     }
 
