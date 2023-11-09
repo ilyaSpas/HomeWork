@@ -32,10 +32,12 @@ public class Philosopher extends Thread {
             if (getRandomBoolean()) {
                 System.out.println(name + " размышляет.");
             } else {
+                System.out.println(name + " хочет есть.");
                 tryGetTwoForks();
                 if (amountForks == 2){
-                    System.out.println(name + " ест.");
+                    System.out.print(name + " ест.\n");
                     hungry--;
+                    returnTwoForks();
                 }
             }
             sleep(1000);
@@ -43,18 +45,20 @@ public class Philosopher extends Thread {
         System.out.println(name + " - сыт.");
     }
 
+    private void returnTwoForks() {
+        table.returnFork();
+        table.returnFork();
+        amountForks = 0;
+    }
+
     private void tryGetTwoForks() {
         if (table.getAmountForks() > 0){
-            if (getRandomBoolean()){
                 table.getFork();
                 amountForks++;
-            }
         }
         if (table.getAmountForks() > 0){
-            if (getRandomBoolean()){
                 table.getFork();
                 amountForks++;
-            }
         }
     }
 
