@@ -39,6 +39,9 @@ public class Philosopher extends Thread {
                     hungry--;
                     returnTwoForks();
                 }
+                if (amountForks == 1){
+                    table.returnFork();
+                }
             }
             sleep(1000);
         }
