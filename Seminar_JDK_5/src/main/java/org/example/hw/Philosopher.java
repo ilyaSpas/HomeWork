@@ -39,6 +39,7 @@ public class Philosopher extends Thread {
             }
             sleep(1000);
         }
+        System.out.println(name + " - сыт.");
     }
 
 }
