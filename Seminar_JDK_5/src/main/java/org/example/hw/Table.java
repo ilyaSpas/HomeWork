@@ -7,10 +7,8 @@ import java.util.concurrent.CountDownLatch;
 public class Table extends Thread {
     private List<Philosopher> philosophers;
     private List<Fork> forks;
-    private volatile int amountHungryPhilosophers;
 
     public Table() {
-        amountHungryPhilosophers = 6;
         philosophers = new ArrayList<>();
         for (int i = 0; i < 6; i++) {
             philosophers.add(new Philosopher(this,(i + 1) + ". Философ"));
