@@ -4,16 +4,14 @@ public class Philosopher extends Thread {
     private String name;
     private Table table;
     private int hungry;
+    private int amountForks;
 
 
     public Philosopher(Table table, String name) {
+        amountForks = 0;
         hungry = 3;
         this.table = table;
         this.name = name;
-    }
-
-    public String getPhilosopherName() {
-        return name;
     }
 
     public static boolean getRandomBoolean() {
@@ -34,12 +32,30 @@ public class Philosopher extends Thread {
             if (getRandomBoolean()) {
                 System.out.println(name + " размышляет.");
             } else {
-                System.out.println(name + " ест.");
-                hungry--;
+                tryGetTwoForks();
+                if (amountForks == 2){
+                    System.out.println(name + " ест.");
+                    hungry--;
+                }
             }
             sleep(1000);
         }
         System.out.println(name + " - сыт.");
+    }
+
+    private void tryGetTwoForks() {
+        if (table.getAmountForks() > 0){
+            if (getRandomBoolean()){
+                table.getFork();
+                amountForks++;
+            }
+        }
+        if (table.getAmountForks() > 0){
+            if (getRandomBoolean()){
+                table.getFork();
+                amountForks++;
+            }
+        }
     }
 
 }
