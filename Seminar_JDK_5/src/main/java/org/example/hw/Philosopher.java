@@ -40,12 +40,17 @@ public class Philosopher extends Thread {
                     returnTwoForks();
                 }
                 if (amountForks == 1){
-                    table.returnFork();
+                    returnOneFork();
                 }
             }
             sleep(1000);
         }
         System.out.println(name + " - сыт.");
+    }
+
+    private void returnOneFork(){
+        table.returnFork();
+        amountForks--;
     }
 
     private void returnTwoForks() {
