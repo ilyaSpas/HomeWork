@@ -8,7 +8,7 @@ public class Main {
 
         Child child1 = new Child(basket, "Вася");
         Child child2 = new Child(basket, "Петя");
-        Child child3 = new Child(basket, "Мама");
+        Child child3 = new Child(basket, "Маша");
         Mom mom = new Mom(basket);
 
         child1.start();
