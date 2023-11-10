@@ -18,7 +18,7 @@ public class Mom extends Thread {
         for (int i = 0; i < 30; i++) {
             basket.putCandie(this);
             try {
-                sleep(500);
+                sleep(100);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }

@@ -28,7 +28,7 @@ public class Child extends Thread {
         for (int i = 0; i < 10; i++) {
             basket.takeCandie(this);
             try {
-                sleep(100);
+                sleep(800);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
