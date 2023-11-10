@@ -1,19 +1,11 @@
 package org.example.wait_and_notify_example;
 
 public class BasketOfCandies {
-    private volatile int amountOfCandies;
+    private int amountOfCandies;
     private final int maxSizeOfBasket = 20;
 
     public BasketOfCandies() {
         amountOfCandies = 10;
-    }
-
-    public int getAmountOfCandies() {
-        return amountOfCandies;
-    }
-
-    public int getMaxSizeOfBasket() {
-        return maxSizeOfBasket;
     }
 
     public synchronized void takeCandies(Child child){
@@ -23,11 +15,15 @@ public class BasketOfCandies {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
+        } else {
+            amountOfCandies--;
+            child.eat();
+            System.out.println(child.getChildName() + " берет конфету.");
+            System.out.println("В корзине осталось " + amountOfCandies + " конфет.");
+            System.out.println(child.getChildName() + " сьел " + child.getEatenCandies() + " конфет.");
+            notify();
         }
-        amountOfCandies--;
-        System.out.println(child.getChildName() + " берет конфету.");
-        System.out.println("В корзине осталось " + amountOfCandies + " конфет.");
-        notify();
+
     }
 
     public synchronized void putCandies(Mom mom) {
@@ -37,10 +33,11 @@ public class BasketOfCandies {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
+        } else {
+            amountOfCandies++;
+            System.out.println(mom.getMomName() + " положила конфету.");
+            System.out.println("В корзине осталось " + amountOfCandies + " конфет.");
+            notify();
         }
-        amountOfCandies++;
-        System.out.println(mom.getMomName() + " положила конфету.");
-        System.out.println("В корзине осталось " + amountOfCandies + " конфет.");
-        notify();
     }
 }
