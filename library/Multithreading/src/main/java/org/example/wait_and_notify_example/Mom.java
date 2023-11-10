@@ -16,7 +16,7 @@ public class Mom extends Thread {
     @Override
     public void run() {
         for (int i = 0; i < 30; i++) {
-            basket.putCandies(this);
+            basket.putCandie(this);
             try {
                 sleep(500);
             } catch (InterruptedException e) {

@@ -26,7 +26,7 @@ public class Child extends Thread {
     @Override
     public void run() {
         for (int i = 0; i < 10; i++) {
-            basket.takeCandies(this);
+            basket.takeCandie(this);
             try {
                 sleep(100);
             } catch (InterruptedException e) {

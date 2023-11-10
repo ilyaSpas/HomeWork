@@ -1,14 +1,14 @@
 package org.example.wait_and_notify_example;
 
 public class BasketOfCandies {
-    private int amountOfCandies;
+    private volatile int amountOfCandies;
     private final int maxSizeOfBasket = 20;
 
     public BasketOfCandies() {
         amountOfCandies = 10;
     }
 
-    public synchronized void takeCandies(Child child){
+    public synchronized void takeCandie(Child child){
         if (amountOfCandies <= 0){
             try {
                 wait();
@@ -26,7 +26,7 @@ public class BasketOfCandies {
 
     }
 
-    public synchronized void putCandies(Mom mom) {
+    public synchronized void putCandie(Mom mom) {
         if (amountOfCandies == maxSizeOfBasket){
             try {
                 wait();
