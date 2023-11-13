@@ -1,4 +1,4 @@
-package org.example;
+package org.example.simple_threads;
 
 public class MyThread extends Thread {
     public static void main(String[] args) {

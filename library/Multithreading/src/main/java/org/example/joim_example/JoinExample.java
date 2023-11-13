@@ -1,4 +1,7 @@
-package org.example;
+package org.example.joim_example;
+
+import org.example.simple_threads.MyRunnable;
+import org.example.simple_threads.MyThread;
 
 public class JoinExample {
     public static void main(String[] args) throws InterruptedException {
