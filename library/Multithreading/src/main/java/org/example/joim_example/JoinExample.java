@@ -6,11 +6,10 @@ import org.example.simple_threads.MyThread;
 public class JoinExample {
     public static void main(String[] args) throws InterruptedException {
         MyThread thread = new MyThread();
-        thread.start();
-
-        thread.join();
-
         Thread thread1 = new Thread(new MyRunnable());
+
+        thread.start();
+        thread.join();
         thread1.start();
     }
 }
