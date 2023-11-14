@@ -1,7 +1,5 @@
 package org.example.callable_example;
 
-import org.example.Main;
-
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
