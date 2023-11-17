@@ -45,6 +45,8 @@ public class Level {
         System.out.println(person.getName() + choiceMassage + choice);
         int offer = montyOffer(choice);
         System.out.println("Монти предлагает выбрать дверь №" + offer);
+        choice = thinking(offer, choice);
+
         switch (choice) {
             case (1) -> {
                 checkTheDoor(firsDoor);
@@ -55,6 +57,17 @@ public class Level {
             case (3) -> {
                 checkTheDoor(thirdDoor);
             }
+        }
+    }
+
+    private int thinking(int offer, int choice) {
+        int newChoice = getRandomNumber(1,3);
+        if (newChoice == 1){
+            System.out.println(person.getName() + " принимает предложение Монти и открывает дверь №" + offer);
+            return offer;
+        } else {
+            System.out.println(person.getName() + " отказывается от предложения Монти и открывает дверь №" + choice);
+            return choice;
         }
     }
 
