@@ -7,8 +7,8 @@ public class Level {
     private Door secondDoor;
     private Door thirdDoor;
     private Person person;
-    private final String massageForWin = "И он выйгрывает!";
-    private final String massageForLose = "и за дверью находится коза...";
+    private final String massageForWin = "И он выйгрывает!\n";
+    private final String massageForLose = "и за дверью находится коза...\n";
     private final String choiceMassage = " выбирает дверь номер №";
 
     public Level(Person person) {
@@ -43,6 +43,8 @@ public class Level {
     public void openTheDoor() {
         int choice = person.makeChoice();
         System.out.println(person.getName() + choiceMassage + choice);
+        int offer = montyOffer(choice);
+        System.out.println("Монти предлагает выбрать дверь №" + offer);
         switch (choice) {
             case (1) -> {
                 checkTheDoor(firsDoor);
@@ -64,5 +66,13 @@ public class Level {
             System.out.println(massageForLose);
             person.lose();
         }
+    }
+
+    private int montyOffer(int choice){
+        int offer =  getRandomNumber(1,4);
+        while (offer == choice){
+            offer =  getRandomNumber(1,4);
+        }
+        return offer;
     }
 }
