@@ -10,6 +10,9 @@ public class Level {
     private final String massageForWin = "И он выйгрывает!\n";
     private final String massageForLose = "и за дверью находится коза...\n";
     private final String choiceMassage = " выбирает дверь номер №";
+    private final String offerMassage1 = " принимает предложение Монти и открывает дверь №";
+    private final String offerMassage2 = " отказывается от предложения Монти и открывает дверь №";
+    private final String offerMassage3 = "Монти предлагает выбрать дверь №";
 
     public Level(Person person) {
         this.person = person;
@@ -44,29 +47,23 @@ public class Level {
         int choice = person.makeChoice();
         System.out.println(person.getName() + choiceMassage + choice);
         int offer = montyOffer(choice);
-        System.out.println("Монти предлагает выбрать дверь №" + offer);
+        System.out.println(offerMassage3 + offer);
         choice = thinking(offer, choice);
 
         switch (choice) {
-            case (1) -> {
-                checkTheDoor(firsDoor);
-            }
-            case (2) -> {
-                checkTheDoor(secondDoor);
-            }
-            case (3) -> {
-                checkTheDoor(thirdDoor);
-            }
+            case (1) -> checkTheDoor(firsDoor);
+            case (2) -> checkTheDoor(secondDoor);
+            case (3) -> checkTheDoor(thirdDoor);
         }
     }
 
     private int thinking(int offer, int choice) {
         int newChoice = getRandomNumber(1,3);
         if (newChoice == 1){
-            System.out.println(person.getName() + " принимает предложение Монти и открывает дверь №" + offer);
+            System.out.println(person.getName() + offerMassage1 + offer);
             return offer;
         } else {
-            System.out.println(person.getName() + " отказывается от предложения Монти и открывает дверь №" + choice);
+            System.out.println(person.getName() + offerMassage2 + choice);
             return choice;
         }
     }
