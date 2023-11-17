@@ -7,7 +7,7 @@ public class Level {
     private Door secondDoor;
     private Door thirdDoor;
     private Person person;
-    private final String massageForWin = "И он выйгрывает!\n";
+    private final String massageForWin = "И он выйгрывает автомобиль!\n";
     private final String massageForLose = "и за дверью находится коза...\n";
     private final String choiceMassage = " выбирает дверь номер №";
     private final String offerMassage1 = " принимает предложение Монти и открывает дверь №";
