@@ -5,23 +5,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51c2e4e6-9e6f-4b45-a1a0-8f7981bf9e98" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/list/arrayList/MyArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/list/linkedList/MyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/list/linkedList/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/list/vector/MyVector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/set/hashSet/MyHashSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/set/linkedHashSet/MyLinkedHashSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/set/sortedSet/MySortedSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/decorator/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/decorator/beverage/Americano.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/decorator/beverage/Beverage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/decorator/beverage/Cappuccino.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/decorator/beverage/Espresso.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/decorator/beverage/Latte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/decorator/condiment/Cinnamon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/decorator/condiment/CondimentDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/decorator/condiment/Milk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lambda/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lambda/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lambda/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lambda/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lambda/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lambda/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lambda/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lambda/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lambda/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lambda/src/main/java/org/example/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lambda/src/main/java/org/example/TwoNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IO/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IO/src/main/java/org/example/bufferedInputStream/MyBufferedInputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IO/src/main/java/org/example/bufferedInputStream/MyBufferedInputStream1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IO/src/main/java/org/example/bufferedOutputStream/MyBufferedOutputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IO/src/main/java/org/example/bufferedOutputStream/MyBufferedOutputStream1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IO/src/main/java/org/example/bufferedReader/MyBufferedReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IO/src/main/java/org/example/bufferedWriter/MyBufferedWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IO/src/main/java/org/example/file/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IO/src/main/java/org/example/fileInputStream/MyFileInputStream1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IO/src/main/java/org/example/fileReader/MyFileReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IO/src/main/java/org/example/fileWriter/MyFileWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IO/src/main/java/org/example/files/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IO/src/main/java/org/example/inputStreamReader/MyInputStreamReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IO/src/main/java/org/example/outputStreamWriter/MyOutputStreamWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IO/src/main/java/org/example/randomAccessFile/MyRandomAccessFileR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IO/src/main/java/org/example/randomAccessFile/MyRandomAccessFileRW.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Seminar_JDK_6/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Seminar_JDK_6/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IO/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IO/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IO/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IO/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IO/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IO/src/main/java/org/example/fileOutputStream/MyFileOutputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/../IO/src/main/java/org/example/fileOutputStream/MyFileOutputStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,14 +82,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Spass/OneDrive/Рабочий стол/HW/library/JavaFrameworkCollection/src/main/java/org/example/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Spass/OneDrive/Рабочий стол/HW/library/JavaFrameworkCollection",
+    "onboarding.tips.debug.path": "C:/Users/Spass/OneDrive/Рабочий стол/HW/library/JavaFrameworkCollection/src/main/java/org/example/Main.java"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.MyVector">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
