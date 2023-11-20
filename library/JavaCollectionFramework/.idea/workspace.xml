@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="51c2e4e6-9e6f-4b45-a1a0-8f7981bf9e98" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/map/hashMap/MyHashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/map/linkedHashMap/MyLinkedHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/set/hashSet/MyHashSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/set/hashSet/MyHashSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/set/linkedHashSet/MyLinkedHashSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/set/linkedHashSet/MyLinkedHashSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/set/sortedSet/MySortedSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/set/sortedSet/MyTreeSet.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2YAKpHMEzdrplc5fCDCAqiqyPL0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Spass/OneDrive/Рабочий стол/HW/library/JavaFrameworkCollection",
+    "onboarding.tips.debug.path": "C:/Users/Spass/OneDrive/Рабочий стол/HW/library/JavaFrameworkCollection/src/main/java/org/example/Main.java"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.MyHashMap">
+    <configuration name="MyHashMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.map.hashMap.MyHashMap" />
+      <module name="JavaCollectionsFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.map.hashMap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyHashSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.set.hashSet.MyHashSet" />
+      <module name="JavaCollectionsFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.set.hashSet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyLinkedHashSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.set.linkedHashSet.MyLinkedHashSet" />
+      <module name="JavaCollectionsFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.set.linkedHashSet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTreeSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.set.sortedSet.MyTreeSet" />
+      <module name="JavaCollectionsFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.set.sortedSet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyVector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.list.vector.MyVector" />
+      <module name="JavaCollectionsFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.list.vector.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MyHashMap" />
+        <item itemvalue="Application.MyTreeSet" />
+        <item itemvalue="Application.MyLinkedHashSet" />
+        <item itemvalue="Application.MyHashSet" />
+        <item itemvalue="Application.MyVector" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51c2e4e6-9e6f-4b45-a1a0-8f7981bf9e98" name="Changes" comment="" />
+      <created>1699963127131</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699963127131</updated>
+    </task>
+    <servers />
+  </component>
+</project>
