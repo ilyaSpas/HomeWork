@@ -39,9 +39,7 @@ public class MainPageController {
     public String createBook(@ModelAttribute @Valid Book book, BindingResult bindingResult, Model model) {
 
         if (!bindingResult.hasErrors()) {
-
             bookRepository.save(book);
-
         }
 
         model.addAttribute("libSize", getBookCount());
