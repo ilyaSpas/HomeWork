@@ -1,21 +1,15 @@
 package org.example;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(2, 2, 4, 5, 6, 7, 5, 34, 65, 33, 2, 22));
-        System.out.println("Average - " + foo(list));
-    }
-
-    public static double foo(ArrayList<Integer> numbers) {
-        return numbers.stream()
-                .filter(number -> number % 2 == 0)
-                .mapToDouble(a -> a)
-                .average()
-                .orElse(0);
+        var books = new ArrayList<Book>();
+        books.add(new Book("Преступление и наказание", "DOstoevskiy", 1866));
+        books.add(new Book("Evgeniy Onegin", " Pushkin", 1833));
+        books.add(new Book("Peace and War", "Tolstoy", 1869));
+        books.add(new Book("Master and Margery", "Bulgakov", 1967));
+        books.add(new Book("Priklychenie psa", "Unknown", 2000));
+        books.add(new Book("Book1", "Pushkin", 1833));
     }
 }
