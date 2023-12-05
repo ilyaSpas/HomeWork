@@ -10,65 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ff0c650-dc5c-433f-8909-8d6ac0f90193" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../HTTP/.idea/HTTP.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HTTP/Servlets/.idea/artifacts/Http_Web_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HTTP/Servlets/.idea/artifacts/servlets_starter.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HTTP/Servlets/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HTTP/Servlets/web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JDBC/demo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JDBC/demo/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JDBC/demo/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JDBC/demo/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JDBC/demo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JDBC/demo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JDBC/demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JDBC/demo/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JDBC/demo/src/main/java/org/example/util/ConnectionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JDBC/demo/src/main/java/org/example/util/PropertiesUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JDBC/demo/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MyProjects/WebLibrary/.idea/WebLibrary.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_1/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_1/src/main/java/org/example/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_1/src/main/java/org/example/HomeWork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/demo_Web_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/lombok.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/servlet-api.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ilsy/http/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ilsy/http/dao/Dao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ilsy/http/dao/FlightDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ilsy/http/dao/TicketDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ilsy/http/dto/FlightDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ilsy/http/dto/TicketDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ilsy/http/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ilsy/http/entity/Flight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ilsy/http/entity/FlightStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ilsy/http/entity/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ilsy/http/service/FlightService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ilsy/http/service/TicketService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ilsy/http/servlet/CookieServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ilsy/http/servlet/DownloadServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ilsy/http/servlet/FirstServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ilsy/http/servlet/FlightServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ilsy/http/servlet/SessionServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ilsy/http/servlet/TicketServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ilsy/http/util/ConnectionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ilsy/http/util/PropertiesUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/html/public.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Seminar_Junior_1/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Seminar_Junior_1/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBC/demo/src/main/java/org/example/dao/Dao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBC/demo/src/main/java/org/example/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBC/demo/src/main/java/org/example/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JDBC/demo/src/main/java/org/example/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,6 +216,7 @@
       <workItem from="1701368727122" duration="11735000" />
       <workItem from="1701511814499" duration="30111000" />
       <workItem from="1701612810553" duration="1667000" />
+      <workItem from="1701785312500" duration="440000" />
     </task>
     <servers />
   </component>
