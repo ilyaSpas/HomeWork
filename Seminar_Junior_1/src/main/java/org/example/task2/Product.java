@@ -1,6 +1,6 @@
 package org.example.task2;
 
-public abstract class Product {
+public abstract class Product implements BasketProduct{
     protected String title;
     protected double cost;
 
@@ -21,6 +21,7 @@ public abstract class Product {
     public String toString() {
         return "--------------\n" +
                 title + "\n" +
-                "Цена: " + cost + " руб.\n";
+                "Цена: " + cost + " руб\n" +
+                "--------------\n";
     }
 }

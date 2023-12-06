@@ -1,6 +1,6 @@
 package org.example.task2;
 
-public abstract class Thing extends Product{
+public class Thing extends Product{
     private String description;
 
     public Thing(String title, double cost, String description) {
@@ -13,9 +13,10 @@ public abstract class Thing extends Product{
     }
 
     @Override
-    public String toString() {
-        return super.toString() +
-                "Описание: " + getDescription() + '\n' +
-                "--------------\n";
+    public String getInfo() {
+        return toString() +
+                "Описание:\n" +
+                getDescription() +
+                "\n--------------\n";
     }
 }
