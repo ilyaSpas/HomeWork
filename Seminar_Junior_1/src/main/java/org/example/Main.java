@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.task1.Book;
+
 import java.util.ArrayList;
 import java.util.List;
 
