@@ -21,6 +21,6 @@ public abstract class Product {
     public String toString() {
         return "--------------\n" +
                 title + "\n" +
-                "Цена: " + cost + '\n';
+                "Цена: " + cost + " руб.\n";
     }
 }

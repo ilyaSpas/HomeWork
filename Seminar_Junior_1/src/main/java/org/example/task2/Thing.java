@@ -11,4 +11,11 @@ public abstract class Thing extends Product{
     public String getDescription() {
         return description;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "Описание: " + getDescription() + '\n' +
+                "--------------\n";
+    }
 }

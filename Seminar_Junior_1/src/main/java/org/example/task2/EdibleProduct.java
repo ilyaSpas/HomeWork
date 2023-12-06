@@ -29,6 +29,7 @@ public abstract class EdibleProduct extends Product {
         return super.toString() +
                 "Белки - " + getProteins() + '\n' +
                 "Жиры - " + getFats() + '\n' +
-                "Углеводы - " + getCarbohydrates() + '\n';
+                "Углеводы - " + getCarbohydrates() + '\n' +
+                "--------------\n";
     }
 }
