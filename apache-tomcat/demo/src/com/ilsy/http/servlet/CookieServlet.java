@@ -36,7 +36,7 @@ public class CookieServlet extends HttpServlet {
         resp.setContentType("text/html");
         resp.setCharacterEncoding(StandardCharsets.UTF_8.name());
         try (PrintWriter printWriter = resp.getWriter()) {
-            printWriter.write(Arrays.toString(cookies));
+            printWriter.write(counter.get());
         }
 
     }
