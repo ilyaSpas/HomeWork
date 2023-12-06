@@ -1,8 +1,7 @@
 package org.example.task2;
 
-public interface Food extends Product{
-    String getDescription();
-    double getProteins();
-    double getFats();
-    double getCarbohydrates();
+public class Food extends EdibleProduct{
+    public Food(String title, double cost, double proteins, double fats, double carbohydrates) {
+        super(title, cost, proteins, fats, carbohydrates);
+    }
 }
