@@ -1,6 +1,6 @@
 package org.example.task2;
 
 public interface Product {
-    String getDescription();
+    String getName();
     double getPrice();
 }
