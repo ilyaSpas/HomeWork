@@ -5,28 +5,55 @@ import org.example.dao.UserDao;
 
 
 public class UserDto {
-    private String id;
-
     private String name;
+    private String birthday;
+    private String email;
+    private String password;
+    private String role;
+    private String male;
 
-    public UserDto(String id, String name) {
-        this.id = id;
+    public UserDto(String name, String birthday, String email, String password, String role, String male) {
         this.name = name;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
+        this.birthday = birthday;
+        this.email = email;
+        this.password = password;
+        this.role = role;
+        this.male = male;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getBirthday() {
+        return birthday;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public String getMale() {
+        return male;
+    }
+
+    @Override
+    public String toString() {
+        return "UserDto{" +
+               "name='" + name + '\'' +
+               ", birthday='" + birthday + '\'' +
+               ", email='" + email + '\'' +
+               ", password='" + password + '\'' +
+               ", role='" + role + '\'' +
+               ", male='" + male + '\'' +
+               '}';
     }
 }

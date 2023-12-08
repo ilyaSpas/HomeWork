@@ -23,7 +23,9 @@ public class TestServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        UserDto userDto = new UserDto(req.getParameter("id"), req.getParameter("name"));
+        UserDto userDto = new UserDto(req.getParameter("name"), req.getParameter("birthday"),
+                req.getParameter("email"), req.getParameter("password"),
+                req.getParameter("role"), req.getParameter("male"));
         userService.save(userDto);
         resp.sendRedirect("/");
     }

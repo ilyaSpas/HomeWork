@@ -3,6 +3,7 @@ package org.example;
 import org.example.util.ConnectionManager;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
