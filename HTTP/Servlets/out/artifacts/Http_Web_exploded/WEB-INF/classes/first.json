@@ -1,0 +1,13 @@
+{
+  "id": 1,
+  "name": "Ivan",
+  "age": 12,
+  "work": true,
+  "hobby": [
+    {
+      "name": "content",
+      "value": "123"
+    }
+  ]
+
+}
