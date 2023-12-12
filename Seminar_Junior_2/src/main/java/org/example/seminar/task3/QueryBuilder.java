@@ -51,4 +51,31 @@ public class QueryBuilder {
         }
     }
 
+    public String buildDeleteQuery(Object object) throws IllegalAccessException {
+        Class<?> clazz = object.getClass();
+        Field[] fields = clazz.getDeclaredFields();
+
+        StringBuilder stringBuilder = new StringBuilder("DELETE FROM ");
+
+        if (clazz.isAnnotationPresent(Table.class)){
+            Table tableAnnotation = clazz.getAnnotation(Table.class);
+            stringBuilder.append(tableAnnotation.name());
+        }
+
+        stringBuilder.append(" WHERE ");
+
+        for (Field field : fields){
+            if (field.isAnnotationPresent(Column.class)){
+                field.setAccessible(true);
+                Column fieldAnnotation = field.getAnnotation(Column.class);
+                if (fieldAnnotation.primaryKey()){
+                    stringBuilder.append(fieldAnnotation.name() + " = '");
+                    stringBuilder.append(field.get(object) + "'");
+                }
+            }
+        }
+
+        return stringBuilder.toString();
+    }
+
 }

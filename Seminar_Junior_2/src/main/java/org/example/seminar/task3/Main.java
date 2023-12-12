@@ -8,7 +8,9 @@ public class Main {
         employee.setId(UUID.randomUUID());
 
         QueryBuilder queryBuilder = new QueryBuilder();
-        String buildInsertQuery = queryBuilder.buildInsertQuery(employee);
-        System.out.printf("Запрос: %s", buildInsertQuery);
+//        String buildInsertQuery = queryBuilder.buildInsertQuery(employee);
+
+        String buildDeleteQuery = queryBuilder.buildDeleteQuery(employee);
+        System.out.printf("Запрос: %s", buildDeleteQuery);
     }
 }
