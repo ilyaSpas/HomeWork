@@ -18,8 +18,6 @@ public class Main {
         Student student2 = deserialization(file3);
 
         System.out.println(student2);
-
-
     }
 
     private static void serialization(Student student, File file) throws IOException {
