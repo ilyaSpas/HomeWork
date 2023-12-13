@@ -36,6 +36,7 @@ public class Main {
         } else if (file.getName().endsWith(".xml")) {
             XmlMapper xmlMapper = new XmlMapper();
             xmlMapper.writeValue(file, student);
+            System.err.println("Объект сериализован в файл .xml");
         }
     }
 
@@ -54,6 +55,7 @@ public class Main {
         } else if (file.getName().endsWith(".xml")) {
             XmlMapper xmlMapper = new XmlMapper();
             student = xmlMapper.readValue(file, Student.class);
+            System.err.println("Объект десериализован из файла .xml");
         }
         return student;
     }
