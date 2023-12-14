@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+<!--    для указания файла .properties-->
+    <context:property-placeholder location="classpath:musicPlayer.properties"/>
+<!--            указывает, где искать компонеты-->
+    <context:component-scan base-package="ru.ilsy.education"/>
+<!--             id                    указывается класс-->
+    <bean id="testBean" class="ru.ilsy.education.applicationContext.TestBean">
+<!--                   значение конструктора-->
+        <constructor-arg value="Ilya"/>
+    </bean>
+<!--                        Bean класса-->
+    <bean id="musicBean" class="ru.ilsy.education.RockMusic">
+    </bean>
+
+    <bean id="musicBean1" class="ru.ilsy.education.ClassicalMusic">
+    </bean>
+
+    <bean id="musicPlayer" class="ru.ilsy.education.MusicPlayer">
+<!--                            ссылаемся на другой Bean-->
+        <constructor-arg ref="musicBean"/>
+    </bean>
+
+    <bean id="musicPlayer1" class="ru.ilsy.education.MusicPlayer">
+         <property name="music" ref="musicBean"/>
+        <property name="volume" value="6"/>
+    </bean>
+
+    <bean id="musicPlayer2" class="ru.ilsy.education.MusicPlayer">
+        <constructor-arg ref="musicBean"/>
+        <property name="volume" value="13"/>
+    </bean>
+
+    <bean id="musicPlayer3" class="ru.ilsy.education.MusicPlayer">
+        <constructor-arg ref="musicBean"/>
+        <property name="volume" value="${musicPlayer.volume}"/>
+    </bean>
+
+    <bean id="musicList" class="ru.ilsy.education.MusicPlayer">
+        <property name="musicList">
+            <list>
+                <ref bean="musicBean"/>
+                <ref bean="musicBean1"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="scopeBean"
+          class="ru.ilsy.education.MusicPlayer"
+          scope="prototype">
+        <constructor-arg ref="musicBean1"/>
+        <property name="volume" value="500"/>
+    </bean>
+
+    <bean id="musicBean2"
+          class="ru.ilsy.education.JazzMusic"
+          init-method="doInit"
+          destroy-method="doDestroy">
+
+<!-- для прототипа не вызывается дестрой  scope="prototype"-->
+    </bean>
+
+    <bean id="musicBean3"
+          class="ru.ilsy.education.JazzMusic"
+          factory-method="getJazzMusic">
+    </bean>
+
+
+
+</beans>
