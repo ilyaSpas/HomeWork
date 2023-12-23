@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span>ID: </span>
+<p th:text="${person.getId()}"></p>
+<span>NAME: </span>
+<p th:text="${person.getName()}"></p>
+
+<a th:href="'/people/' + ${person.getId()} + '/edit'">Редактировать</a>
+
+<hr>
+
+<form th:action="'/people/' + ${person.getId() + '/delete'}" th:method="post">
+<!--    <input type="hidden" name="_method" value="delete">-->
+    <button type="submit">Удалить</button>
+</form>
+
+
+</body>
+</html>

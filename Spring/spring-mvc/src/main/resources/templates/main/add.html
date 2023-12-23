@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p th:text="${welcomeMessage}"></p>
+
+<form th:action="@{/people}" th:method="post" th:object="${person}">
+
+    <div th:if="${#fields.hasErrors('id')}" th:errors="*{id}" style="color:red"></div>
+    <label>ID: </label>
+    <input type="text" name="id" th:field="*{id}">
+    <br>
+
+    <div th:if="${#fields.hasErrors('name')}" th:errors="*{name}" style="color:red"></div>
+    <label>NAME: </label>
+    <input type="text" name="name" th:field="*{name}">
+    <br>
+
+    <button type="submit">Добавить</button>
+</form>
+
+</body>
+</html>

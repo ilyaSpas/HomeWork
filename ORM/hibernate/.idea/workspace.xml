@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c2910229-4d33-4975-8cd2-269def6f1907" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/adapter/AdapterObjectAToObjectB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/adapter/CommandForObjectB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/adapter/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/adapter/ObjectA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/adapter/ObjectB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/builder/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/command/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/command/CreateCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/command/DataBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/command/DeleteCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/command/Developer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/command/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/command/SelectCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/command/UpdateCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/observer/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/observer/observer/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/observer/observer/ObserverStation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/observer/subject/Station.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/observer/subject/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/singltone/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/singltone/SomeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/Duck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/move/FlyingBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/move/MoveBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/move/SwimmingBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/move/WalkingBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/sound/BarkingBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/sound/BeepingBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/sound/MeowBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/sound/SoundBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JUnit5/demo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JUnit5/demo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JUnit5/demo/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JUnit5/demo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JUnit5/demo/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JUnit5/demo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JUnit5/demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JUnit5/demo/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JUnit5/demo/src/main/java/org/example/dto/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JUnit5/demo/src/main/java/org/example/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../JUnit5/demo/src/test/java/org/example/service/UserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2/storage_v2/_src_/database/postgres.edMnLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/HibernateRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/HibernateRunner1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/HibernateRunner2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/HibernateRunner3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/DogInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/util/HibernateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/java/org/example/dao/CoursesDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/java/org/example/dao/Dao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/java/org/example/entity/Courses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/java/org/example/service/CoursesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/java/org/example/util/HibernateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/resources/hibernate.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/main/java/com/example/springmvc/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/main/java/com/example/springmvc/controllers/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/main/java/com/example/springmvc/controllers/PeopleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/main/java/com/example/springmvc/dao/PersonDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/main/java/com/example/springmvc/model/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/main/resources/templates/main/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/main/resources/templates/main/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/main/resources/templates/main/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/main/resources/templates/main/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/main/resources/templates/main/show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/test/java/com/example/springmvc/ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Design_patterns/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Design_patterns/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Design_patterns/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Design_patterns/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring/spring-core/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring-core/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat/demo/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat/demo/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat/demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat/demo/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2ZZZwwSZO4kl79uwbQNGuv9hEVe" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HibernateRunner.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HibernateRunner1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HibernateRunner2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HibernateRunner3.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Spass/OneDrive/Рабочий стол/HW/Design_patterns&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Spass/OneDrive/Рабочий стол/HW/ORM/hibernate/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.entity" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.HibernateRunner3">
+    <configuration name="HibernateRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.HibernateRunner" />
+      <module name="hibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HibernateRunner1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.HibernateRunner1" />
+      <module name="hibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HibernateRunner2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.HibernateRunner2" />
+      <module name="hibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HibernateRunner3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.HibernateRunner3" />
+      <module name="hibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HibernateRunner3" />
+        <item itemvalue="Application.HibernateRunner2" />
+        <item itemvalue="Application.HibernateRunner" />
+        <item itemvalue="Application.HibernateRunner1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-19.0.2-corretto-19.0.2-3183f394aec4-f0552fc0" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c2910229-4d33-4975-8cd2-269def6f1907" name="Changes" comment="" />
+      <created>1702631807231</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702631807231</updated>
+      <workItem from="1702631808297" duration="1728000" />
+      <workItem from="1702635087754" duration="15637000" />
+      <workItem from="1702755798193" duration="2501000" />
+      <workItem from="1702894782709" duration="2989000" />
+      <workItem from="1702905228177" duration="143000" />
+      <workItem from="1702905388044" duration="10695000" />
+      <workItem from="1703082787361" duration="789000" />
+      <workItem from="1703163479320" duration="1545000" />
+      <workItem from="1703249524053" duration="67000" />
+      <workItem from="1703332413519" duration="3492000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
