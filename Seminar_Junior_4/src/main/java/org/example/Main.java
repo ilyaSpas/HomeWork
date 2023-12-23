@@ -14,10 +14,10 @@ public class Main {
     public static void main(String[] args) {
         CoursesService service = CoursesService.getInstance();
 
-//        Courses courses = new Courses();
-//        courses.setName("GB");
-//        courses.setDuration(100);
-//        service.save(courses);
+        Courses courses = new Courses();
+        courses.setName("GB");
+        courses.setDuration(100);
+        service.save(courses);
 
 //        Courses courses = service.get(3);
 //        System.out.println(courses);
