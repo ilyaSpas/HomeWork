@@ -6,14 +6,15 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
-public class CoursesDao implements Dao<Courses> {
+public class CoursesDao implements Dao<Courses, Integer> {
     private static CoursesDao INSTANCE = new CoursesDao();
 
     private CoursesDao() {
 
     }
 
-    public static Courses findById(int id) {
+    @Override
+    public Courses findById(Integer id) {
         Courses courses;
         try (SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
              Session session = sessionFactory.openSession()) {
@@ -27,7 +28,8 @@ public class CoursesDao implements Dao<Courses> {
         return courses;
     }
 
-    public static void update(Courses courses) {
+    @Override
+    public void update(Courses courses) {
         try (SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
              Session session = sessionFactory.openSession()) {
 
@@ -41,7 +43,8 @@ public class CoursesDao implements Dao<Courses> {
         }
     }
 
-    public static void delete(Courses courses) {
+    @Override
+    public void delete(Courses courses) {
         try (SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
              Session session = sessionFactory.openSession()) {
 

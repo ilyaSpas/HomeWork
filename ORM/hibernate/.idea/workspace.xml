@@ -4,117 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2910229-4d33-4975-8cd2-269def6f1907" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/adapter/AdapterObjectAToObjectB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/adapter/CommandForObjectB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/adapter/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/adapter/ObjectA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/adapter/ObjectB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/builder/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/command/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/command/CreateCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/command/DataBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/command/DeleteCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/command/Developer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/command/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/command/SelectCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/command/UpdateCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/observer/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/observer/observer/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/observer/observer/ObserverStation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/observer/subject/Station.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/observer/subject/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/singltone/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/singltone/SomeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/Duck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/move/FlyingBehavior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/move/MoveBehavior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/move/SwimmingBehavior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/move/WalkingBehavior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/sound/BarkingBehavior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/sound/BeepingBehavior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/sound/MeowBehavior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Design_patterns/src/main/java/org/example/strategy/sound/SoundBehavior.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JUnit5/demo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JUnit5/demo/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JUnit5/demo/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JUnit5/demo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JUnit5/demo/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JUnit5/demo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JUnit5/demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JUnit5/demo/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JUnit5/demo/src/main/java/org/example/dto/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JUnit5/demo/src/main/java/org/example/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../JUnit5/demo/src/test/java/org/example/service/UserServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2/storage_v2/_src_/database/postgres.edMnLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/HibernateRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/HibernateRunner1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/HibernateRunner2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/HibernateRunner3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/DogInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/util/HibernateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/java/org/example/dao/CoursesDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/java/org/example/dao/Dao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/java/org/example/entity/Courses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/java/org/example/service/CoursesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/java/org/example/util/HibernateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/resources/hibernate.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/resources/log4j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/main/java/com/example/springmvc/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/main/java/com/example/springmvc/controllers/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/main/java/com/example/springmvc/controllers/PeopleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/main/java/com/example/springmvc/dao/PersonDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/main/java/com/example/springmvc/model/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/main/resources/templates/main/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/main/resources/templates/main/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/main/resources/templates/main/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/main/resources/templates/main/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/main/resources/templates/main/show.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Spring/spring-mvc/src/test/java/com/example/springmvc/ApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Design_patterns/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Design_patterns/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Design_patterns/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Design_patterns/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spring/spring-core/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring-core/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apache-tomcat/demo/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat/demo/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apache-tomcat/demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat/demo/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c2910229-4d33-4975-8cd2-269def6f1907" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -267,7 +157,7 @@
       <workItem from="1703082787361" duration="789000" />
       <workItem from="1703163479320" duration="1545000" />
       <workItem from="1703249524053" duration="67000" />
-      <workItem from="1703332413519" duration="3492000" />
+      <workItem from="1703332413519" duration="4086000" />
     </task>
     <servers />
   </component>

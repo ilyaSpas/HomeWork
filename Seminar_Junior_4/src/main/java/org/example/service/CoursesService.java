@@ -21,17 +21,17 @@ public class CoursesService {
     }
 
     public Courses get(int id) {
-        Courses course = CoursesDao.findById(id);
+        Courses course = coursesDao.findById(id);
         return course;
     }
 
     public void update(Courses courses) {
-        CoursesDao.update(courses);
+        coursesDao.update(courses);
         log.warn("Updated object: " + courses.toString());
     }
 
     public void delete(Courses courses) {
-        CoursesDao.delete(courses);
+        coursesDao.delete(courses);
         log.warn("Deleted object: " + courses.toString());
     }
 
