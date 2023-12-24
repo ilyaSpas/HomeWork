@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  lesson4:
+    image: ${DOCKER_REGISTRY-}lesson4
+    container_name: testing-docker.app
+    build:
+      context: .
+      dockerfile: Dockerfile
+  testing-db:
+    image: postgres:latest
+    container_name: some-postgres
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=12345
+    ports:
+     - 5432:5433
+    volumes:
+     - ./.containers/database:/var/lib/postgresql

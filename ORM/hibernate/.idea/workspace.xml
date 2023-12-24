@@ -4,7 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2910229-4d33-4975-8cd2-269def6f1907" name="Changes" comment="" />
+    <list default="true" id="c2910229-4d33-4975-8cd2-269def6f1907" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/.idea/artifacts/Seminar_Junior_4_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_5/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_5/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_5/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_5/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_5/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_5/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_5/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_5/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_5/src/main/java/org/example/task1/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_5/src/main/java/org/example/task1/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_5/src/main/java/org/example/task2/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-core/src/main/java/ru/ilsy/education/for_testing/Bean1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-core/src/main/java/ru/ilsy/education/for_testing/Bean2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-core/src/main/java/ru/ilsy/education/for_testing/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-core/src/main/java/ru/ilsy/education/for_testing/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-core/src/main/java/ru/ilsy/education/for_testing/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring-core/src/main/java/ru/ilsy/education/for_testing/Test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/resources/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/resources/hibernate.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring/spring-core/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring-core/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring/spring-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring-core/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +41,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -54,7 +82,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Spass/OneDrive/Рабочий стол/HW/ORM/hibernate/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
@@ -158,6 +186,10 @@
       <workItem from="1703163479320" duration="1545000" />
       <workItem from="1703249524053" duration="67000" />
       <workItem from="1703332413519" duration="4086000" />
+      <workItem from="1703356786829" duration="2027000" />
+      <workItem from="1703412455300" duration="840000" />
+      <workItem from="1703419733513" duration="526000" />
+      <workItem from="1703422880912" duration="2096000" />
     </task>
     <servers />
   </component>

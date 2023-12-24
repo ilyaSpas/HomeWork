@@ -1,3 +1,4 @@
 [15:41:37,501] WARN [org.example.dao.CoursesDao: 24] Courses(id=2, name=GB, duration=10)
 [15:46:18,748] WARN [org.example.service.CoursesService: 20] Courses(id=3, name=GB, duration=100)
 [21:38:11,754] WARN [org.example.service.CoursesService: 20] Created object: Courses(id=4, name=GB, duration=100)
+[22:19:33,550] WARN [org.example.service.CoursesService: 20] Created object: Courses(id=5, name=GB, duration=100)
