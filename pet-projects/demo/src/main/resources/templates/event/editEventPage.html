@@ -31,7 +31,9 @@
         <input type="text" name="conferenceHall" th:value="${event.get().getConferenceHall()}"/>
     </label><br>
 
-    <button type="submit">Обновить</button>
+    <button type="submit">Обновить</button><br>
+
+    <a th:href="'/event/' + ${event.get().getId()}">Назад</a><br>
 </form>
 </body>
 </html>

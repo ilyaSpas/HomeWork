@@ -14,6 +14,7 @@
 <p th:text="'АДРЕС: ' + ${event.get().getHotelAddress()}"></p>
 <hr>
 <a th:href="'/event/' + ${event.get().getId()} + '/edit'">Редактировать</a><br>
+<a href="/event">Назад</a><br>
 <form th:action="'/event/' + ${event.get().getId()} + '/delete'" th:method="post">
     <button type="submit">Удалить</button>
 </form>

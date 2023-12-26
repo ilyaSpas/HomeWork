@@ -5,6 +5,32 @@
     <title>Title</title>
 </head>
 <body>
+
+<form action="/event/search" method="get">
+    <input type="text" name="town">
+    <button type="submit">Поиск</button>
+</form><br>
+
+<a href="/event/new">Добавить мероприятие</a>
+
+<hr><h2>Мероприятия</h2><hr>
+
+<div th:if="${find_events != null}">
+    <a href="/event">Сбросить</a><br>
+    <h3>Результат поиска:</h3>
+    <div th:each="event : ${find_events}">
+        <img th:src="${event.getHotelImageUrl()}" width="200" height="100" th:alt="${event.getTown()}">
+        <p th:text="'ГОРОД: ' + ${event.getTown()}"></p>
+        <p th:text="'ДАТА ПРОВЕДЕНИЯ: ' + ${event.getDate()}"></p>
+        <p th:text="'ГОСТИНИЦА: ' + ${event.getHotel()}"></p>
+        <p th:text="'КОНФЕРЕНЦ-ЗАЛ: ' + ${event.getConferenceHall()}"></p>
+        <p th:text="'АДРЕС: ' + ${event.getHotelAddress()}"></p>
+        <hr>
+        <a th:href="'/event/' + ${event.getId()}">Детальнее</a>
+        <hr>
+    </div>
+</div>
+
 <div th:each="event : ${events}">
     <img th:src="${event.getHotelImageUrl()}" width="200" height="100" th:alt="${event.getTown()}">
     <p th:text="'ГОРОД: ' + ${event.getTown()}"></p>
@@ -15,7 +41,7 @@
     <hr>
     <a th:href="'/event/' + ${event.getId()}">Детальнее</a>
     <hr>
-
 </div>
+
 </body>
 </html>

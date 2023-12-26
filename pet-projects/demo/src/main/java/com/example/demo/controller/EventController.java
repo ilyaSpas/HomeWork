@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import com.example.demo.model.Event;
 import com.example.demo.service.EventService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -15,6 +16,12 @@ public class EventController {
 
     @Autowired
     private EventService eventService;
+
+    @GetMapping("/search")
+    public String search(@Param("name") String town, Model model) {
+        model.addAttribute("find_events", eventService.findByTown(town));
+        return "event/eventsPage";
+    }
 
     @GetMapping
     public String allEvents(Model model) {
@@ -53,7 +60,7 @@ public class EventController {
     public String updateEvent(@ModelAttribute("id") Long id,
                               @ModelAttribute("event") Event event){
         eventService.update(event);
-        return "redirect:/event";
+        return "redirect:/event/{id}";
     }
 
     @PostMapping("/{id}/delete")

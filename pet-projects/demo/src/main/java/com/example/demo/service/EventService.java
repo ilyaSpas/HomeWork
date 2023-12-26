@@ -30,6 +30,10 @@ public class EventService {
         return eventRepository.findById(id);
     }
 
+    public List<Event> findByTown(String town){
+        return eventRepository.findByTown(town);
+    }
+
     public void update(Event event) {
         Event eventFromDB = eventRepository.findById(event.getId()).orElseThrow();
         eventFromDB.setTown(event.getTown());
