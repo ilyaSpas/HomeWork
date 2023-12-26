@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<img th:src="${event.get().getHotelImageUrl()}" width="200" height="100" th:alt="${event.get().getTown()}">
+<p th:text="'ГОРОД: ' + ${event.get().getTown()}"></p>
+<p th:text="'ДАТА ПРОВЕДЕНИЯ: ' + ${event.get().getDate()}"></p>
+<p th:text="'ГОСТИНИЦА: ' + ${event.get().getHotel()}"></p>
+<p th:text="'КОНФЕРЕНЦ-ЗАЛ: ' + ${event.get().getConferenceHall()}"></p>
+<p th:text="'АДРЕС: ' + ${event.get().getHotelAddress()}"></p>
+<hr>
+<a th:href="'/event/' + ${event.get().getId()} + '/edit'">Редактировать</a><br>
+<form th:action="'/event/' + ${event.get().getId()} + '/delete'" th:method="post">
+    <button type="submit">Удалить</button>
+</form>
+<hr>
+</body>
+</html>

@@ -1,6 +1,7 @@
 package com.example.demoWebApp.controller;
 
-import com.example.demoWebApp.util.Test;
+import com.example.demoWebApp.model.Event;
+import com.example.demoWebApp.service.EventService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,6 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/event")
 public class EventController {
 
+    @Autowired
+    private EventService eventService;
+
     @GetMapping
     public String allEvents() {
         return "event/events";
@@ -18,9 +22,10 @@ public class EventController {
 
     @PostMapping
     public String saveEvent() {
-        Test test = new Test();
-        test.checkHibernate();
-        return "redirect:/event";
+        eventService.save(Event.builder()
+                .town("Azov")
+                .build());
+        return "redirect:/";
     }
 
     @GetMapping("/new")

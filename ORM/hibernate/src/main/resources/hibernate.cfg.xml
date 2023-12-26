@@ -16,6 +16,8 @@
     <mapping class="org.example.entity.User"/>
     <mapping class="org.example.entity.Cat"/>
     <mapping class="org.example.entity.Dog"/>
+    <mapping class="org.example.mapping.many_to_one.Company"/>
+    <mapping class="org.example.mapping.many_to_one.Employee"/>
 
 
     <!-- DB schema will be updated if needed -->

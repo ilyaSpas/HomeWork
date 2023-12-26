@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form th:action="'/event/' + ${event.get().getId()} + '/update'" th:method="post" th:object="${event}">
+    <label>Город проведения мероприятия:
+        <input type="text" name="town" th:value="${event.get().getTown()}"/>
+    </label><br>
+
+    <label>Дата:
+        <input type="date" name="date" th:value="${event.get().getDate()}"/>
+    </label><br>
+
+    <label>Название гостиницы:
+        <input type="text" name="hotel" th:value="${event.get().getHotel()}"/>
+    </label><br>
+
+    <label>URL адрес фото гостницы:
+        <input type="text" name="hotelImageUrl" th:value="${event.get().getHotelImageUrl()}"/>
+    </label><br>
+
+    <label>Адрес площадки:
+        <input type="text" name="hotelAddress" th:value="${event.get().getHotelAddress()}"/>
+    </label><br>
+
+    <label>Название конференц-зала:
+        <input type="text" name="conferenceHall" th:value="${event.get().getConferenceHall()}"/>
+    </label><br>
+
+    <button type="submit">Обновить</button>
+</form>
+</body>
+</html>

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.testing;
 
 import org.example.entity.Role;
 import org.example.entity.User;

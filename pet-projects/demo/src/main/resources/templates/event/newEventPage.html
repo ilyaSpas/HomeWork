@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+NEW EVENT
+<hr>
+<form th:action="@{/event}" th:method="post" th:object="${event}">
+    <label>Город проведения мероприятия:
+        <input type="text" name="town"/>
+    </label><br>
+
+    <label>Дата:
+        <input type="date" name="date"/>
+    </label><br>
+
+    <label>Название гостиницы:
+        <input type="text" name="hotel"/>
+    </label><br>
+
+    <label>URL адрес фото гостницы:
+        <input type="text" name="hotelImageUrl"/>
+    </label><br>
+
+    <label>Адрес площадки:
+        <input type="text" name="hotelAddress"/>
+    </label><br>
+
+    <label>Название конференц-зала:
+        <input type="text" name="conferenceHall"/>
+    </label><br>
+
+    <button type="submit">Сохранить</button>
+</form>
+
+</body>
+</html>
