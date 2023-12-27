@@ -3,6 +3,8 @@ package com.example.demo.service;
 import com.example.demo.model.Event;
 import com.example.demo.repository.EventRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -43,5 +45,9 @@ public class EventService {
         eventFromDB.setConferenceHall(event.getConferenceHall());
         eventFromDB.setHotelImageUrl(event.getHotelImageUrl());
         eventRepository.save(eventFromDB);
+    }
+
+    public Page<Event> findWithPagination(Integer page ,Integer bookPerPage) {
+        return  eventRepository.findAll(PageRequest.of(page, bookPerPage));
     }
 }

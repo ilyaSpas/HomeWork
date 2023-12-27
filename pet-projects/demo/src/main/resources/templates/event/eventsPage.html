@@ -43,5 +43,11 @@
     <hr>
 </div>
 
+<ul>
+    <li th:each="pageNumber : ${numbers}">
+        <a th:href="'/event?page=' + ${pageNumber}" th:text="${pageNumber + 1}"></a>
+    </li>
+</ul>
+
 </body>
 </html>

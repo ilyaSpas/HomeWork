@@ -3,12 +3,14 @@ package com.example.demo.controller;
 import com.example.demo.model.Event;
 import com.example.demo.service.EventService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Optional;
+import java.util.stream.IntStream;
+
 
 @Controller
 @RequestMapping("/event")
@@ -17,15 +19,19 @@ public class EventController {
     @Autowired
     private EventService eventService;
 
-    @GetMapping("/search")
-    public String search(@Param("name") String town, Model model) {
-        model.addAttribute("find_events", eventService.findByTown(town));
+    @GetMapping
+    public String allEvents(Model model,
+                            @RequestParam(value = "page", required = false, defaultValue = "0") Integer page,
+                            @RequestParam(value = "event_per_page", required = false, defaultValue = "3") Integer bookPerPage) {
+        Page<Event> events = eventService.findWithPagination(page, bookPerPage);
+        model.addAttribute("events", events);
+        model.addAttribute("numbers", IntStream.range(0, events.getTotalPages()).toArray());
         return "event/eventsPage";
     }
 
-    @GetMapping
-    public String allEvents(Model model) {
-        model.addAttribute("events", eventService.findAll());
+    @GetMapping("/search")
+    public String search(@Param("name") String town, Model model) {
+        model.addAttribute("find_events", eventService.findByTown(town));
         return "event/eventsPage";
     }
 
