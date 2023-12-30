@@ -22,8 +22,8 @@ public class HibernateRunner {
              Session session = sessionFactory.openSession()) {
             Transaction transaction = session.beginTransaction();
 
-            employee.setCompany(company);
-            session.persist(employee);
+            Employee employee1 = session.get(Employee.class, 2L);
+            System.out.println(employee1.getCompany().getName());
 
             transaction.commit();
         }

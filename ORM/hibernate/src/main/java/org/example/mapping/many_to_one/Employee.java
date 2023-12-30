@@ -25,8 +25,7 @@ public class Employee {
     @Column(name = "lastName")
     private String lastName;
 
-    @ManyToOne(cascade = CascadeType.,
-            optional = false,
+    @ManyToOne(optional = false,
             fetch = FetchType.EAGER)
     @JoinColumn(name = "company_id")
     private Company company;

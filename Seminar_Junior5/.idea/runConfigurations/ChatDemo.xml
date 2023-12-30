@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ChatDemo" type="CompoundRunConfigurationType">
+    <toRun name="client" type="Application" />
+    <toRun name="client-2" type="Application" />
+    <toRun name="server" type="Application" />
+    <method v="2" />
+  </configuration>
+</component>

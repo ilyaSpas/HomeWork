@@ -5,21 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2910229-4d33-4975-8cd2-269def6f1907" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mapping/many_to_one/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mapping/many_to_one/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mapping/many_to_one/HibernateRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/mail-sender/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/mail-sender/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/mail-sender/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/mail-sender/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/mail-sender/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/mail-sender/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/mail-sender/src/main/java/com/example/mailsender/MailSenderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/mail-sender/src/main/java/com/example/mailsender/config/MyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/mail-sender/src/main/java/com/example/mailsender/controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/mail-sender/src/main/java/com/example/mailsender/service/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/mail-sender/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/mail-sender/src/main/resources/templates/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/mail-sender/src/test/java/com/example/mailsender/MailSenderApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HibernateRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/testing/HibernateRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HibernateRunner1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/testing/HibernateRunner1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HibernateRunner2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/testing/HibernateRunner2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HibernateRunner3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/testing/HibernateRunner3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demoWebApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demoWebApp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demoWebApp/src/main/java/com/example/demoWebApp/controller/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demoWebApp/src/main/java/com/example/demoWebApp/controller/EventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demoWebApp/src/main/java/com/example/demoWebApp/model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demoWebApp/src/main/java/com/example/demoWebApp/model/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demoWebApp/src/main/java/com/example/demoWebApp/util/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demoWebApp/src/main/java/com/example/demoWebApp/util/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mapping/many_to_one/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mapping/many_to_one/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mapping/many_to_one/HibernateRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mapping/many_to_one/HibernateRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,6 +199,7 @@
       <workItem from="1703508184595" duration="3854000" />
       <workItem from="1703516877507" duration="383000" />
       <workItem from="1703517270219" duration="625000" />
+      <workItem from="1703777255593" duration="2745000" />
     </task>
     <servers />
   </component>
