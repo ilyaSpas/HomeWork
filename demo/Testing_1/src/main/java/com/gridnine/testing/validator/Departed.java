@@ -6,7 +6,7 @@ import com.gridnine.testing.Segment;
 import java.time.LocalDateTime;
 import java.util.List;
 
-public class Departed implements DepartureBeforeArrivalFlights {
+public class Departed implements DepartedFlights {
 
     @Override
     public boolean areSegmentsCorrect(Flight flight) {

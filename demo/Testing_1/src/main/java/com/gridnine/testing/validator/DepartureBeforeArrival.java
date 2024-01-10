@@ -3,7 +3,7 @@ package com.gridnine.testing.validator;
 import com.gridnine.testing.Flight;
 import com.gridnine.testing.Segment;
 
-public class DepartureBeforeArrival implements ArrivalTimeAfterDepartedFlights {
+public class DepartureBeforeArrival implements DepartureBeforeArrivalFlights {
 
     @Override
     public boolean areSegmentsCorrect(Flight flight) {
