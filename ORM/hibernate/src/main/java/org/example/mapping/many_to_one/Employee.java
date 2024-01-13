@@ -1,10 +1,7 @@
 package org.example.mapping.many_to_one;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity
 @Table(name = "employee")
@@ -25,8 +22,7 @@ public class Employee {
     @Column(name = "lastName")
     private String lastName;
 
-    @ManyToOne(optional = false,
-            fetch = FetchType.EAGER)
-    @JoinColumn(name = "company_id")
+    @ManyToOne
+    @JoinColumn(name = "company_id", referencedColumnName = "id")
     private Company company;
 }

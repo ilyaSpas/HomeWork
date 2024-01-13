@@ -11,17 +11,11 @@
     <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
     <property name="show_sql">true</property>
     <property name="format_sql">true</property>
-    <property name="hibernate.hbm2ddl.auto">create</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
 
-    <mapping class="org.example.entity.User"/>
-    <mapping class="org.example.entity.Cat"/>
-    <mapping class="org.example.entity.Dog"/>
-    <mapping class="org.example.mapping.many_to_one.Company"/>
-    <mapping class="org.example.mapping.many_to_one.Employee"/>
+    <mapping class="org.example.entity.Person"/>
+    <mapping class="org.example.entity.Passport"/>
+    <mapping class="org.example.entity.Item"/>
 
-
-
-    <!-- DB schema will be updated if needed -->
-    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
   </session-factory>
 </hibernate-configuration>
