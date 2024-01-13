@@ -25,14 +25,14 @@
     <hr>
 
     <div th:if="${find_events != null}">
-        <a href="/event">Сбросить</a><br>
         <h3>Результат поиска:</h3>
+        <a href="/event">Сбросить</a><br>
         <div th:each="event : ${find_events}">
             <img th:src="${event.getHotelImageUrl()}" width="200" height="100" th:alt="${event.getTown()}">
             <p th:text="'ГОРОД: ' + ${event.getTown()}"></p>
             <p th:text="'ДАТА ПРОВЕДЕНИЯ: ' + ${event.getDate()}"></p>
             <p th:text="'ГОСТИНИЦА: ' + ${event.getHotel()}"></p>
-            <p th:text="'КОНФЕРЕНЦ-ЗАЛ: ' + ${event.getConferenceHall()}"></p>
+            <p th:unless="${event.getConferenceHall().isEmpty()}" th:text="'КОНФЕРЕНЦ-ЗАЛ: ' + ${event.getConferenceHall()}"></p>
             <p th:text="'АДРЕС: ' + ${event.getHotelAddress()}"></p>
             <hr>
             <a th:href="'/event/' + ${event.getId()}">Детальнее</a>
@@ -45,7 +45,7 @@
         <p th:text="'ГОРОД: ' + ${event.getTown()}"></p>
         <p th:text="'ДАТА ПРОВЕДЕНИЯ: ' + ${event.getDate()}"></p>
         <p th:text="'ГОСТИНИЦА: ' + ${event.getHotel()}"></p>
-        <p th:text="'КОНФЕРЕНЦ-ЗАЛ: ' + ${event.getConferenceHall()}"></p>
+        <p th:unless="${event.getConferenceHall().isEmpty()}" th:text="'КОНФЕРЕНЦ-ЗАЛ: ' + ${event.getConferenceHall()}"></p>
         <p th:text="'АДРЕС: ' + ${event.getHotelAddress()}"></p>
         <hr>
         <a th:href="'/event/' + ${event.getId()}">Детальнее</a>

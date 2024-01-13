@@ -17,6 +17,11 @@ public class EventService {
     private EventRepository eventRepository;
 
     public void save(Event event) {
+        if (event.getHotelImageUrl().isEmpty()){
+            event.setHotelImageUrl("https://images.divisare.com/images/c_limit,f_auto,h_2000,q_auto,w_3000/" +
+                                   "v1490958815/kkofaeofhmpw57956lq6/morris-adjmi-architects-mark-mahaney-matthew-williams-" +
+                                   "jimi-billingsley-wythe-hotel.jpg");
+        }
         eventRepository.save(event);
     }
 
