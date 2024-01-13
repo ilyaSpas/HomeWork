@@ -14,17 +14,24 @@
 
 NEW EVENT
 <hr>
+
 <form th:action="@{/event}" th:method="post" th:object="${event}">
+
+
     <label>Город проведения мероприятия:
-        <input type="text" name="town"/>
+        <input type="text" name="town" th:field="*{town}"/>
+        <i style="color:red" th:if="${#fields.hasErrors('town')}" th:errors="*{town}" >town error</i>
     </label><br>
 
+
     <label>Дата:
-        <input type="date" name="date"/>
+        <input type="date" name="date" th:field="*{date}"/>
+        <i style="color:red" th:if="${#fields.hasErrors('date')}" th:errors="*{date}" >date error</i>
     </label><br>
 
     <label>Название гостиницы:
-        <input type="text" name="hotel"/>
+        <input type="text" name="hotel" th:field="*{hotel}"/>
+        <i style="color:red" th:if="${#fields.hasErrors('hotel')}" th:errors="*{hotel}" >hotel error</i>
     </label><br>
 
     <label>URL адрес фото гостницы:
@@ -32,7 +39,8 @@ NEW EVENT
     </label><br>
 
     <label>Адрес площадки:
-        <input type="text" name="hotelAddress"/>
+        <input type="text" name="hotelAddress" th:field="*{hotelAddress}"/>
+        <i style="color:red" th:if="${#fields.hasErrors('hotelAddress')}" th:errors="*{hotelAddress}" >hotelAddress error</i>
     </label><br>
 
     <label>Название конференц-зала:

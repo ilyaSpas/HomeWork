@@ -13,6 +13,7 @@
 <div class="container">
 
 <form th:action="'/event/' + ${event.get().getId()} + '/update'" th:method="post" th:object="${event}">
+
     <label>Город проведения мероприятия:
         <input type="text" name="town" th:value="${event.get().getTown()}"/>
     </label><br>

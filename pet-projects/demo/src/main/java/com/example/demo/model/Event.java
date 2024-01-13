@@ -1,6 +1,7 @@
 package com.example.demo.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,18 +20,22 @@ public class Event {
     @Column(name = "event_id")
     public Long id;
 
+    @NotEmpty(message = "Необходимо ввести название города проведения мероприятия!")
     @Column(name = "town")
     private String town;
 
+    @NotEmpty(message = "Необходимо ввести дату проведения мероприятия!")
     @Column(name = "date")
     private String date;
 
+    @NotEmpty(message = "Необходимо ввести название отеля!")
     @Column(name = "hotel")
     private String hotel;
 
     @Column(name = "image_url")
     private String hotelImageUrl;
 
+    @NotEmpty(message = "Необходимо ввести адрес проведения мероприятия!")
     @Column(name = "hotel_address")
     private String hotelAddress;
 
