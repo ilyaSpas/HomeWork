@@ -6,25 +6,27 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
 </head>
 <body>
 <header th:insert="blocks/header :: header"></header>
 <div class="container">
 
-<img th:src="${event.get().getHotelImageUrl()}" width="200" height="100" th:alt="${event.get().getTown()}">
-<p th:text="'ГОРОД: ' + ${event.get().getTown()}"></p>
-<p th:text="'ДАТА ПРОВЕДЕНИЯ: ' + ${event.get().getDate()}"></p>
-<p th:text="'ГОСТИНИЦА: ' + ${event.get().getHotel()}"></p>
-<p th:text="'КОНФЕРЕНЦ-ЗАЛ: ' + ${event.get().getConferenceHall()}"></p>
-<p th:text="'АДРЕС: ' + ${event.get().getHotelAddress()}"></p>
-<hr>
-<a th:href="'/event/' + ${event.get().getId()} + '/edit'">Редактировать</a><br>
-<a href="/event">Назад</a><br>
-<form th:action="'/event/' + ${event.get().getId()} + '/delete'" th:method="post">
-    <button type="submit">Удалить</button>
-</form>
-<hr>
+    <img th:src="${event.get().getHotelImageUrl()}" width="200" height="100" th:alt="${event.get().getTown()}">
+    <p th:text="'ГОРОД: ' + ${event.get().getTown()}"></p>
+    <p th:text="'ДАТА ПРОВЕДЕНИЯ: ' + ${event.get().getDate()}"></p>
+    <p th:text="'ГОСТИНИЦА: ' + ${event.get().getHotel()}"></p>
+    <p th:text="'КОНФЕРЕНЦ-ЗАЛ: ' + ${event.get().getConferenceHall()}"></p>
+    <p th:text="'АДРЕС: ' + ${event.get().getHotelAddress()}"></p>
+    <hr>
+    <a th:href="'/event/' + ${event.get().getId()} + '/registration'">Регистрация</a><br>
+    <a th:href="'/event/' + ${event.get().getId()} + '/edit'">Редактировать</a><br>
+    <a href="/event">Назад</a><br>
+    <form th:action="'/event/' + ${event.get().getId()} + '/delete'" th:method="post">
+        <button type="submit">Удалить</button>
+    </form>
+    <hr>
 
 </div>
 </body>
