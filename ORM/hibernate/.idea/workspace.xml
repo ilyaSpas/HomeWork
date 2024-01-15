@@ -5,28 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2910229-4d33-4975-8cd2-269def6f1907" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../hibernate-1/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hibernate-1/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hibernate-1/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hibernate-1/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hibernate-1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hibernate-1/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hibernate-1/src/main/java/org/example/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hibernate-1/src/main/java/org/example/entity/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hibernate-1/src/main/java/org/example/util/HibernateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hibernate-1/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mapping/many_to_one/HibernateRunner1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring-seminar-2/src/main/java/org/example/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo/src/main/java/com/example/demo/model/Position.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mapping/many_to_one/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mapping/many_to_one/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mapping/many_to_one/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mapping/many_to_one/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../demo/Testing_1/src/main/java/com/gridnine/testing/util/LocalDateTimeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/Testing_1/src/main/java/com/gridnine/testing/util/LocalDateTimeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo/src/main/java/com/example/demo/model/Participant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo/src/main/java/com/example/demo/model/Participant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo/src/main/resources/templates/person/registrationPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo/src/main/resources/templates/person/registrationPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,6 +195,7 @@
       <workItem from="1704989958118" duration="2791000" />
       <workItem from="1704992765815" duration="323000" />
       <workItem from="1704993163648" duration="424000" />
+      <workItem from="1705321501717" duration="1101000" />
     </task>
     <servers />
   </component>

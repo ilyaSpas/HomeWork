@@ -10,43 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ff0c650-dc5c-433f-8909-8d6ac0f90193" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../ORM/hibernate/src/main/java/org/example/mapping/many_to_one/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ORM/hibernate/src/main/java/org/example/mapping/many_to_one/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ORM/hibernate/src/main/java/org/example/mapping/many_to_one/HibernateRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo/src/main/java/com/example/demo/controller/EventController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo/src/main/java/com/example/demo/controller/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo/src/main/java/com/example/demo/model/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo/src/main/java/com/example/demo/repository/EventRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo/src/main/java/com/example/demo/service/EventService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo/src/main/resources/templates/event/newEventPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo/src/main/resources/templates/main/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo/src/test/java/com/example/demo/DemoApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pet-projects/demoWebApp/src/main/java/com/example/demoWebApp/repository/EventRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pet-projects/demoWebApp/src/main/java/com/example/demoWebApp/service/EventService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo/src/main/java/com/example/demo/model/Position.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ORM/hibernate/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ORM/hibernate/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ORM/hibernate/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../ORM/hibernate/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ORM/hibernate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ORM/hibernate/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ORM/hibernate/src/main/java/org/example/HibernateRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ORM/hibernate/src/main/java/org/example/testing/HibernateRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ORM/hibernate/src/main/java/org/example/HibernateRunner1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ORM/hibernate/src/main/java/org/example/testing/HibernateRunner1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ORM/hibernate/src/main/java/org/example/HibernateRunner2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ORM/hibernate/src/main/java/org/example/testing/HibernateRunner2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ORM/hibernate/src/main/java/org/example/HibernateRunner3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ORM/hibernate/src/main/java/org/example/testing/HibernateRunner3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ORM/hibernate/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ORM/hibernate/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demoWebApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demoWebApp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demoWebApp/src/main/java/com/example/demoWebApp/DemoWebAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demoWebApp/src/main/java/com/example/demoWebApp/DemoWebAppApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demoWebApp/src/main/java/com/example/demoWebApp/controller/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demoWebApp/src/main/java/com/example/demoWebApp/controller/EventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demoWebApp/src/main/java/com/example/demoWebApp/model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demoWebApp/src/main/java/com/example/demoWebApp/model/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demoWebApp/src/main/java/com/example/demoWebApp/util/HibernateUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demoWebApp/src/main/java/com/example/demoWebApp/util/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demoWebApp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demoWebApp/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demoWebApp/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo/src/main/java/com/example/demo/model/Participant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo/src/main/java/com/example/demo/model/Participant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo/src/main/resources/templates/person/registrationPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo/src/main/resources/templates/person/registrationPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,13 +217,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-19.0.2-corretto-19.0.2-3183f394aec4-f0552fc0" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -279,6 +240,7 @@
       <workItem from="1703083985989" duration="826000" />
       <workItem from="1703163442335" duration="35000" />
       <workItem from="1703542148426" duration="151000" />
+      <workItem from="1705322605115" duration="100000" />
     </task>
     <servers />
   </component>
