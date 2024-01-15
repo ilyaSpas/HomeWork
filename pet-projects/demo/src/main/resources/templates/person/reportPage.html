@@ -36,12 +36,8 @@
             <td th:text="${participant.getTimeOfRegistration()}"></td>
         </tr>
     </table>
+    <a th:href="'/event/' + ${event_id} + '/download'">Скачать отчет</a>
 
-
-<!--    <div th:each="participant : ${participants}">-->
-<!--        <p th:text="'Имя: ' + ${participant.getFirstName()}"></p>-->
-<!--    </div>-->
 </div>
-
 </body>
 </html>

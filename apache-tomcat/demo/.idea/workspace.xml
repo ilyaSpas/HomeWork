@@ -9,13 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ff0c650-dc5c-433f-8909-8d6ac0f90193" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo/src/main/java/com/example/demo/model/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ORM/hibernate/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ORM/hibernate/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ORM/hibernate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ORM/hibernate/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo/src/main/java/com/example/demo/model/Participant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo/src/main/java/com/example/demo/model/Participant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo/src/main/resources/templates/person/registrationPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo/src/main/resources/templates/person/registrationPage.html" afterDir="false" />
-    </list>
+    <list default="true" id="7ff0c650-dc5c-433f-8909-8d6ac0f90193" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -241,6 +235,7 @@
       <workItem from="1703163442335" duration="35000" />
       <workItem from="1703542148426" duration="151000" />
       <workItem from="1705322605115" duration="100000" />
+      <workItem from="1705338796859" duration="2617000" />
     </task>
     <servers />
   </component>

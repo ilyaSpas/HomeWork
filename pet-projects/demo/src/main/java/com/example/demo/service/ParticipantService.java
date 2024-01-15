@@ -6,6 +6,8 @@ import com.example.demo.repository.ParticipantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ParticipantService {
     @Autowired
@@ -18,5 +20,9 @@ public class ParticipantService {
         Event event = eventService.findById(eventId).get();
         participant.setEvent(event);
         participantRepository.save(participant);
+    }
+
+    public List<Participant> findByEventId(Long eventId) {
+        return participantRepository.findByEventId(eventId);
     }
 }
