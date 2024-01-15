@@ -13,9 +13,14 @@
 <header th:insert="blocks/header :: header"></header>
 <div class="container">
 
-    <div th:each="participant : ${participants}">
-        <p th:text="'Имя: ' + ${participant.getFirstName()}"></p>
-    </div>
+    <section>
+        <div th:each="participant : ${participants}">
+            <p th:text="'Имя: ' + ${participant.getFirstName()}"></p>
+        </div>
+    </section>
+
+
+
 
     REGISTRATION
 
@@ -50,7 +55,11 @@
         </label><br>
 
         <label>Должность:
-            <input type="text" name="position"/>
+            <select name="position" >
+                <option th:each="position : ${positions}"
+                        th:text="${position}"
+                        th:value="${position}">
+            </select>
         </label><br>
 
         <label>Адрес аптеки:
@@ -58,6 +67,7 @@
         </label><br>
 
         <button type="submit">Сохранить</button>
+
         <br>
     </form>
     <br>
