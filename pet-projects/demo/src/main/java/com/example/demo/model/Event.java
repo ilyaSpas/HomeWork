@@ -7,6 +7,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Entity
 @Table(name = "event")
 @Data
@@ -17,7 +19,7 @@ public class Event {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "event_id")
+    @Column(name = "id")
     public Long id;
 
     @NotEmpty(message = "Необходимо ввести название города проведения мероприятия!")
@@ -41,4 +43,7 @@ public class Event {
 
     @Column(name = "conference_hall")
     private String conferenceHall;
+
+    @OneToMany(mappedBy = "event", fetch = FetchType.LAZY)
+    private List<Participant> participants;
 }

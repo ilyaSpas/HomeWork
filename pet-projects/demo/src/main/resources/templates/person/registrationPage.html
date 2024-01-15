@@ -12,8 +12,20 @@
 <header th:insert="blocks/header :: header"></header>
 <div class="container">
 
+    <div th:each="participant : ${participants}">
+        <p th:text="'Имя: ' + ${participant.getFirstName()}"></p>
+    </div>
+
     REGISTRATION
 
+    <form th:action="'/event/' + ${id} + '/registration'" th:method="post" th:object="${participant}">
+
+        <label>Имя:
+            <input type="text" name="firstName"/>
+        </label><br>
+
+        <button type="submit">Сохранить</button>
+    </form><br>
 
 </div>
 </body>
