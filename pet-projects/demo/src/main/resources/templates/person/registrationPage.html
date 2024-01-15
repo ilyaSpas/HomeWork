@@ -13,14 +13,6 @@
 <header th:insert="blocks/header :: header"></header>
 <div class="container">
 
-    <section>
-        <div th:each="participant : ${participants}">
-            <p th:text="'Имя: ' + ${participant.getFirstName()}"></p>
-        </div>
-    </section>
-
-
-
 
     REGISTRATION
 
@@ -55,7 +47,7 @@
         </label><br>
 
         <label>Должность:
-            <select name="position" >
+            <select name="position">
                 <option th:each="position : ${positions}"
                         th:text="${position}"
                         th:value="${position}">

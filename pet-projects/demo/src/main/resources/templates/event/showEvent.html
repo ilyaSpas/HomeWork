@@ -21,6 +21,8 @@
     <p th:text="'АДРЕС: ' + ${event.get().getHotelAddress()}"></p>
     <hr>
     <a th:href="'/event/' + ${event.get().getId()} + '/registration'">Регистрация</a><br>
+    <a th:href="'/event/' + ${event.get().getId()} + '/report'">Отчет</a><br>
+    <a th:href="'/event/' + ${event.get().getId()} + '/qr'">Получить QR-код</a><br>
     <a th:href="'/event/' + ${event.get().getId()} + '/edit'">Редактировать</a><br>
     <a href="/event">Назад</a><br>
     <form th:action="'/event/' + ${event.get().getId()} + '/delete'" th:method="post">
