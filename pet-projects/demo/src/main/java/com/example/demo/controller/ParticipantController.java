@@ -23,8 +23,7 @@ public class ParticipantController {
     @GetMapping("/{id}/registration")
     public String registrationForm(@ModelAttribute("participant") Participant participant,
                                    @PathVariable("id") Long id, Model model) {
-        model.addAttribute("participants", eventService.findById(id).get().getParticipants());
-        model.addAttribute("positions", Arrays.asList(Position.values()));
+                model.addAttribute("positions", Arrays.asList(Position.values()));
         return "person/registrationPage";
     }
 
@@ -33,5 +32,20 @@ public class ParticipantController {
                                @PathVariable("event_id") Long eventId){
         participantService.save(participant, eventId);
         return "redirect:/";
+    }
+
+    @GetMapping("/{event_id}/report")
+    public String report(@ModelAttribute("participant") Participant participant,
+                         @PathVariable("event_id") Long eventId,
+                         Model model){
+        model.addAttribute("participants", eventService.findById(eventId).get().getParticipants());
+        return "person/reportPage";
+    }
+
+    @GetMapping("/{event_id}/qr")
+    public String getQrCode(@PathVariable("event_id") Long eventId,
+                            Model model){
+        model.addAttribute("id", eventId);
+        return "person/QRcodePage";
     }
 }

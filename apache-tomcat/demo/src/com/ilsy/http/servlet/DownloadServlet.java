@@ -18,6 +18,7 @@ import java.sql.*;
 public class DownloadServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         resp.setHeader("Content-Disposition", "attachment; filename=\"filename.xlsx\"");
         resp.setContentType("text/plan");
         resp.setCharacterEncoding(StandardCharsets.UTF_8.name());
@@ -30,11 +31,14 @@ public class DownloadServlet extends HttpServlet {
                 SELECT * 
                 FROM flight
                 """;
+
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("id\tCODE\tDate\n");
+
         try (Connection connection = ConnectionManager.get();
              PreparedStatement preparedStatement = connection.prepareStatement(sql);
              PrintWriter printWriter = resp.getWriter()) {
+
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()){
                 stringBuilder.append(resultSet.getObject("id", Long.class));
