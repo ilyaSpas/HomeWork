@@ -25,4 +25,8 @@ public class ParticipantService {
     public List<Participant> findByEventId(Long eventId) {
         return participantRepository.findByEventId(eventId);
     }
+
+    public void delete(Long id) {
+        participantRepository.deleteById(id);
+    }
 }

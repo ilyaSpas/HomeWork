@@ -13,7 +13,7 @@
 <header th:insert="blocks/header :: header"></header>
 
 <div class="container">
-    REPORT
+    <h1 th:text="${participants.get(0).getEvent().getTown()} + ' ' + ${participants.get(0).getEvent().getDate()}"></h1>
     <table>
         <tr>
             <th>ФИО</th>
@@ -34,6 +34,13 @@
             <td th:text="${participant.getPhoneNumber()}"></td>
             <td th:text="${participant.getEmail()}"></td>
             <td th:text="${participant.getTimeOfRegistration()}"></td>
+            <td>
+                <form th:action="'/event/' + ${participant.getEvent().getId()} + '/participant/' + ${participant.getId()} + '/delete'" th:method="post">
+                    <button type="submit">
+                        Удалить
+                    </button>
+                </form>
+            </td>
         </tr>
     </table>
     <a th:href="'/event/' + ${event_id} + '/download'">Скачать отчет</a>
