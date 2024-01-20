@@ -9,7 +9,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ff0c650-dc5c-433f-8909-8d6ac0f90193" name="Changes" comment="" />
+    <list default="true" id="7ff0c650-dc5c-433f-8909-8d6ac0f90193" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../ORM/hibernate-1/src/main/java/org/example/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring.security/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring.security/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring.security/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring.security/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring.security/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring.security/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring.security/src/main/java/com/ilsy/spring/security/SpringSecurity1Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring.security/src/main/java/com/ilsy/spring/security/config/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring.security/src/main/java/com/ilsy/spring/security/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring.security/src/main/java/com/ilsy/spring/security/controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring.security/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring.security/src/main/resources/templates/db/test2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring.security/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring.security/src/main/resources/templates/main/mainPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring.security/src/test/java/com/ilsy/spring/security/SpringSecurity1ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo/src/main/java/com/example/demo/controller/ParticipantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo/src/main/java/com/example/demo/controller/ParticipantController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -236,6 +257,8 @@
       <workItem from="1703542148426" duration="151000" />
       <workItem from="1705322605115" duration="100000" />
       <workItem from="1705338796859" duration="2617000" />
+      <workItem from="1705482413078" duration="709000" />
+      <workItem from="1705575601355" duration="635000" />
     </task>
     <servers />
   </component>

@@ -48,4 +48,10 @@ public class ParticipantController {
         model.addAttribute("id", eventId);
         return "person/QRcodePage";
     }
+
+    @PostMapping("/{event_id}/participant/{participant_id}/delete")
+    public String deleteParticipant(@PathVariable("participant_id") Long id){
+        participantService.delete(id);
+        return "redirect:/event/{event_id}/report";
+    }
 }

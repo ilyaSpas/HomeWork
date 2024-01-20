@@ -9,6 +9,7 @@ import org.hibernate.annotations.Cascade;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @Data
 @Entity
@@ -42,5 +43,18 @@ public class Person {
         }
         items.add(item);
         item.setOwner(this);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return id == person.id && Objects.equals(name, person.name) && Objects.equals(items, person.items) && Objects.equals(passport, person.passport);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, items, passport);
     }
 }
