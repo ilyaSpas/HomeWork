@@ -35,7 +35,7 @@ public class FilmService {
     public Film updateById(Long id, Film film) {
         Film filmFromDB = filmRepository.findById(id).orElse(null);
         filmFromDB.setTitle(film.getTitle());
-        filmFromDB.setActors(film.getActors());
+        filmFromDB.setComments(film.getComments());
         return filmRepository.save(filmFromDB);
     }
 }

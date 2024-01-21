@@ -6,7 +6,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
 import java.util.List;
 
 @Data
@@ -22,5 +21,5 @@ public class Film {
 
     @OneToMany(mappedBy = "film", cascade = CascadeType.PERSIST)
     @JsonIgnore
-    private List<Actor> actors;
+    private List<Comment> comments;
 }

@@ -25,16 +25,18 @@ public class FilmController {
         this.modelMapper = modelMapper;
     }
 
+
     @GetMapping
     public ResponseEntity<List<FilmDto>> getFilms() {
         List<FilmDto> filmDtoList = filmService.findAll().stream()
-                .map(this::convertToFilmDto)
+                .map(filmDto -> convertToFilmDto(filmDto))
                 .collect(Collectors.toList());
         return new ResponseEntity<>(filmDtoList, HttpStatus.OK);
     }
 
     @PostMapping
     public ResponseEntity<HttpStatus> createFilm(@RequestBody FilmDto filmDto) {
+        filmService.save(convertToFilm(filmDto));
         return ResponseEntity.ok(HttpStatus.OK);
     }
 

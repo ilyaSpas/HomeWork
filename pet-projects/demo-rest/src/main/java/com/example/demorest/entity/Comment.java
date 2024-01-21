@@ -4,19 +4,17 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.Cascade;
-import org.hibernate.annotations.CascadeType;
 
 @Data
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-public class Actor {
+public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
+    private String text;
 
     @ManyToOne
     @JoinColumn(name = "film_id", referencedColumnName = "id")

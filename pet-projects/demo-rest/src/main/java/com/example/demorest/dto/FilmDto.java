@@ -1,6 +1,6 @@
 package com.example.demorest.dto;
 
-import com.example.demorest.entity.Actor;
+import com.example.demorest.entity.Comment;
 import lombok.Data;
 
 import java.util.List;
@@ -9,5 +9,5 @@ import java.util.List;
 public class FilmDto {
     private String title;
 
-    private List<Actor> actors;
+    private List<CommentDto> comments;
 }
