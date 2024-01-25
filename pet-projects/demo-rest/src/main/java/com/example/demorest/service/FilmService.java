@@ -5,7 +5,9 @@ import com.example.demorest.repo.FilmRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class FilmService {
@@ -16,11 +18,19 @@ public class FilmService {
         this.filmRepository = filmRepository;
     }
 
-    public Film save(Film film){
+    public Film save(Film film) {
         return filmRepository.save(film);
     }
 
-    public List<Film> findAll() {
+    public List<Film> findAll(String sort) {
+        if (sort != null){
+            switch (sort){
+                case ("title"):
+                    return filmRepository.findAll().stream()
+                            .sorted(Comparator.comparing(Film::getTitle))
+                            .collect(Collectors.toList());
+            }
+        }
         return filmRepository.findAll();
     }
 
@@ -34,8 +44,12 @@ public class FilmService {
 
     public Film updateById(Long id, Film film) {
         Film filmFromDB = filmRepository.findById(id).orElse(null);
-        filmFromDB.setTitle(film.getTitle());
-        filmFromDB.setComments(film.getComments());
+        if (film.getTitle() != null) {
+            filmFromDB.setTitle(film.getTitle());
+        }
+        if (film.getComments() != null) {
+            filmFromDB.setComments(film.getComments());
+        }
         return filmRepository.save(filmFromDB);
     }
 }

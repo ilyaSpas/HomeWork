@@ -6,6 +6,9 @@ import com.example.demorest.repo.FilmRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Collection;
+import java.util.List;
+
 @Service
 public class CommentService {
     public final CommentRepository commentRepository;
@@ -20,5 +23,9 @@ public class CommentService {
     public void save(Comment comment, Long id) {
         comment.setFilm(filmService.findById(id));
         commentRepository.save(comment);
+    }
+
+    public List<Comment> findAll() {
+        return commentRepository.findAll();
     }
 }

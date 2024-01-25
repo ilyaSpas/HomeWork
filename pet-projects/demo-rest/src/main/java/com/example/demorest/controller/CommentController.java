@@ -11,6 +11,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 @RestController
 @RequestMapping("/api/film")
 public class CommentController {
@@ -24,8 +27,16 @@ public class CommentController {
         this.modelMapper = modelMapper;
     }
 
+    @GetMapping("/comment")
+    public ResponseEntity<List<CommentDto>> getAllComments() {
+        List<CommentDto> commentDtoList = commentService.findAll().stream()
+                .map(comment -> convertToCommentDto(comment))
+                .collect(Collectors.toList());
+        return new ResponseEntity<>(commentDtoList, HttpStatus.OK);
+    }
+
     @PostMapping("/{id}/comment")
-    public ResponseEntity<HttpStatus> createFilm(@PathVariable("id") Long id,
+    public ResponseEntity<HttpStatus> createComment(@PathVariable("id") Long id,
                                                  @RequestBody CommentDto commentDto) {
         commentService.save(convertToComment(commentDto), id);
         return ResponseEntity.ok(HttpStatus.OK);

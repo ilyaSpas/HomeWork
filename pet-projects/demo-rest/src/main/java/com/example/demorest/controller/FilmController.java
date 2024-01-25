@@ -27,8 +27,8 @@ public class FilmController {
 
 
     @GetMapping
-    public ResponseEntity<List<FilmDto>> getFilms() {
-        List<FilmDto> filmDtoList = filmService.findAll().stream()
+    public ResponseEntity<List<FilmDto>> getFilms(@RequestParam(value = "sort", required = false) String sort) {
+        List<FilmDto> filmDtoList = filmService.findAll(sort).stream()
                 .map(filmDto -> convertToFilmDto(filmDto))
                 .collect(Collectors.toList());
         return new ResponseEntity<>(filmDtoList, HttpStatus.OK);

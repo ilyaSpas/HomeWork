@@ -5,32 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ef676cd-a9f7-41e0-bbb6-aad5759a9d16" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/.idea/artifacts/Seminar_Junior_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_5/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_5/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_5/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_5/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_5/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_5/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_5/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_5/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_5/src/main/java/org/example/task1/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_5/src/main/java/org/example/task1/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Seminar_Junior_5/src/main/java/org/example/task2/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/for_testing/Bean1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/for_testing/Bean2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/for_testing/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/for_testing/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/for_testing/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/for_testing/Test2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ORM/hibernate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ORM/hibernate/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ORM/hibernate/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ORM/hibernate/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/resources/hibernate.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Seminar_Junior_4/src/main/resources/hibernate.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/Test1/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/Test1/Dot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/Test1/MyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/Test1/TestFromTouTube.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/Arifm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/ExceptionAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/TestAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/test_for_order/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/test_for_order/aspect/DogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/test_for_order/aspect/DogAspect1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/test_for_order/aspect/DogAspect2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/test_for_order/aspect/pointcut/DogPointcut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/test_for_order/config/Configure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/test_for_order/entity/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_2/aspect/DogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_2/aspect/pointcut/DogPointcut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_2/config/ConfigurationAop2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_2/entity/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_2/entity/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_2/joinPoint/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/aspect/DogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/aspect/MathAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/aspect/pountcut/Pointcut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/config/MyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/entity/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/entity/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/util/MathClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/config/AspectForTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/DemoRestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/DemoRestApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/config/Configs.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/config/Configs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/controller/FilmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/controller/FilmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/entity/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/entity/Film.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/repo/FilmRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/repo/FilmRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/service/FilmService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/service/FilmService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,14 +85,19 @@
     "Application.Main.executor": "Run",
     "Application.SpringTest.executor": "Run",
     "Application.TesSpring.executor": "Run",
+    "Application.Test2.executor": "Run",
+    "Application.TestFromTouTube.executor": "Run",
     "Application.TestSpring.executor": "Run",
     "Application.TestSpring1.executor": "Run",
     "Application.TestSpring2.executor": "Run",
     "Application.ru.ilsy.education.annotation.TestSpring.executor": "Run",
     "Application.ru.ilsy.education.annotationAutowired.TestSpring.executor": "Run",
+    "Application.ru.ilsy.education.aop.test_for_order.Main.executor": "Run",
+    "Application.ru.ilsy.education.aop_2.joinPoint.Main.executor": "Run",
     "Application.ru.ilsy.education.dependencyInjection.TestSpring.executor": "Run",
     "Application.ru.ilsy.education.inversionOfControl.TestSpring.executor": "Run",
     "Application.ru.ilsy.education.scope.TestSpring.executor": "Run",
+    "Application.test1.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -84,12 +109,15 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Spass/OneDrive/Рабочий стол/HW/Seminar_Junior_4",
+    "last_opened_file_path": "C:/Users/Spass/OneDrive/Рабочий стол/aspectjweaver-1.9.21.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   }
@@ -102,11 +130,11 @@
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.ilsy.education.for_testing.Main" />
+      <option name="MAIN_CLASS_NAME" value="ru.ilsy.education.aop_3.Main" />
       <module name="spring-core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.ilsy.education.for_testing.*" />
+          <option name="PATTERN" value="ru.ilsy.education.aop_3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,12 +142,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.ilsy.education.config.SpringTest" />
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.ilsy.education.aop.Test2" />
       <module name="spring-core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.ilsy.education.config.*" />
+          <option name="PATTERN" value="ru.ilsy.education.aop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,12 +155,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSpring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.ilsy.education.annotationCompinent.TestSpring" />
+    <configuration name="ru.ilsy.education.aop_2.joinPoint.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.ilsy.education.aop_2.joinPoint.Main" />
       <module name="spring-core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.ilsy.education.annotationCompinent.*" />
+          <option name="PATTERN" value="ru.ilsy.education.aop_2.joinPoint.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,12 +168,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ru.ilsy.education.annotation.TestSpring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.ilsy.education.annotation.TestSpring" />
+    <configuration name="ru.ilsy.education.aop.test_for_order.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.ilsy.education.aop.test_for_order.Main" />
       <module name="spring-core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.ilsy.education.annotation.*" />
+          <option name="PATTERN" value="ru.ilsy.education.aop.test_for_order.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,12 +181,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.ilsy.education.aop.test1" />
       <module name="spring-core" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.ilsy.education.for_testing.Main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.ilsy.education.for_testing.*" />
+          <option name="PATTERN" value="ru.ilsy.education.aop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -169,17 +197,17 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.SpringTest" />
-        <item itemvalue="Spring Boot.Main" />
-        <item itemvalue="Application.ru.ilsy.education.annotation.TestSpring" />
-        <item itemvalue="Application.TestSpring" />
+        <item itemvalue="Application.ru.ilsy.education.aop_2.joinPoint.Main" />
+        <item itemvalue="Application.ru.ilsy.education.aop.test_for_order.Main" />
+        <item itemvalue="Application.Test2" />
+        <item itemvalue="Application.test1" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-19.0.2-corretto-19.0.2-3183f394aec4-f0552fc0" />
+        <option value="jdk-19.0.2-corretto-19.0.2-f644763e9732-1e16d6ec" />
       </set>
     </attachedChunks>
   </component>
@@ -200,6 +228,7 @@
       <workItem from="1702658244908" duration="34000" />
       <workItem from="1702747954114" duration="606000" />
       <workItem from="1703413279276" duration="4503000" />
+      <workItem from="1706010324593" duration="26710000" />
     </task>
     <task id="LOCAL-00001" summary="New commit">
       <option name="closed" value="true" />
