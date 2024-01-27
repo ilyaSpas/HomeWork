@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ef676cd-a9f7-41e0-bbb6-aad5759a9d16" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../ORM/hibernate-2/src/main/java/ru/ilsy/hibernate/config/Configuration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ORM/hibernate-2/src/main/java/ru/ilsy/hibernate/lesson_simple/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ORM/hibernate-2/src/main/java/ru/ilsy/hibernate/lesson_simple/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ORM/hibernate-2/src/main/java/ru/ilsy/hibernate/util/SessionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ORM/hibernate-2/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ORM/hibernate/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ORM/hibernate/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ORM/hibernate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ORM/hibernate/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/aspect/MathAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/aspect/MathAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/aspect/pountcut/Pointcut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/aspect/pountcut/Pointcut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/util/MathClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/util/MathClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/aspect/filmLoggingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/aspect/pointcut/FilmPointcut.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,6 +186,7 @@
       <workItem from="1703413279276" duration="4503000" />
       <workItem from="1706010324593" duration="30700000" />
       <workItem from="1706212801520" duration="14000" />
+      <workItem from="1706360796903" duration="28000" />
     </task>
     <task id="LOCAL-00001" summary="New commit">
       <option name="closed" value="true" />

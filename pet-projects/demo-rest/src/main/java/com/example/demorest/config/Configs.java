@@ -1,5 +1,6 @@
 package com.example.demorest.config;
 
+import com.example.demorest.aspect.FilmLoggingAspect;
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -15,7 +16,7 @@ public class Configs {
     }
 
     @Bean
-    public AspectForTest aspectForTest(){
-        return new AspectForTest();
+    public FilmLoggingAspect filmLoggingAspect(){
+        return new FilmLoggingAspect();
     }
 }
