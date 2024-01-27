@@ -19,7 +19,7 @@ public class Film {
 
     private String title;
 
-    @OneToMany(mappedBy = "film")
+    @OneToMany(mappedBy = "film", cascade = CascadeType.ALL)
     @JsonIgnore
     private List<Comment> comments;
 }

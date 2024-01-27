@@ -13,11 +13,7 @@ public class Main {
         Human human = context.getBean("human", Human.class);
         MathClass mathClass = context.getBean("mathClass", MathClass.class);
 
-        try {
-            mathClass.des(3, 0);
-        } catch (ArithmeticException ignored){
-
-        }
+        System.out.println(mathClass.divide(3,0));
 
         context.close();
     }

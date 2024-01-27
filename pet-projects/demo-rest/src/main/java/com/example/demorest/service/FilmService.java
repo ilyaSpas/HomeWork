@@ -1,7 +1,9 @@
 package com.example.demorest.service;
 
+import com.example.demorest.dto.FilmDto;
 import com.example.demorest.entity.Film;
 import com.example.demorest.repo.FilmRepository;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +14,7 @@ import java.util.stream.Collectors;
 @Service
 public class FilmService {
     private final FilmRepository filmRepository;
+
 
     @Autowired
     public FilmService(FilmRepository filmRepository) {

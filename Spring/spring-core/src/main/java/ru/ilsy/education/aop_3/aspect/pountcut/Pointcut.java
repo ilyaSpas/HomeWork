@@ -12,4 +12,10 @@ public class Pointcut {
 
     @org.aspectj.lang.annotation.Pointcut("execution(* ru.ilsy.education.aop_3.util.MathClass.des(..))")
     public void mathPointcut(){}
+
+    @org.aspectj.lang.annotation.Pointcut("execution(* ru.ilsy.education.aop_3.util.MathClass.sum(..))")
+    public void mathSumPointcut(){}
+
+    @org.aspectj.lang.annotation.Pointcut("execution(* ru.ilsy.education.aop_3.util.MathClass.divide(..))")
+    public void mathDividePointcut(){}
 }

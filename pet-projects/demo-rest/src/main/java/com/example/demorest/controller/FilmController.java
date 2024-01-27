@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("api/film")
+@RequestMapping("api/films")
 public class FilmController {
     private final FilmService filmService;
 
@@ -64,5 +64,11 @@ public class FilmController {
 
     public FilmDto convertToFilmDto(Film film) {
         return modelMapper.map(film, FilmDto.class);
+    }
+
+    public List<FilmDto> convertToListFilmDto(List<Film> films){
+        return films.stream()
+                .map(filmDto -> convertToFilmDto(filmDto))
+                .collect(Collectors.toList());
     }
 }

@@ -5,52 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ef676cd-a9f7-41e0-bbb6-aad5759a9d16" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/Test1/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/Test1/Dot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/Test1/MyConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/Test1/TestFromTouTube.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/Arifm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/ExceptionAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/Human.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/Test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/TestAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/test_for_order/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/test_for_order/aspect/DogAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/test_for_order/aspect/DogAspect1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/test_for_order/aspect/DogAspect2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/test_for_order/aspect/pointcut/DogPointcut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/test_for_order/config/Configure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop/test_for_order/entity/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_2/aspect/DogAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_2/aspect/pointcut/DogPointcut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_2/config/ConfigurationAop2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_2/entity/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_2/entity/Human.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_2/joinPoint/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/aspect/DogAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/aspect/MathAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/aspect/pountcut/Pointcut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/config/MyConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/entity/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/entity/Human.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/util/MathClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/config/AspectForTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ORM/hibernate-2/src/main/java/ru/ilsy/hibernate/config/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ORM/hibernate-2/src/main/java/ru/ilsy/hibernate/lesson_simple/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ORM/hibernate-2/src/main/java/ru/ilsy/hibernate/lesson_simple/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ORM/hibernate-2/src/main/java/ru/ilsy/hibernate/util/SessionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ORM/hibernate-2/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ORM/hibernate/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ORM/hibernate/.idea/dataSources/6008775c-0bed-457a-8d6f-0d1bef7383a2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ORM/hibernate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ORM/hibernate/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/DemoRestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/DemoRestApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/config/Configs.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/config/Configs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/controller/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/controller/FilmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/controller/FilmController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/entity/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/entity/Film.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/repo/FilmRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/repo/FilmRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/service/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/service/FilmService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/service/FilmService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/aspect/MathAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/aspect/MathAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/aspect/pountcut/Pointcut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/aspect/pountcut/Pointcut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/util/MathClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ilsy/education/aop_3/util/MathClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,49 +45,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "Application.SpringTest.executor": "Run",
-    "Application.TesSpring.executor": "Run",
-    "Application.Test2.executor": "Run",
-    "Application.TestFromTouTube.executor": "Run",
-    "Application.TestSpring.executor": "Run",
-    "Application.TestSpring1.executor": "Run",
-    "Application.TestSpring2.executor": "Run",
-    "Application.ru.ilsy.education.annotation.TestSpring.executor": "Run",
-    "Application.ru.ilsy.education.annotationAutowired.TestSpring.executor": "Run",
-    "Application.ru.ilsy.education.aop.test_for_order.Main.executor": "Run",
-    "Application.ru.ilsy.education.aop_2.joinPoint.Main.executor": "Run",
-    "Application.ru.ilsy.education.dependencyInjection.TestSpring.executor": "Run",
-    "Application.ru.ilsy.education.inversionOfControl.TestSpring.executor": "Run",
-    "Application.ru.ilsy.education.scope.TestSpring.executor": "Run",
-    "Application.test1.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.Main.executor": "Run",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Spass/OneDrive/Рабочий стол/aspectjweaver-1.9.21.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SpringTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TesSpring.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestFromTouTube.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestSpring.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestSpring1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TestSpring2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ru.ilsy.education.annotation.TestSpring.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ru.ilsy.education.annotationAutowired.TestSpring.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ru.ilsy.education.aop.test_for_order.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ru.ilsy.education.aop_2.joinPoint.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ru.ilsy.education.dependencyInjection.TestSpring.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ru.ilsy.education.inversionOfControl.TestSpring.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ru.ilsy.education.scope.TestSpring.executor&quot;: &quot;Run&quot;,
+    &quot;Application.test1.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Main.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Spass/OneDrive/Рабочий стол/aspectjweaver-1.9.21.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ru.ilsy.education.dependencyInjection" />
@@ -228,7 +194,8 @@
       <workItem from="1702658244908" duration="34000" />
       <workItem from="1702747954114" duration="606000" />
       <workItem from="1703413279276" duration="4503000" />
-      <workItem from="1706010324593" duration="26710000" />
+      <workItem from="1706010324593" duration="30700000" />
+      <workItem from="1706212801520" duration="14000" />
     </task>
     <task id="LOCAL-00001" summary="New commit">
       <option name="closed" value="true" />

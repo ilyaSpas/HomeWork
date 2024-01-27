@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/api/film")
+@RequestMapping("/api/films")
 public class CommentController {
     private final CommentService commentService;
 
