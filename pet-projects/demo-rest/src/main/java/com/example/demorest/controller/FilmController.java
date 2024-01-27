@@ -1,8 +1,8 @@
 package com.example.demorest.controller;
 
 import com.example.demorest.dto.FilmDto;
-import com.example.demorest.entity.Film;
 import com.example.demorest.service.FilmService;
+import com.example.demorest.util.Converter;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -10,65 +10,50 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("api/films")
 public class FilmController {
     private final FilmService filmService;
-
-    private final ModelMapper modelMapper;
+    private final Converter converter;
 
     @Autowired
-    public FilmController(FilmService filmService, ModelMapper modelMapper) {
+    public FilmController(FilmService filmService, Converter converter) {
         this.filmService = filmService;
-        this.modelMapper = modelMapper;
+        this.converter = converter;
     }
 
-
+    //DONE
     @GetMapping
     public ResponseEntity<List<FilmDto>> getFilms(@RequestParam(value = "sort", required = false) String sort) {
-        List<FilmDto> filmDtoList = filmService.findAll(sort).stream()
-                .map(filmDto -> convertToFilmDto(filmDto))
-                .collect(Collectors.toList());
-        return new ResponseEntity<>(filmDtoList, HttpStatus.OK);
+        return new ResponseEntity<>(converter.ListFilmToListFilmDto(filmService.findAll(sort)), HttpStatus.OK);
     }
 
+    //DONE
     @PostMapping
     public ResponseEntity<HttpStatus> createFilm(@RequestBody FilmDto filmDto) {
-        filmService.save(convertToFilm(filmDto));
+        filmService.save(converter.filDaoToFilm(filmDto));
         return ResponseEntity.ok(HttpStatus.OK);
     }
 
+    //DONE
     @GetMapping("/{id}")
     public ResponseEntity<FilmDto> getFilm(@PathVariable("id") Long id) {
-        return new ResponseEntity<>(convertToFilmDto(filmService.findById(id)), HttpStatus.OK);
+        return new ResponseEntity<>(converter.filmToFilmDto(filmService.findById(id)), HttpStatus.OK);
     }
 
+    //DONE
     @DeleteMapping("/{id}")
     public ResponseEntity<HttpStatus> deleteFilm(@PathVariable("id") Long id) {
         filmService.deleteById(id);
         return ResponseEntity.ok(HttpStatus.OK);
     }
 
+    //DONE
     @PutMapping("/{id}")
     public ResponseEntity<FilmDto> updateFilm(@PathVariable("id") Long id,
                                                  @RequestBody FilmDto filmDto) {
-        filmService.updateById(id, convertToFilm(filmDto));
+        filmService.updateById(id, converter.filDaoToFilm(filmDto));
         return new ResponseEntity<>(filmDto, HttpStatus.OK);
-    }
-
-    public Film convertToFilm(FilmDto filmDto) {
-        return modelMapper.map(filmDto, Film.class);
-    }
-
-    public FilmDto convertToFilmDto(Film film) {
-        return modelMapper.map(film, FilmDto.class);
-    }
-
-    public List<FilmDto> convertToListFilmDto(List<Film> films){
-        return films.stream()
-                .map(filmDto -> convertToFilmDto(filmDto))
-                .collect(Collectors.toList());
     }
 }
