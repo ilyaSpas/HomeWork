@@ -54,7 +54,7 @@ public class FilmService {
     }
 
 
-    public Film updateById(Long id, Film film) {
+    public FilmDto updateById(Long id, Film film) {
         Film filmFromDB = filmRepository.findById(id).orElse(null);
         if (film.getTitle() != null) {
             filmFromDB.setTitle(film.getTitle());
@@ -62,6 +62,7 @@ public class FilmService {
         if (film.getComments() != null) {
             filmFromDB.setComments(film.getComments());
         }
-        return filmRepository.save(filmFromDB);
+        filmRepository.save(filmFromDB);
+        return converter.filmToFilmDto(filmFromDB);
     }
 }

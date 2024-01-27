@@ -1,6 +1,7 @@
 package com.example.demorest.controller;
 
 import com.example.demorest.dto.FilmDto;
+import com.example.demorest.entity.Film;
 import com.example.demorest.service.FilmService;
 import com.example.demorest.util.Converter;
 import org.modelmapper.ModelMapper;
@@ -52,8 +53,7 @@ public class FilmController {
     //TODO
     @PutMapping("/{id}")
     public ResponseEntity<FilmDto> updateFilm(@PathVariable("id") Long id,
-                                                 @RequestBody FilmDto filmDto) {
-        filmService.updateById(id, converter.filDaoToFilm(filmDto));
-        return new ResponseEntity<>(filmDto, HttpStatus.OK);
+                                                 @RequestBody Film film) {
+        return new ResponseEntity<>(filmService.updateById(id, film), HttpStatus.OK);
     }
 }
