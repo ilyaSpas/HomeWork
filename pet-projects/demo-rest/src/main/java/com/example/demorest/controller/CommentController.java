@@ -1,6 +1,7 @@
 package com.example.demorest.controller;
 
 import com.example.demorest.dto.CommentDto;
+import com.example.demorest.entity.Comment;
 import com.example.demorest.service.CommentService;
 import com.example.demorest.util.Converter;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,25 +15,22 @@ import java.util.List;
 @RequestMapping("/api/films")
 public class CommentController {
     private final CommentService commentService;
-    private final Converter converter;
 
     @Autowired
-    public CommentController(CommentService commentService, Converter converter) {
+    public CommentController(CommentService commentService) {
         this.commentService = commentService;
-        this.converter = converter;
     }
 
-    //DONE
     @GetMapping("/comments")
     public ResponseEntity<List<CommentDto>> getAllComments() {
-        return new ResponseEntity<>(converter.listCommentToCommentFilmDto(commentService.findAll()), HttpStatus.OK);
+        return new ResponseEntity<>(commentService.findAll(), HttpStatus.OK);
     }
 
-    //DONE
+    //TODO
     @PostMapping("/{id}/comments")
     public ResponseEntity<HttpStatus> createComment(@PathVariable("id") Long id,
                                                     @RequestBody CommentDto commentDto) {
-        commentService.save(converter.commentDtoToComment(commentDto), id);
+        commentService.save(commentDto, id);
         return ResponseEntity.ok(HttpStatus.OK);
     }
 }

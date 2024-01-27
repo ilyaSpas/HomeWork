@@ -24,13 +24,10 @@ public class FilmService {
         this.converter = converter;
     }
 
-    //DONE
     public Film save(FilmDto filmDto) {
         return filmRepository.save(converter.filDaoToFilm(filmDto));
     }
 
-
-    //DONE
     public List<FilmDto> findAll(String sort) {
         if (sort != null){
             switch (sort){
@@ -43,12 +40,10 @@ public class FilmService {
         return converter.ListFilmToListFilmDto(filmRepository.findAll());
     }
 
-    //DONE
     public FilmDto findById(Long id) {
         return converter.filmToFilmDto(filmRepository.findById(id).orElse(null));
     }
 
-    //DONE
     public void deleteById(Long id) {
         filmRepository.deleteById(id);
     }

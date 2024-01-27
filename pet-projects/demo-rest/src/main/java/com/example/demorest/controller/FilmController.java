@@ -16,44 +16,37 @@ import java.util.List;
 @RequestMapping("api/films")
 public class FilmController {
     private final FilmService filmService;
-    private final Converter converter;
 
     @Autowired
-    public FilmController(FilmService filmService, Converter converter) {
+    public FilmController(FilmService filmService) {
         this.filmService = filmService;
-        this.converter = converter;
     }
 
-    //DONE
     @GetMapping
     public ResponseEntity<List<FilmDto>> getFilms(@RequestParam(value = "sort", required = false) String sort) {
         return new ResponseEntity<>(filmService.findAll(sort), HttpStatus.OK);
     }
 
-    //DONE
     @PostMapping
     public ResponseEntity<HttpStatus> createFilm(@RequestBody FilmDto filmDto) {
         filmService.save(filmDto);
         return ResponseEntity.ok(HttpStatus.OK);
     }
 
-    //DONE
     @GetMapping("/{id}")
     public ResponseEntity<FilmDto> getFilm(@PathVariable("id") Long id) {
         return new ResponseEntity<>(filmService.findById(id), HttpStatus.OK);
     }
 
-    //DONE
+    @PutMapping("/{id}")
+    public ResponseEntity<FilmDto> updateFilm(@PathVariable("id") Long id,
+                                              @RequestBody Film film) {
+        return new ResponseEntity<>(filmService.updateById(id, film), HttpStatus.OK);
+    }
+
     @DeleteMapping("/{id}")
     public ResponseEntity<HttpStatus> deleteFilm(@PathVariable("id") Long id) {
         filmService.deleteById(id);
         return ResponseEntity.ok(HttpStatus.OK);
-    }
-
-    //TODO
-    @PutMapping("/{id}")
-    public ResponseEntity<FilmDto> updateFilm(@PathVariable("id") Long id,
-                                                 @RequestBody Film film) {
-        return new ResponseEntity<>(filmService.updateById(id, film), HttpStatus.OK);
     }
 }
