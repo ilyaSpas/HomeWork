@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ef676cd-a9f7-41e0-bbb6-aad5759a9d16" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/aspect/filmLoggingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/aspect/FilmLoggingAspect.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/aspect/pointcut/FilmPointcut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/config/AspectForTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/config/Configs.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/config/Configs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,6 +190,7 @@
       <workItem from="1706010324593" duration="30700000" />
       <workItem from="1706212801520" duration="14000" />
       <workItem from="1706360796903" duration="28000" />
+      <workItem from="1706360889327" duration="389000" />
     </task>
     <task id="LOCAL-00001" summary="New commit">
       <option name="closed" value="true" />

@@ -25,8 +25,7 @@ public class CommentController {
     public ResponseEntity<List<CommentDto>> getAllComments() {
         return new ResponseEntity<>(commentService.findAll(), HttpStatus.OK);
     }
-
-    //TODO
+    
     @PostMapping("/{id}/comments")
     public ResponseEntity<HttpStatus> createComment(@PathVariable("id") Long id,
                                                     @RequestBody CommentDto commentDto) {

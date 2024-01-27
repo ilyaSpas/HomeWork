@@ -4,8 +4,9 @@ import com.example.demorest.dto.FilmDto;
 import com.example.demorest.entity.Film;
 import com.example.demorest.repo.FilmRepository;
 import com.example.demorest.util.Converter;
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.Comparator;
@@ -28,7 +29,7 @@ public class FilmService {
         return filmRepository.save(converter.filDaoToFilm(filmDto));
     }
 
-    public List<FilmDto> findAll(String sort) {
+    public List<FilmDto> findAll(String sort, Integer page, Integer size) {
         if (sort != null){
             switch (sort){
                 case ("title"):
@@ -36,6 +37,11 @@ public class FilmService {
                             .sorted(Comparator.comparing(Film::getTitle))
                             .collect(Collectors.toList()));
             }
+        }
+        if (page != null && size != null){
+            Page<Film> filmPage = filmRepository.findAll(PageRequest.of(page, size));
+            List<FilmDto> filmsDto = converter.ListFilmToListFilmDto(filmPage.getContent());
+            return filmsDto;
         }
         return converter.ListFilmToListFilmDto(filmRepository.findAll());
     }

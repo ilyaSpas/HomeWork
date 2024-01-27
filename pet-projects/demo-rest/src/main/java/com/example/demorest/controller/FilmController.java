@@ -23,8 +23,10 @@ public class FilmController {
     }
 
     @GetMapping
-    public ResponseEntity<List<FilmDto>> getFilms(@RequestParam(value = "sort", required = false) String sort) {
-        return new ResponseEntity<>(filmService.findAll(sort), HttpStatus.OK);
+    public ResponseEntity<List<FilmDto>> getFilms(@RequestParam(value = "sort", required = false) String sort,
+                                                  @RequestParam(value = "page", required = false) Integer page,
+                                                  @RequestParam(value = "size", required = false) Integer size) {
+        return new ResponseEntity<>(filmService.findAll(sort, page, size), HttpStatus.OK);
     }
 
     @PostMapping
