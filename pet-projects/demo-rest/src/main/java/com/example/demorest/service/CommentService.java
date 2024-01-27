@@ -12,16 +12,17 @@ import java.util.List;
 @Service
 public class CommentService {
     public final CommentRepository commentRepository;
-    private final FilmService filmService;
+    public final FilmRepository filmRepository;
 
     @Autowired
-    public CommentService(CommentRepository commentRepository, FilmService filmService) {
+    public CommentService(CommentRepository commentRepository, FilmRepository filmRepository) {
         this.commentRepository = commentRepository;
-        this.filmService = filmService;
+        this.filmRepository = filmRepository;
     }
 
+    //DONE
     public void save(Comment comment, Long id) {
-        comment.setFilm(filmService.findById(id));
+        comment.setFilm(filmRepository.findById(id).orElse(null));
         commentRepository.save(comment);
     }
 

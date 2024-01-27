@@ -26,20 +26,20 @@ public class FilmController {
     //DONE
     @GetMapping
     public ResponseEntity<List<FilmDto>> getFilms(@RequestParam(value = "sort", required = false) String sort) {
-        return new ResponseEntity<>(converter.ListFilmToListFilmDto(filmService.findAll(sort)), HttpStatus.OK);
+        return new ResponseEntity<>(filmService.findAll(sort), HttpStatus.OK);
     }
 
     //DONE
     @PostMapping
     public ResponseEntity<HttpStatus> createFilm(@RequestBody FilmDto filmDto) {
-        filmService.save(converter.filDaoToFilm(filmDto));
+        filmService.save(filmDto);
         return ResponseEntity.ok(HttpStatus.OK);
     }
 
     //DONE
     @GetMapping("/{id}")
     public ResponseEntity<FilmDto> getFilm(@PathVariable("id") Long id) {
-        return new ResponseEntity<>(converter.filmToFilmDto(filmService.findById(id)), HttpStatus.OK);
+        return new ResponseEntity<>(filmService.findById(id), HttpStatus.OK);
     }
 
     //DONE
@@ -49,7 +49,7 @@ public class FilmController {
         return ResponseEntity.ok(HttpStatus.OK);
     }
 
-    //DONE
+    //TODO
     @PutMapping("/{id}")
     public ResponseEntity<FilmDto> updateFilm(@PathVariable("id") Long id,
                                                  @RequestBody FilmDto filmDto) {

@@ -24,29 +24,35 @@ public class FilmService {
         this.converter = converter;
     }
 
-    public Film save(Film film) {
-        return filmRepository.save(film);
+    //DONE
+    public Film save(FilmDto filmDto) {
+        return filmRepository.save(converter.filDaoToFilm(filmDto));
     }
 
-    public List<Film> findAll(String sort) {
+
+    //DONE
+    public List<FilmDto> findAll(String sort) {
         if (sort != null){
             switch (sort){
                 case ("title"):
-                    return filmRepository.findAll().stream()
+                    return converter.ListFilmToListFilmDto(filmRepository.findAll().stream()
                             .sorted(Comparator.comparing(Film::getTitle))
-                            .collect(Collectors.toList());
+                            .collect(Collectors.toList()));
             }
         }
-        return filmRepository.findAll();
+        return converter.ListFilmToListFilmDto(filmRepository.findAll());
     }
 
-    public Film findById(Long id) {
-        return filmRepository.findById(id).orElse(null);
+    //DONE
+    public FilmDto findById(Long id) {
+        return converter.filmToFilmDto(filmRepository.findById(id).orElse(null));
     }
 
+    //DONE
     public void deleteById(Long id) {
         filmRepository.deleteById(id);
     }
+
 
     public Film updateById(Long id, Film film) {
         Film filmFromDB = filmRepository.findById(id).orElse(null);
