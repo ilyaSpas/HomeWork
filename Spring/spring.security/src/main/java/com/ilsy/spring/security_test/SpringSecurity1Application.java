@@ -1,4 +1,4 @@
-package com.ilsy.spring.security;
+package com.ilsy.spring.security_test;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
