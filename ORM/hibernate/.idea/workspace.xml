@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2910229-4d33-4975-8cd2-269def6f1907" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../hibernate-2/src/main/java/ru/ilsy/hibernate/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hibernate-2/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spring/spring-core/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring-core/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spring/spring-core/src/main/java/ru/ilsy/education/aop_3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring-core/src/main/java/ru/ilsy/education/aop_3/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spring/spring-core/src/main/java/ru/ilsy/education/aop_3/aspect/MathAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring-core/src/main/java/ru/ilsy/education/aop_3/aspect/MathAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spring/spring-core/src/main/java/ru/ilsy/education/aop_3/aspect/pountcut/Pointcut.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring-core/src/main/java/ru/ilsy/education/aop_3/aspect/pountcut/Pointcut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spring/spring-core/src/main/java/ru/ilsy/education/aop_3/util/MathClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring-core/src/main/java/ru/ilsy/education/aop_3/util/MathClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring.security/src/main/java/com/ilsy/spring/security_test/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring/spring.security/src/main/resources/log4j.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring/spring.security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring.security/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring/spring.security/src/main/java/com/ilsy/spring/security_test/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring.security/src/main/java/com/ilsy/spring/security_test/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring/spring.security/src/main/java/com/ilsy/spring/security_test/security/AuthProviderImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring/spring.security/src/main/java/com/ilsy/spring/security_test/service/PersonDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring.security/src/main/java/com/ilsy/spring/security_test/service/PersonDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring/spring.security/src/main/resources/templates/db/addUserPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring.security/src/main/resources/templates/db/addUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring/spring.security/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring.security/src/main/resources/templates/auth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring/spring.security/src/main/resources/templates/main/mainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring.security/src/main/resources/templates/main/mainPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,6 +203,9 @@
       <workItem from="1705321501717" duration="1101000" />
       <workItem from="1705830841780" duration="638000" />
       <workItem from="1706203844751" duration="58000" />
+      <workItem from="1706611637941" duration="90000" />
+      <workItem from="1706611870367" duration="112000" />
+      <workItem from="1706613301670" duration="975000" />
     </task>
     <servers />
   </component>
