@@ -1,6 +1,6 @@
-package com.ilsy.spring.security_test.security;
+package com.ilsy.spring.project.security;
 
-import com.ilsy.spring.security_test.entity.Person;
+import com.ilsy.spring.project.entity.Person;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -26,7 +26,7 @@ public class PersonDetails implements UserDetails {
 
     @Override
     public String getUsername() {
-        return person.getUsername();
+        return person.getEmail();
     }
 
     @Override
@@ -52,4 +52,5 @@ public class PersonDetails implements UserDetails {
     public Person getPerson(){
         return this.person;
     }
+
 }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Registry</h2>
+
+<form th:action="@{/auth/registry}" th:method="post" th:object="${person}">
+
+
+    <label>Имя:
+        <input type="text" name="firsName"/>
+    </label><br>
+
+    <label>Фамилия:
+        <input type="text" name="lastName"/>
+    </label><br>
+
+    <label>Отчество:
+        <input type="text" name="patronymic"/>
+    </label><br>
+
+    <label>Номер телефона:
+        <input type="text" name="phoneNumber"/>
+    </label><br>
+
+    <label>Почта:
+        <input type="text" name="email"/>
+    </label><br>
+
+    <label>Пароль:
+        <input type="text" name="password"/>
+    </label><br>
+
+    <label>Дата рождения:
+        <input type="date" name="birthday"/>
+    </label><br>
+
+    <button type="submit">Сохранить</button>
+</form>
+
+</body>
+</html>

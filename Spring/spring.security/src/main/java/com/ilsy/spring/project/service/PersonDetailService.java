@@ -1,11 +1,10 @@
-package com.ilsy.spring.security_test.service;
+package com.ilsy.spring.project.service;
 
-import com.ilsy.spring.security_test.entity.Person;
-import com.ilsy.spring.security_test.repo.PersonRepository;
-import com.ilsy.spring.security_test.security.PersonDetails;
+import com.ilsy.spring.project.entity.Person;
+import com.ilsy.spring.project.repo.PersonRepository;
+import com.ilsy.spring.project.security.PersonDetails;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -25,11 +24,9 @@ public class PersonDetailService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        log.warn("Кто-то пробует войти на сайт!");
-        Optional<Person> person = personRepository.findByUsername(username);
-        if (person.isEmpty()){
-            throw new UsernameNotFoundException("Username not found!");
-        }
+        Optional<Person> person = personRepository.findByEmail(username);
         return new PersonDetails(person.get());
     }
+
+
 }

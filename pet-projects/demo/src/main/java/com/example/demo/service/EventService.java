@@ -1,5 +1,6 @@
 package com.example.demo.service;
 
+
 import com.example.demo.model.Event;
 import com.example.demo.repository.EventRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,7 +53,7 @@ public class EventService {
         eventRepository.save(eventFromDB);
     }
 
-    public Page<Event> findWithPagination(Integer page ,Integer bookPerPage) {
+    public Page<Event> findWithPagination(Integer page , Integer bookPerPage) {
         return  eventRepository.findAll(PageRequest.of(page, bookPerPage));
     }
 }

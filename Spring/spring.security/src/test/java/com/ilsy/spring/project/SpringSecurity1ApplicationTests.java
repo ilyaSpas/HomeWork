@@ -1,4 +1,4 @@
-package com.ilsy.spring.security_test;
+package com.ilsy.spring.project;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

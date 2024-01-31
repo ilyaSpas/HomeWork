@@ -23,7 +23,7 @@
         </filter>
     </appender>
 
-    <logger name="com.ilsy.spring.security_test">
+    <logger name="com.ilsy.spring.project">
         <level value="warn"/>
         <appender-ref ref="fileLogger"/>
     </logger>
