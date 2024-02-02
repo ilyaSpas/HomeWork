@@ -20,7 +20,7 @@ public class RequestController {
     private final RequestService requestService;
 
     @GetMapping
-    public ResponseEntity<List<Request>> getRequests() {
+    public ResponseEntity<List<Request>> getAllRequests() {
         return new ResponseEntity<>(requestService.findAll(), HttpStatus.OK);
     }
 
