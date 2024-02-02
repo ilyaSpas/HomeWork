@@ -1,29 +1,25 @@
 package com.ilsy.spring.project.service;
 
-import com.ilsy.spring.project.dto.PersonDto;
 import com.ilsy.spring.project.entity.Person;
 import com.ilsy.spring.project.repo.PersonRepository;
-import com.ilsy.spring.project.util.Converter;
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 
 @Service
 public class PersonService {
     private final PersonRepository personRepository;
-    private final Converter converter;
+    private final PasswordEncoder passwordEncoder;
 
     @Autowired
-    public PersonService(PersonRepository personRepository, Converter converter) {
-        this.converter = converter;
+    public PersonService(PersonRepository personRepository, PasswordEncoder passwordEncoder) {
+        this.passwordEncoder = passwordEncoder;
         this.personRepository = personRepository;
     }
 
-    public void createPerson(PersonDto personDto){
-        personRepository.save(converter.DtoToPerson(personDto));
+    public void createPerson(Person person) {
+        person.setPassword(passwordEncoder.encode(person.getPassword()));
+        personRepository.save(person);
     }
 
 

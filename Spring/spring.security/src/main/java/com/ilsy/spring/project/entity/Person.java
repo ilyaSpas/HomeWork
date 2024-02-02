@@ -3,10 +3,10 @@ package com.ilsy.spring.project.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
-import java.time.LocalDate;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 
 @Entity
@@ -20,6 +20,7 @@ public class Person {
     @Column(name = "id")
     private Long id;
 
+    @NotEmpty(message = "!!!")
     @Column(name = "firsName")
     private String firsName;
 
@@ -30,14 +31,16 @@ public class Person {
     private String patronymic;
 
     @Column(name = "birthday")
-    private LocalDate birthday;
+    private String birthday;
 
     @Column(name = "phone_number")
     private String phoneNumber;
 
+    @NotNull
     @Column(name = "email")
     private String email;
 
+    @NotEmpty
     @Column(name = "password")
     private String password;
 

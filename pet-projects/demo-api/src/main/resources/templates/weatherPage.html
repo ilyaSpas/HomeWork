@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+WEATHER
+<br>
+<br>
+<form action="/weather/get" method="get">
+    <label>Город:
+        <input type="text" name="town">
+    </label>
+    <br>
+    <br>
+    <button>Узнать погоду!</button>
+    <div th:if="${weather != null}">
+        <img th:src="${weather.getCurrent().getCondition().getIcon()}" alt="">
+        <p th:text="'Погода в городе ' + ${weather.getLocation().getName()} + ' на ' + ${weather.getLocation().getLocaltime()}"></p>
+        <p th:text="${weather.getCurrent().getCondition().getText()}"></p>
+        <p th:text="'Температура: ' + ${weather.getCurrent().getTemp_c()}"></p>
+    </div>
+</form>
+</body>
+</html>

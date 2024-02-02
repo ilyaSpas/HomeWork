@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.validator.constraints.NotEmpty;
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -18,6 +20,7 @@ public class Person {
     @Column(name = "id")
     private Long id;
 
+    @NotEmpty(message = "!!!")
     @Column(name = "firsName")
     private String firsName;
 

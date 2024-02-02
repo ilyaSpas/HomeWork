@@ -17,6 +17,7 @@ public class EventService {
     @Autowired
     private EventRepository eventRepository;
 
+    //DONE!
     public void save(Event event) {
         if (event.getHotelImageUrl().isEmpty()){
             event.setHotelImageUrl("https://images.divisare.com/images/c_limit,f_auto,h_2000,q_auto,w_3000/" +
@@ -26,22 +27,27 @@ public class EventService {
         eventRepository.save(event);
     }
 
+
     public List<Event> findAll() {
         return eventRepository.findAll();
     }
 
+    //DONE!
     public void delete(Long id) {
         eventRepository.deleteById(id);
     }
 
+    //DONE!
     public Optional<Event> findById(Long id) {
         return eventRepository.findById(id);
     }
 
+    //DONE!
     public List<Event> findByTown(String town){
         return eventRepository.findByTown(town);
     }
 
+    //DONE!
     public void update(Event event) {
         Event eventFromDB = eventRepository.findById(event.getId()).orElseThrow();
         eventFromDB.setTown(event.getTown());
@@ -53,6 +59,7 @@ public class EventService {
         eventRepository.save(eventFromDB);
     }
 
+    //DONE!
     public Page<Event> findWithPagination(Integer page , Integer bookPerPage) {
         return  eventRepository.findAll(PageRequest.of(page, bookPerPage));
     }

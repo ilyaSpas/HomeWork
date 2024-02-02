@@ -1,15 +1,14 @@
 package com.ilsy.spring.project.controller;
 
-import com.ilsy.spring.project.dto.PersonDto;
 import com.ilsy.spring.project.entity.Person;
 import com.ilsy.spring.project.service.PersonService;
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
+
+
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/auth")
@@ -33,9 +32,14 @@ public class AuthController {
     }
 
     @PostMapping("/registry")
-    public String registration(@ModelAttribute("person") PersonDto personDto) {
-        personService.createPerson(personDto);
-        return "redirect:/";
+    public String registration(@ModelAttribute("person") @Valid Person person, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()){
+            System.out.println("Есть ошибка");
+            return "/auth/registryPage";
+        }
+        System.out.println("Ошибок - нет");
+        personService.createPerson(person);
+        return "redirect:/auth/login";
     }
 
 

@@ -20,6 +20,7 @@ public class EventController {
     @Autowired
     private EventService eventService;
 
+    //DONE!
     @GetMapping
     public String allEvents(Model model,
                             @RequestParam(value = "page", required = false, defaultValue = "0") Integer page,
@@ -30,12 +31,14 @@ public class EventController {
         return "event/eventsPage";
     }
 
+    //DONE!
     @GetMapping("/search")
     public String search(@Param("name") String town, Model model) {
         model.addAttribute("find_events", eventService.findByTown(town));
         return "event/eventsPage";
     }
 
+    //DONE!
     @PostMapping
     public String createEvent(@ModelAttribute("event") @Valid Event event, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
@@ -45,6 +48,7 @@ public class EventController {
         return "redirect:/event";
     }
 
+    //DONE!
     @GetMapping("/{id}")
     public String showEvent(@PathVariable("id") Long id,
                             @ModelAttribute("event") Event event,
@@ -53,11 +57,13 @@ public class EventController {
         return "event/showEvent";
     }
 
+    //DONE!
     @GetMapping("/new")
     public String newEvent(@ModelAttribute("event") Event event) {
         return "event/newEventPage";
     }
 
+    //DONE!
     @GetMapping("/{id}/edit")
     public String editEvent(@ModelAttribute("event") Event event,
                             @PathVariable("id") Long id,
@@ -66,6 +72,7 @@ public class EventController {
         return "event/editEventPage";
     }
 
+    //DONE!
     @PostMapping("/{id}/update")
     public String updateEvent(@ModelAttribute("id") Long id,
                               @ModelAttribute("event") @Valid Event event, BindingResult bindingResult) {
@@ -76,6 +83,7 @@ public class EventController {
         return "redirect:/event/{id}";
     }
 
+    //DONE!
     @PostMapping("/{id}/delete")
     public String deleteEvent(@PathVariable("id") Long id) {
         eventService.delete(id);
