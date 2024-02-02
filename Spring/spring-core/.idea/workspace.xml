@@ -5,11 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ef676cd-a9f7-41e0-bbb6-aad5759a9d16" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/aspect/FilmLoggingAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/aspect/pointcut/FilmPointcut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/config/AspectForTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/config/Configs.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-rest/src/main/java/com/example/demorest/config/Configs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo-api/src/main/java/org/example/project/aspect/WeatherAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo-api/src/main/java/org/example/project/aspect/pointcut/WeatherPointcut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo-api/src/main/java/org/example/project/config/MyAppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo-api/src/main/java/org/example/project/entity/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo-api/src/main/java/org/example/project/repo/RequestRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pet-projects/demo-api/src/main/java/org/example/project/service/RequestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-api/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-api/src/main/java/org/example/project/service/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-api/src/main/java/org/example/project/service/WeatherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-api/src/main/java/org/example/project/weather/Condition.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-api/src/main/java/org/example/project/model/Condition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-api/src/main/java/org/example/project/weather/Current.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-api/src/main/java/org/example/project/model/Current.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-api/src/main/java/org/example/project/weather/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-api/src/main/java/org/example/project/model/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-api/src/main/java/org/example/project/weather/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-api/src/main/java/org/example/project/model/Weather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-api/src/main/java/org/example/project/weather_api/Test1WeatherApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-api/src/main/java/org/example/project/weather_api_test/Test1WeatherApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-api/src/main/java/org/example/project/weather_api/TestWeatherApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-api/src/main/java/org/example/project/weather_api_test/TestWeatherApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pet-projects/demo-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../pet-projects/demo-api/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,6 +202,7 @@
       <workItem from="1706212801520" duration="14000" />
       <workItem from="1706360796903" duration="28000" />
       <workItem from="1706360889327" duration="389000" />
+      <workItem from="1706894985070" duration="459000" />
     </task>
     <task id="LOCAL-00001" summary="New commit">
       <option name="closed" value="true" />

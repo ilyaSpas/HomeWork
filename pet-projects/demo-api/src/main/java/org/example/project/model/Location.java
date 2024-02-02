@@ -1,4 +1,4 @@
-package org.example.project.weather;
+package org.example.project.model;
 
 import lombok.Data;
 

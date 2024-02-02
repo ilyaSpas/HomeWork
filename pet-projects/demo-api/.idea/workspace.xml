@@ -5,71 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="599e6518-f69b-45c4-a29e-74f7e5bbb399" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../MyProjects/.idea/MyProjects.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project/DemoApiApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project/controller/WeatherController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project/service/WeatherService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project/weather/Condition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project/weather/Current.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project/weather/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project/weather/Weather.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project/weather_api/Test1WeatherApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project/weather_api/TestWeatherApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/weatherPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/project/DemoApiApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/eureka-client-1/src/main/java/org/example/eurekaclient1/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/eureka-client-2/src/main/java/org/example/eurekaclient2/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/eureka-client/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/eureka-client/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/eureka-client/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/eureka-client/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/eureka-client/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/eureka-client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/eureka-client/src/main/java/org/example/eurekaclient/EurekaClientApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/eureka-client/src/main/java/org/example/eurekaclient/controller/FirstController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/eureka-client/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/eureka-client/src/test/java/org/example/eurekaclient/EurekaClientApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/eureka-server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/eureka-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/eureka-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/eureka-server/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/eureka-server/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/eureka-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/eureka-server/src/main/java/org/example/eurekaserver/EurekaServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/eureka-server/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/eureka-server/src/test/java/org/example/eurekaserver/EurekaServerApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/src/main/java/org/example/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Микросервисы/micro-demo/src/test/java/org/example/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spring/spring.security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring.security/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spring/spring.security/src/main/java/com/ilsy/spring/project/config/ApplicationConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring.security/src/main/java/com/ilsy/spring/project/config/ApplicationConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spring/spring.security/src/main/java/com/ilsy/spring/project/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring.security/src/main/java/com/ilsy/spring/project/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spring/spring.security/src/main/java/com/ilsy/spring/project/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring.security/src/main/java/com/ilsy/spring/project/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spring/spring.security/src/main/java/com/ilsy/spring/project/dto/PersonDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spring/spring.security/src/main/java/com/ilsy/spring/project/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring.security/src/main/java/com/ilsy/spring/project/entity/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spring/spring.security/src/main/java/com/ilsy/spring/project/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring.security/src/main/java/com/ilsy/spring/project/service/PersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spring/spring.security/src/main/java/com/ilsy/spring/project/util/Converter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spring/spring.security/src/main/resources/templates/auth/registryPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring.security/src/main/resources/templates/auth/registryPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/controller/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/controller/EventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/service/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/src/main/java/com/example/demo/service/EventService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project/aspect/WeatherAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project/aspect/pointcut/WeatherPointcut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project/config/MyAppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project/entity/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project/repo/RequestRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project/service/RequestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring/spring-core/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring-core/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project/service/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project/service/WeatherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project/weather/Condition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project/model/Condition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project/weather/Current.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project/model/Current.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project/weather/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project/model/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project/weather/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project/model/Weather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project/weather_api/Test1WeatherApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project/weather_api_test/Test1WeatherApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project/weather_api/TestWeatherApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project/weather_api_test/TestWeatherApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,8 +31,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -108,76 +61,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test1WeatherApi.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TestWeatherApi.executor&quot;: &quot;Run&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.DemoApiApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Spass/OneDrive/Рабочий стол/HW/pet-projects/demo-api/src/main/java/org/example/project&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.Test1WeatherApi.executor": "Run",
+    "Application.TestWeatherApi.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.DemoApiApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Spass/OneDrive/Рабочий стол/HW/pet-projects/demo-api/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Spass\OneDrive\Рабочий стол\HW\pet-projects\demo-api\src\main\resources" />
       <recent name="C:\Users\Spass\OneDrive\Рабочий стол\HW\pet-projects\demo-api\src\main\java\org\example\project" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.project.Main" />
-      <module name="demo-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.project.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test1WeatherApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.project.weather_api.Test1WeatherApi" />
-      <module name="demo-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.project.weather_api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestWeatherApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.project.weather_api.TestWeatherApi" />
-      <module name="demo-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.project.weather_api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="DemoApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="demo-api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.project.DemoApiApplication" />
@@ -185,13 +100,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.TestWeatherApi" />
-        <item itemvalue="Application.Test1WeatherApi" />
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -203,9 +111,22 @@
       <updated>1706888211551</updated>
       <workItem from="1706888212619" duration="5231000" />
     </task>
+    <task id="LOCAL-00001" summary="New commit">
+      <option name="closed" value="true" />
+      <created>1706893616346</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706893616346</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="New commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="New commit" />
   </component>
 </project>
