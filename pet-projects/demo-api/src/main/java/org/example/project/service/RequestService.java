@@ -6,6 +6,8 @@ import org.example.project.entity.Request;
 import org.example.project.repo.RequestRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class RequestService {
@@ -13,5 +15,13 @@ public class RequestService {
 
     public void save(Request request){
         requestRepository.save(request);
+    }
+
+    public Request findById(Long id){
+        return requestRepository.findById(id).orElse(null);
+    }
+
+    public List<Request> findAll(){
+        return requestRepository.findAll();
     }
 }

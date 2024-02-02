@@ -1,4 +1,4 @@
-package org.example.project.weather_api_test;
+package org.example.project.weather_api_example;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;

@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="599e6518-f69b-45c4-a29e-74f7e5bbb399" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project/aspect/WeatherAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project/aspect/pointcut/WeatherPointcut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project/config/MyAppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project/entity/Request.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project/repo/RequestRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project/service/RequestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Spring/spring-core/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring/spring-core/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project/controller/RequestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project/service/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project/service/WeatherService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project/weather/Condition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project/model/Condition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project/weather/Current.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project/model/Current.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project/weather/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project/model/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project/weather/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project/model/Weather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project/weather_api/Test1WeatherApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project/weather_api_test/Test1WeatherApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project/weather_api/TestWeatherApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project/weather_api_test/TestWeatherApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project/service/RequestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project/service/RequestService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +70,11 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -119,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706893616346</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="New commit">
+      <option name="closed" value="true" />
+      <created>1706896150615</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706896150615</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

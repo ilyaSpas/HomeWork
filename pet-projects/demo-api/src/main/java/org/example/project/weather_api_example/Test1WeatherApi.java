@@ -1,4 +1,4 @@
-package org.example.project.weather_api_test;
+package org.example.project.weather_api_example;
 
 import org.example.project.model.Weather;
 import org.springframework.web.client.RestTemplate;
