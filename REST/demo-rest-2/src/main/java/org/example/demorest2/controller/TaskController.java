@@ -4,6 +4,8 @@ import lombok.RequiredArgsConstructor;
 import org.example.demorest2.dto.TaskDto;
 import org.example.demorest2.entity.Task;
 import org.example.demorest2.service.TaskService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,31 +17,31 @@ public class TaskController {
     private final TaskService taskService;
 
     @PostMapping
-    public String createTask(@RequestBody TaskDto taskDto) {
+    public ResponseEntity<HttpStatus> createTask(@RequestBody TaskDto taskDto) {
         taskService.save(taskDto);
-        return "Task created!";
+        return ResponseEntity.ok(HttpStatus.CREATED);
     }
 
     @GetMapping
-    public List<TaskDto> getAllTasks(){
-        return taskService.findAll();
+    public ResponseEntity<List<TaskDto>> getAllTasks(){
+        return new ResponseEntity<>(taskService.findAll(), HttpStatus.FOUND);
     }
 
     @GetMapping("/{id}")
-    public TaskDto getTaskById(@PathVariable("id") Long id){
-        return taskService.findById(id);
+    public ResponseEntity<TaskDto> getTaskById(@PathVariable("id") Long id){
+        return new ResponseEntity<>(taskService.findById(id), HttpStatus.FOUND);
     }
 
     @PutMapping("/{id}")
-    public String updateTask(@PathVariable("id") Long id,
+    public ResponseEntity<HttpStatus> updateTask(@PathVariable("id") Long id,
                              @RequestBody TaskDto taskDto){
         taskService.update(id, taskDto);
-        return "Task updated!";
+        return ResponseEntity.ok(HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")
-    public String deleteTask(@PathVariable("id") Long id){
+    public ResponseEntity<HttpStatus> deleteTask(@PathVariable("id") Long id){
         taskService.delete(id);
-        return "Task is deleted!";
+        return ResponseEntity.ok(HttpStatus.OK);
     }
 }
