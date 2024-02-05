@@ -16,13 +16,13 @@ import java.util.List;
 @RestController
 @RequestMapping("/tasks")
 @RequiredArgsConstructor
-@Tag(name="Task controller", description="RESTful сервис")
+@Tag(name="Task controller", description="demo RESTful API")
 public class TaskController {
     private final TaskService taskService;
 
     @Operation(
-            summary = "Создать задачу",
-            description = "Позволяет создать задачу"
+            summary = "Create task",
+            description = "Создать задачу"
     )
     @PostMapping
     public ResponseEntity<HttpStatus> createTask(@RequestBody @Valid TaskDto taskDto,
@@ -33,8 +33,8 @@ public class TaskController {
     }
 
     @Operation(
-            summary = "Получить все задачи",
-            description = "Возвращает список задач"
+            summary = "Get all tasks",
+            description = "Получить все задачи"
     )
     @GetMapping
     public ResponseEntity<List<TaskDto>> getAllTasks() {
@@ -42,8 +42,8 @@ public class TaskController {
     }
 
     @Operation(
-            summary = "Получить задачу по id",
-            description = "Возвращает задачу по id"
+            summary = "Get task by id",
+            description = "Получить задачу по id"
     )
     @GetMapping("/{id}")
     public ResponseEntity<TaskDto> getTaskById(@PathVariable("id") Long id) {
@@ -51,8 +51,8 @@ public class TaskController {
     }
 
     @Operation(
-            summary = "Обновить задачу по id",
-            description = "Обновляет задачу по id"
+            summary = "Update task by id",
+            description = "Обновить задачу по id"
     )
     @PutMapping("/{id}")
     public ResponseEntity<HttpStatus> updateTask(@PathVariable("id") Long id,
@@ -64,8 +64,8 @@ public class TaskController {
     }
 
     @Operation(
-            summary = "Удаляет задачу по id",
-            description = "Позваляет удаить задачу"
+            summary = "Delete task by id",
+            description = "Удалить задачу по id"
     )
     @DeleteMapping("/{id}")
     public ResponseEntity<HttpStatus> deleteTask(@PathVariable("id") Long id) {
