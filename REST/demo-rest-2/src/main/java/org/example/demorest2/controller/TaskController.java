@@ -20,8 +20,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class TaskController {
     private final TaskService taskService;
-
-    //TODO
+    
     @PostMapping
     public ResponseEntity<HttpStatus> createTask(@RequestBody @Valid TaskDto taskDto,
                                                  BindingResult bindingResult) {
