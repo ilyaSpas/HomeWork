@@ -4,7 +4,6 @@ import lombok.RequiredArgsConstructor;
 import org.example.demorest2.converter.Converter;
 import org.example.demorest2.dto.TaskDto;
 import org.example.demorest2.entity.Task;
-import org.example.demorest2.entity.TaskStatus;
 import org.example.demorest2.exception.TaskNotCreatedException;
 import org.example.demorest2.exception.TaskNotFoundException;
 import org.example.demorest2.repository.TaskRepository;

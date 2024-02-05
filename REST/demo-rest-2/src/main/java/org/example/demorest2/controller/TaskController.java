@@ -3,14 +3,10 @@ package org.example.demorest2.controller;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.example.demorest2.dto.TaskDto;
-import org.example.demorest2.exception.TaskErrorResponse;
-import org.example.demorest2.exception.TaskNotCreatedException;
-import org.example.demorest2.exception.TaskNotFoundException;
 import org.example.demorest2.service.TaskService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
