@@ -1,6 +1,7 @@
 package org.example.demorest2.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -16,7 +17,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/tasks")
 @RequiredArgsConstructor
-@Tag(name="Task controller", description="demo RESTful API")
+@Tag(name = "Task controller", description = "demo RESTful API")
 public class TaskController {
     private final TaskService taskService;
 
@@ -25,7 +26,10 @@ public class TaskController {
             description = "Создать задачу"
     )
     @PostMapping
-    public ResponseEntity<HttpStatus> createTask(@RequestBody @Valid TaskDto taskDto,
+    public ResponseEntity<HttpStatus> createTask(@RequestBody
+                                                 @Valid
+                                                 @Parameter(description = "Dto задачи")
+                                                 TaskDto taskDto,
                                                  BindingResult bindingResult) {
         taskService.checkBindingResult(bindingResult);
         taskService.save(taskDto);
@@ -46,7 +50,9 @@ public class TaskController {
             description = "Получить задачу по id"
     )
     @GetMapping("/{id}")
-    public ResponseEntity<TaskDto> getTaskById(@PathVariable("id") Long id) {
+    public ResponseEntity<TaskDto> getTaskById(@PathVariable("id")
+                                               @Parameter(description = "Идентификатор задачи")
+                                               Long id) {
         return new ResponseEntity<>(taskService.findById(id), HttpStatus.FOUND);
     }
 
@@ -55,8 +61,13 @@ public class TaskController {
             description = "Обновить задачу по id"
     )
     @PutMapping("/{id}")
-    public ResponseEntity<HttpStatus> updateTask(@PathVariable("id") Long id,
-                                                 @RequestBody @Valid TaskDto taskDto,
+    public ResponseEntity<HttpStatus> updateTask(@PathVariable("id")
+                                                 @Parameter(description = "Идентификатор задачи")
+                                                 Long id,
+                                                 @RequestBody
+                                                 @Valid
+                                                 @Parameter(description = "Dto для оновления")
+                                                 TaskDto taskDto,
                                                  BindingResult bindingResult) {
         taskService.checkBindingResult(bindingResult);
         taskService.update(id, taskDto);
@@ -68,7 +79,9 @@ public class TaskController {
             description = "Удалить задачу по id"
     )
     @DeleteMapping("/{id}")
-    public ResponseEntity<HttpStatus> deleteTask(@PathVariable("id") Long id) {
+    public ResponseEntity<HttpStatus> deleteTask(@PathVariable("id")
+                                                 @Parameter(description = "Идентификатор задачи")
+                                                 Long id) {
         taskService.delete(id);
         return ResponseEntity.ok(HttpStatus.OK);
     }
