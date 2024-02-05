@@ -26,26 +26,26 @@ public class TaskController {
     }
 
     @GetMapping
-    public ResponseEntity<List<TaskDto>> getAllTasks(){
+    public ResponseEntity<List<TaskDto>> getAllTasks() {
         return new ResponseEntity<>(taskService.findAll(), HttpStatus.FOUND);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<TaskDto> getTaskById(@PathVariable("id") Long id){
+    public ResponseEntity<TaskDto> getTaskById(@PathVariable("id") Long id) {
         return new ResponseEntity<>(taskService.findById(id), HttpStatus.FOUND);
     }
 
     @PutMapping("/{id}")
     public ResponseEntity<HttpStatus> updateTask(@PathVariable("id") Long id,
-                             @RequestBody @Valid TaskDto taskDto,
-                                                 BindingResult bindingResult){
+                                                 @RequestBody @Valid TaskDto taskDto,
+                                                 BindingResult bindingResult) {
         taskService.checkBindingResult(bindingResult);
         taskService.update(id, taskDto);
         return ResponseEntity.ok(HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<HttpStatus> deleteTask(@PathVariable("id") Long id){
+    public ResponseEntity<HttpStatus> deleteTask(@PathVariable("id") Long id) {
         taskService.delete(id);
         return ResponseEntity.ok(HttpStatus.OK);
     }
