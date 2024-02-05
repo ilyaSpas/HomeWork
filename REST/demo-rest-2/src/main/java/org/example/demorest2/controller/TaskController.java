@@ -24,7 +24,7 @@ public class TaskController {
     @PostMapping
     public ResponseEntity<HttpStatus> createTask(@RequestBody @Valid TaskDto taskDto,
                                                  BindingResult bindingResult) {
-        checkBindingResult(bindingResult);
+        taskService.checkBindingResult(bindingResult);
         taskService.save(taskDto);
         return ResponseEntity.ok(HttpStatus.CREATED);
     }
@@ -43,7 +43,7 @@ public class TaskController {
     public ResponseEntity<HttpStatus> updateTask(@PathVariable("id") Long id,
                              @RequestBody @Valid TaskDto taskDto,
                                                  BindingResult bindingResult){
-        checkBindingResult(bindingResult);
+        taskService.checkBindingResult(bindingResult);
         taskService.update(id, taskDto);
         return ResponseEntity.ok(HttpStatus.OK);
     }
@@ -52,31 +52,5 @@ public class TaskController {
     public ResponseEntity<HttpStatus> deleteTask(@PathVariable("id") Long id){
         taskService.delete(id);
         return ResponseEntity.ok(HttpStatus.OK);
-    }
-
-    @ExceptionHandler
-    private ResponseEntity<TaskErrorResponse> handleException(TaskNotFoundException e){
-        TaskErrorResponse response = new TaskErrorResponse("Task not found!");
-        return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
-    }
-
-    @ExceptionHandler
-    private ResponseEntity<TaskErrorResponse> handleException(TaskNotCreatedException e){
-        TaskErrorResponse response = new TaskErrorResponse(e.getMessage());
-        return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
-    }
-
-    private void checkBindingResult(BindingResult bindingResult) {
-        if (bindingResult.hasErrors()){
-            StringBuilder stringBuilder = new StringBuilder();
-            List<FieldError> errors = bindingResult.getFieldErrors();
-            for (FieldError fieldError : errors){
-                stringBuilder.append(fieldError.getField())
-                        .append(" - ")
-                        .append(fieldError.getDefaultMessage())
-                        .append(";");
-            }
-            throw new TaskNotCreatedException(stringBuilder.toString());
-        }
     }
 }

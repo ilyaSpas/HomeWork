@@ -5,10 +5,13 @@ import org.example.demorest2.converter.Converter;
 import org.example.demorest2.dto.TaskDto;
 import org.example.demorest2.entity.Task;
 import org.example.demorest2.entity.TaskStatus;
+import org.example.demorest2.exception.TaskNotCreatedException;
 import org.example.demorest2.exception.TaskNotFoundException;
 import org.example.demorest2.repository.TaskRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
 
 import java.util.List;
 
@@ -41,5 +44,20 @@ public class TaskService {
 
     public void delete(Long id) {
         taskRepository.deleteById(id);
+    }
+
+
+    public void checkBindingResult(BindingResult bindingResult) {
+        if (bindingResult.hasErrors()){
+            StringBuilder stringBuilder = new StringBuilder();
+            List<FieldError> errors = bindingResult.getFieldErrors();
+            for (FieldError fieldError : errors){
+                stringBuilder.append(fieldError.getField())
+                        .append(" - ")
+                        .append(fieldError.getDefaultMessage())
+                        .append(";");
+            }
+            throw new TaskNotCreatedException(stringBuilder.toString());
+        }
     }
 }
