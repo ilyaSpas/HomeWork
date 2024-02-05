@@ -21,7 +21,7 @@ public class TaskService {
     private final Converter converter;
 
     @Transactional
-    public void save(TaskDto taskDto){
+    public void save(TaskDto taskDto) {
         taskRepository.save(converter.daoToTask(taskDto));
     }
 
@@ -47,10 +47,10 @@ public class TaskService {
 
 
     public void checkBindingResult(BindingResult bindingResult) {
-        if (bindingResult.hasErrors()){
+        if (bindingResult.hasErrors()) {
             StringBuilder stringBuilder = new StringBuilder();
             List<FieldError> errors = bindingResult.getFieldErrors();
-            for (FieldError fieldError : errors){
+            for (FieldError fieldError : errors) {
                 stringBuilder.append(fieldError.getField())
                         .append(" - ")
                         .append(fieldError.getDefaultMessage())

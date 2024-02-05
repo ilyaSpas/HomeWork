@@ -15,21 +15,21 @@ import java.util.stream.Collectors;
 public class Converter {
     private final ModelMapper modelMapper;
 
-    public Task daoToTask(TaskDto taskDto){
+    public Task daoToTask(TaskDto taskDto) {
         return modelMapper.map(taskDto, Task.class);
     }
 
-    public TaskDto taskToDao(Task task){
+    public TaskDto taskToDao(Task task) {
         return modelMapper.map(task, TaskDto.class);
     }
 
-    public List<TaskDto> taskListToTaskDaoList(List<Task> taskList){
+    public List<TaskDto> taskListToTaskDaoList(List<Task> taskList) {
         return taskList.stream()
                 .map(this::taskToDao)
                 .collect(Collectors.toList());
     }
 
-    public Task updateByDao(Task task, TaskDto taskDto){
+    public Task updateByDao(Task task, TaskDto taskDto) {
         task.setTitle(taskDto.getTitle());
         task.setDescription(taskDto.getDescription());
         task.setStatus(TaskStatus.valueOf(taskDto.getStatus()));

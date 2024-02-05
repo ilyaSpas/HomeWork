@@ -26,7 +26,7 @@ public class Task {
     private TaskStatus status;
 
     @PrePersist
-    private void init(){
+    private void init() {
         status = TaskStatus.CREATED;
     }
 }
