@@ -3,11 +3,14 @@ package org.example.demorest2.controller;
 import lombok.RequiredArgsConstructor;
 import org.example.demorest2.dto.TaskDto;
 import org.example.demorest2.entity.Task;
+import org.example.demorest2.exception.TaskErrorResponse;
+import org.example.demorest2.exception.TaskNotFoundException;
 import org.example.demorest2.service.TaskService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
@@ -43,5 +46,11 @@ public class TaskController {
     public ResponseEntity<HttpStatus> deleteTask(@PathVariable("id") Long id){
         taskService.delete(id);
         return ResponseEntity.ok(HttpStatus.OK);
+    }
+
+    @ExceptionHandler
+    private ResponseEntity<TaskErrorResponse> handleException(TaskNotFoundException e){
+        TaskErrorResponse response = new TaskErrorResponse("Task not found!");
+        return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
     }
 }

@@ -3,6 +3,7 @@ package org.example.demorest2.converter;
 import lombok.RequiredArgsConstructor;
 import org.example.demorest2.dto.TaskDto;
 import org.example.demorest2.entity.Task;
+import org.example.demorest2.entity.TaskStatus;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 
@@ -26,5 +27,12 @@ public class Converter {
         return taskList.stream()
                 .map(this::taskToDao)
                 .collect(Collectors.toList());
+    }
+
+    public Task updateByDao(Task task, TaskDto taskDto){
+        task.setTitle(taskDto.getTitle());
+        task.setDescription(taskDto.getDescription());
+        task.setStatus(TaskStatus.valueOf(taskDto.getStatus()));
+        return task;
     }
 }
