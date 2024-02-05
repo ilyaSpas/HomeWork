@@ -4,8 +4,10 @@ import lombok.RequiredArgsConstructor;
 import org.example.demorest2.converter.Converter;
 import org.example.demorest2.dto.TaskDto;
 import org.example.demorest2.entity.Task;
+import org.example.demorest2.exception.TaskNotFoundException;
 import org.example.demorest2.repository.TaskRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -15,6 +17,7 @@ public class TaskService {
     private final TaskRepository taskRepository;
     private final Converter converter;
 
+    @Transactional
     public void save(TaskDto taskDto){
         taskRepository.save(converter.daoToTask(taskDto));
     }
@@ -28,7 +31,8 @@ public class TaskService {
     }
 
     public TaskDto findById(Long id) {
-        return converter.taskToDao(taskRepository.findById(id).orElse(null));
+        Task task = taskRepository.findById(id).orElseThrow(TaskNotFoundException::new);
+        return converter.taskToDao(task);
     }
 
     public void update(Long id, TaskDto taskDto) {
