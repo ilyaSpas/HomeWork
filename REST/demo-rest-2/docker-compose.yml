@@ -1,23 +1,21 @@
-#version: '3.1'
-#services:
-#  db:
-#    container_name: postgresql
-#    image: postgres
-#    environment:
-#      - POSTGRES_USER=postgres
-#      - POSTGRES_PASSWORD=12345
-#    expose:
-#      - 5432
-#    ports:
-#      - "5432:5433"
-#
-#  app:
-#    container_name: myApp
-#    image: spring-boot-app
-#    build:
-#      context: .
-#      dockerfile: Dockerfile
-#    ports:
-#      - 8080:8080
-#    depends_on:
-#      - db
+version: '3.1'
+services:
+  db:
+    container_name: postgresql
+    image: postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=12345
+      - POSTGRES_DB=postgres
+    ports:
+      - "5432:5433"
+
+  app:
+    container_name: myApp
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
