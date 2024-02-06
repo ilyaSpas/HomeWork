@@ -5,6 +5,8 @@ import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 @Entity
 @Table(name = "tasks")
 @Data
@@ -25,8 +27,12 @@ public class Task {
     @Column(name = "status")
     private TaskStatus status;
 
+    @Column(name = "date_of_create")
+    private LocalDateTime dateOfCreate;
+
     @PrePersist
     private void init() {
         status = TaskStatus.CREATED;
+        dateOfCreate = LocalDateTime.now();
     }
 }

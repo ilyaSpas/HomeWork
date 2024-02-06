@@ -7,6 +7,7 @@ import org.example.demorest2.entity.TaskStatus;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -33,6 +34,7 @@ public class Converter {
         task.setTitle(taskDto.getTitle());
         task.setDescription(taskDto.getDescription());
         task.setStatus(TaskStatus.valueOf(taskDto.getStatus()));
+        task.setDateOfCreate(LocalDateTime.parse(taskDto.getDateOfCreate()));
         return task;
     }
 }

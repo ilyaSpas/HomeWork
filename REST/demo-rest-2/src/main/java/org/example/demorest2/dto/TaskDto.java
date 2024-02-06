@@ -17,6 +17,9 @@ public class TaskDto {
     private String description;
 
     @Schema(description = "Статус")
-    @Null(message = "Status set automatically!")
+    @Null(message = "Status will set automatically!")
     private String status;
+
+    @Null(message = "Date of create will set automatically!")
+    private String dateOfCreate;
 }
