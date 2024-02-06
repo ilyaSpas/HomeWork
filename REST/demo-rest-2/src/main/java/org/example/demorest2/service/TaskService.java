@@ -7,6 +7,8 @@ import org.example.demorest2.entity.Task;
 import org.example.demorest2.exception.TaskNotCreatedException;
 import org.example.demorest2.exception.TaskNotFoundException;
 import org.example.demorest2.repository.TaskRepository;
+import org.springframework.boot.actuate.health.Health;
+import org.springframework.boot.actuate.health.HealthIndicator;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.BindingResult;
@@ -16,7 +18,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class TaskService {
+public class TaskService implements HealthIndicator {
     private final TaskRepository taskRepository;
     private final Converter converter;
 
@@ -58,5 +60,10 @@ public class TaskService {
             }
             throw new TaskNotCreatedException(stringBuilder.toString());
         }
+    }
+
+    @Override
+    public Health health() {
+        return Health.up().withDetail("Task service", "Task service is running").build();
     }
 }
