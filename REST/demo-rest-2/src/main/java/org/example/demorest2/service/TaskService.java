@@ -21,7 +21,8 @@ import java.util.List;
 public class TaskService implements HealthIndicator {
     private final TaskRepository taskRepository;
     private final Converter converter;
-    private boolean isTasServiceGood = true;
+
+    private boolean isTaskServiceGood = true;
 
     @Transactional
     public void save(TaskDto taskDto) {
@@ -65,9 +66,13 @@ public class TaskService implements HealthIndicator {
 
     @Override
     public Health health() {
-        if (isTasServiceGood){
+        if (isTaskServiceGood){
             return Health.up().withDetail("Task service", "Task service is running").build();
         }
         return Health.down().withDetail("Task service", "Task service is not available").build();
+    }
+
+    public boolean isTaskServiceGood() {
+        return isTaskServiceGood;
     }
 }
