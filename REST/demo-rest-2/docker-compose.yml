@@ -12,7 +12,7 @@ services:
   app:
     depends_on:
       - db
-    build: .
+    image: demo-rest-2-image
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://db/postgres
     ports:
