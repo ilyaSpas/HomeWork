@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<H1>HELLO WORLD!</H1>
+<h2>Товары со всей России:</h2>
+<form action="/" method="get">
+Поиск по названию: <input type="text" name="title"><br>
+    <button type="submit">Поиск</button>
+</form>
+<br>
+<div th:each="el : ${products}">
+    <hr>
+    <h3 th:text="${el.title}"></h3>
+    <p th:text="${el.description}"></p>
+    <p th:text="${el.price}"></p>
+    <p th:text="${el.city}"></p>
+    <p th:text="${el.author}"></p>
+    <a th:href="'/product/' + ${el.id}" >Детальнее</a>
+</div>
+<hr>
+<h4>Создать новый товар: </h4>
+<form action="/product/create" method="post">
+    Название товара: <input type="text" name="title"><br>
+    Описание товара: <input type="text" name="description"><br>
+    Цена товара: <input type="text" name="price"><br>
+    Город: <input type="text" name="city"><br>
+    Автор: <input type="text" name="author"><br>
+    Первая фотография: <input type="file" name="file1"><br>
+    Вторая фотография: <input type="file" name="file2"><br>
+    Третья фотография: <input type="file" name="file3"><br>
+    <button type="submit">Добавить</button>
+</form>
+</body>
+</html>

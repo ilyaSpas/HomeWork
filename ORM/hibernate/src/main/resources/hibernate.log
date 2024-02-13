@@ -1,0 +1,4 @@
+[19:24:44,885] WARN [org.hibernate.action.internal.UnresolvedEntityInsertActions: 149] HHH000437: Attempting to save one or more entities that have a non-nullable association with an unsaved transient entity. The unsaved transient entity must be saved in an operation prior to saving these dependent entities.
+	Unsaved transient entity: ([org.example.mapping.many_to_one.Company#<null>])
+	Dependent entities: ([[org.example.mapping.many_to_one.Employee#<null>]])
+	Non-nullable association(s): ([org.example.mapping.many_to_one.Employee.company])
